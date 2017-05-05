@@ -73,9 +73,25 @@ body {
 
 .about{
     padding:10px;
-    border-bottom: 3px solid #374151;
+
     margin-top: 25px;
     color: black;
     font-size: 20px;
 }
 
+.about .toprow{
+    padding-bottom:30px;
+}
+
+.about .col-md-4{
+    padding-right:80px;
+}
+
+.about p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.about .rightcol{
+    padding-top:20px;
+}
