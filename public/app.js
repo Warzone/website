@@ -13,6 +13,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'playController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/play.css']
         })
+        .when('/leaderboard', {
+            templateUrl: 'pages/leaderboard.html',
+            controller: 'leaderboardController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
+        })
         .otherwise( {
             redirectTo : '/'
         });
@@ -41,6 +46,10 @@ app.controller('landingController', ['$scope', '$http', 'moment', function($scop
 
 app.controller('playController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
     console.log('play initialized');
+}]);
+
+app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
+    console.log('leaderboard initialized');
 }]);
 
 /**
