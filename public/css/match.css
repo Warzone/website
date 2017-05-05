@@ -1,0 +1,66 @@
+
+.jumbotron.public-connect {
+    background-color: #433381;
+    color: #fff;
+}
+.avatar{
+    display: inline-block;
+    vertical-align:top;
+}
+
+.personal{
+    display:inline-block;
+    margin-left:20px;
+    vertical-align:top;
+}
+
+.rank {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #2A2E34;
+}
+
+.header{
+    height:75px;
+    display:inline-block;
+}
+
+.container h2,h3,h4,h1{
+    margin: 0;
+    
+}
+
+.stats{
+    display:inline-block;
+    margin-left: 80px;
+    vertical-align:center;
+    justify-content: middle;
+    line-height: 75px;
+    text-align: center;
+}
+
+
+.stat{
+    display:inline-block;
+    margin-left: 20px;
+    vertical-align:center;
+    justify-content: middle;
+    line-height: 75px;
+    text-align: center;
+}
+
+.table td{
+    text-align:center;
+}
+
+.trright{
+    text-align:center;
+}

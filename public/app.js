@@ -29,6 +29,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'profileController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
         })
+        .when('/match', {
+            templateUrl: 'pages/match.html',
+            controller: 'matchController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/match.css']
+        })
         .otherwise( {
             redirectTo : '/'
         });
