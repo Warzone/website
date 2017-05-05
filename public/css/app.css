@@ -36,8 +36,19 @@ body {
     }
 }
 
-.jumbotron.header {
-    background-image: url(http://i.imgur.com/v6MLNJV.png);
-    background-position: center top;
-    height: 300px;
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-purple {
+    background-color: #433381;
+    color: #fff;
+}
+.btn-purple:hover {
+    background-color: #414293;
+    color: #fff;
 }

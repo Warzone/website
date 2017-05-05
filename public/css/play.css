@@ -1,0 +1,15 @@
+.top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.top h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.jumbotron.public-connect {
+    background-color: #433381;
+    color: #fff;
+}

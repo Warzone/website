@@ -6,9 +6,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         when('/', {
             templateUrl: 'pages/landing.html',
             controller: 'landingController',
-            css: ['css/app.css', 'css/navbarDefault.css']
-        }).
-        otherwise( {
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/landing.css']
+        })
+        .when('/play', {
+            templateUrl: 'pages/play.html',
+            controller: 'playController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/play.css']
+        })
+        .otherwise( {
             redirectTo : '/'
         });
 
@@ -32,6 +37,10 @@ app.controller('navbarController', function($scope, $location) {
 
 app.controller('landingController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
     console.log('landing initialized');
+}]);
+
+app.controller('playController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
+    console.log('play initialized');
 }]);
 
 /**
