@@ -19,7 +19,7 @@ body {
 
 .header .col-md-8{
     text-align: center;
-        padding-top: 80px;
+        padding-top: 50px;
 }
 
 .header h2{
@@ -53,5 +53,29 @@ body {
   -ms-transition:     0.08s ease-in;
   -moz-transition:    0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
+}
+
+.info{
+    background-color: dimgray;
+    width: 100%;
+    text-align: center;
+}
+
+.info h2{
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+}
+
+.info h2 span{
+    font-weight: lighter;
+}
+
+.about{
+    padding:10px;
+    border-bottom: 3px solid #374151;
+    margin-top: 25px;
+    color: black;
+    font-size: 20px;
 }
 
