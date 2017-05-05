@@ -1,5 +1,11 @@
 var app = angular.module('TeamGG', ['ngRoute', 'angularMoment']);
 
+config = {
+    api: {
+        url: "http://localhost:3001"
+    }
+}
+
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     console.log('route provider');
     $routeProvider.
@@ -49,7 +55,16 @@ app.controller('playController', ['$scope', '$http', 'moment', function($scope, 
 }]);
 
 app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
-    console.log('leaderboard initialized');
+    $scope.topPlayers = new Array();
+
+    $scope.updateLeaderboard = function(category) {
+        $http.get(config.api.url + '/mc/leaderboard/' + category)
+            .then(function(response) {
+                $scope.topPlayers = response.data;
+            })
+    }
+
+    $scope.updateLeaderboard("kills");
 }]);
 
 /**

@@ -3,4 +3,26 @@
         <h3 class="text-muted">Player Leaderboard</h3>
         <h3 class="header-title">The Top Rated players on Team.gg</h3>
     </div>
+
+    <table class="table leaderboard-table">
+
+        <tbody>
+            <tr ng-repeat="user in topPlayers">
+                <td class="user-head" style="width: 32px;"><img src="https://crafatar.com/avatars/{{user.uuid}}?size=32&overlay"></td>
+                <td class="user-name" style="width: 100px; padding-top: 15px;">{{user.name}}</td>
+                <td class="user-position text-center">
+                    <div>{{$index + 1}}</div>
+                    <div class="text-muted">Rank</div>
+                </td>
+                <td class="user-kills text-center">
+                    <div>{{user.kills}}</div>
+                    <div class="text-muted">Kills</div>
+                </td>
+                <td class="user-wins text-center">
+                    <div>{{user.wins}}</div>
+                    <div class="text-muted">Wins</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
