@@ -24,6 +24,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'leaderboardController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
         })
+        .when('/profile', {
+            templateUrl: 'pages/profile.html',
+            controller: 'profileController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
+        })
         .otherwise( {
             redirectTo : '/'
         });
