@@ -13,7 +13,13 @@ body {
 
 .header .col-md-4{
     float:left;
-    padding-top: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.header .col-md-8{
+    text-align: center;
+        padding-top: 80px;
 }
 
 .header h2{
