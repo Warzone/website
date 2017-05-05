@@ -1,76 +1,61 @@
+/*default version*/
+@font-face {
+    font-family: 'proximanova';
+    src:
+        url('../fonts/ProximaNova-Regular.otf')
+        format('opentype');
+}
+/*semibold version*/
+@font-face {
+    font-family: 'proximanova';
+    src:
+        url('../fonts/ProximaNova-Semibold.otf')
+        format('opentype');
+    font-weight: 600;
+}
+/*semibold version*/
+@font-face {
+    font-family: 'proximanova';
+    src:
+        url('../fonts/ProximaNova-Extrabold.otf')
+        format('opentype');
+    font-weight: 800;
+}
+
 body {
+    font-family: 'proximanova';
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 870px;
+    }
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn-purple {
+    background-color: #433381;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+}
+.btn-purple:hover {
+    background-color: #414293;
+    color: #fff;
 }
 
-.background{
-        background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("http://files-cloud.enjin.com/355364/modules/showcase/1360808737_pvp-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
-}
-
-.header .col-md-4{
-    float:left;
-    padding: 50px;
+.page-title {
+    text-transform: uppercase;
     text-align: center;
 }
 
-.header .col-md-8{
-    text-align: center;
-        padding-top: 50px;
-}
-
-.header h2{
-    font-size: 50px;
-}
-
-.header p{
-
-}
-
-.header button{
-  position: relative;
-  height: 45px;
-  width: 200px;
-  margin: 10px 7px;
-  padding: 5px 5px;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: #ffffff;
-  border: 2px #ffffff solid;
-  border-radius: 4px;
-  text-transform: uppercase;
-  outline: 0;
-  overflow:hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-}
-
-.info{
-    background-color: dimgray;
-    width: 100%;
-    text-align: center;
-}
-
-.info h2{
-    font-size: 20px;
-    padding-bottom: 5px;
-    
-}
-
-.info h2 span{
-    font-weight: lighter;
-}
-
+<<<<<<< HEAD
 .about{
     padding:10px;
 
@@ -94,4 +79,14 @@ body {
 
 .about .rightcol{
     padding-top:20px;
+=======
+.page-title .header-title {
+    font-weight: 500;
+}
+
+.page-title h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+>>>>>>> abstract
 }

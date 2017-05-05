@@ -1,14 +1,35 @@
 var app = angular.module('TeamGG', ['ngRoute', 'angularMoment']);
 
+config = {
+    api: {
+        url: "http://api.teamgg.com:3000"
+    }
+}
+
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     console.log('route provider');
     $routeProvider.
         when('/', {
             templateUrl: 'pages/landing.html',
             controller: 'landingController',
-            css: ['css/app.css', 'css/navbarDefault.css']
-        }).
-        otherwise( {
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/landing.css']
+        })
+        .when('/play', {
+            templateUrl: 'pages/play.html',
+            controller: 'playController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/play.css']
+        })
+        .when('/leaderboard', {
+            templateUrl: 'pages/leaderboard.html',
+            controller: 'leaderboardController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
+        })
+        .when('/profile', {
+            templateUrl: 'pages/profile.html',
+            controller: 'profileController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
+        })
+        .otherwise( {
             redirectTo : '/'
         });
 
@@ -32,6 +53,23 @@ app.controller('navbarController', function($scope, $location) {
 
 app.controller('landingController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
     console.log('landing initialized');
+}]);
+
+app.controller('playController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
+    console.log('play initialized');
+}]);
+
+app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
+    $scope.topPlayers = new Array();
+
+    $scope.updateLeaderboard = function(category) {
+        $http.get(config.api.url + '/mc/leaderboard/' + category)
+            .then(function(response) {
+                $scope.topPlayers = response.data;
+            })
+    }
+
+    $scope.updateLeaderboard("kills");
 }]);
 
 /**

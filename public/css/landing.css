@@ -1,0 +1,21 @@
+.jumbotron.header {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(http://i1303.photobucket.com/albums/ag144/ArchosmanF/PVP2_zpscbd21840.png);
+    background-position: center top;
+    height: 300px;
+    color: #fff;
+    text-align: left;
+    /*font-family: 'roboto', sans-serif;*/
+    background-size: cover;
+
+}
+
+.header h2{
+    font-size: 80px;
+    opacity: .9;
+}
+
+.header h4{
+    font-size: 20px;
+    opacity: .9;
+    padding-left: 5px;
+}
