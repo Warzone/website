@@ -1,17 +1,22 @@
-.navbar {
-    margin: 0;
+.navbar .navbar-right a {
+    color: #000;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s
 }
 
-.navbar-brand{
-    font-weight: bolder;
+.navbar .navbar-right a:hover {
+    color: #00b159;
 }
 
-input{
-    margin-top: 12px;
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #fff;
 }
 
-.input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+.navbar-brand {
+    font-size: 28px;
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #000;
 }
