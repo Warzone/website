@@ -54,32 +54,6 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-
-<<<<<<< HEAD
-.about{
-    padding:10px;
-
-    margin-top: 25px;
-    color: black;
-    font-size: 20px;
-}
-
-.about .toprow{
-    padding-bottom:30px;
-}
-
-.about .col-md-4{
-    padding-right:80px;
-}
-
-.about p{
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.about .rightcol{
-    padding-top:20px;
-=======
 .page-title .header-title {
     font-weight: 500;
 }
@@ -88,5 +62,4 @@ body {
     margin-top: 0px;
     margin-bottom: 2px;
     text-transform: uppercase;
->>>>>>> abstract
 }
