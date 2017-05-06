@@ -12,26 +12,16 @@
     background-color: #fff;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-=======
-=======
->>>>>>> abstract
 .navbar-brand {
     font-size: 28px;
     color: #000;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover,
+.navbar-brand:focus {
     color: #000;
-<<<<<<< HEAD
 }
->>>>>>> abstract
-=======
+
+.icon-bar {
+    background-color: #000;
 }
->>>>>>> abstract
