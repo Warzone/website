@@ -95,11 +95,14 @@
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
                             {{match.loadedMap.name}}
                         </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                           2 Min Ago
+                        <td ng-show="match.matchSize == 1" class="kill-feed-message text-center" style="padding-top: 15px;">
+                            {{match.matchSize}} Player
+                        </td>
+                        <td ng-show="match.matchSize != 1" class="kill-feed-message text-center" style="padding-top: 15px;">
+                            {{match.matchSize}} Players
                         </td>
                         <td class="kill-feed-message text-right" style="padding-top: 15px;">
-                          8:26
+                            {{match.timeElapsed}}
                         </td>
                     </tr>
                 </table>
