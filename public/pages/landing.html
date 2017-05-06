@@ -13,67 +13,41 @@
 
     <div class="row">
         <div class="col-md-8">
-           <p> Recent Matches </p>
+
         </div>
 
     </div>
 
     <div class="row">
-        <div class="col-md-8">
-            <div class="kill-feed">
+
+        <!-- Recent Matches -->
+        <div class="col-md-7">
+            Recent Matches
+            <div class="recent-matches">
                 <table class="table">
 
-                    <tr>
+                    <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <button type="button" class="btn btn-primary">View</button>
+                            <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
                         </td>
                         <td class="kill-feed-message " style="padding-top:15px; width:150px">
-                            <span style="font-weight:bolder">Koth</span> -
-                            Fracture
+                            <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
+                            {{match.loadedMap.name}}
                         </td>
                         <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                           2 Min Ago
+                            2 Min Ago
                         </td>
                         <td class="kill-feed-message text-right" style="padding-top: 15px;">
-                          8:26
+                            {{match.timeElapsed}}
                         </td>
-                    </tr> 
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <button type="button" class="btn btn-primary">View</button>
-                        </td>
-                        <td class="kill-feed-message " style="padding-top:15px; width:150px">
-                            <span style="font-weight:bolder">TDM</span> -
-                            Vengeance
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            5 Min Ago
-                        </td>
-                        <td class="kill-feed-message text-right" style="padding-top: 15px;">
-                          13:41
-                        </td>
-                    </tr>   
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <button type="button" class="btn btn-primary">View</button>
-                        </td>
-                        <td class="kill-feed-message " style="padding-top:15px; width:150px">
-                            <span style="font-weight:bolder">CTP</span> -
-                            Castle
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            20 Min Ago
-                        </td>
-                        <td class="kill-feed-message text-right" style="padding-top: 15px;">
-                          3:34
-                        </td>
-                    </tr>                  
+                    </tr>
                 </table>
             </div>
         </div>
 
         <!--kill feed-->
-        <div class="col-md-4">
+        <div class="col-md-5">
+            Recent Kills
             <div class="kill-feed">
                 <table class="table">
                     <tr ng-repeat="death in deaths">

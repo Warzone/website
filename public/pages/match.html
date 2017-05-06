@@ -1,19 +1,20 @@
 <div class="container">
     <div class="header">
-        <div class="avatar">
-        <i class="fa fa-area-chart fa-5x" aria-hidden="true"></i>
-        </div>
-        <div class="personal">
-            <h2 style="margin:0;"> KOTH </h2>
-            <p style="margin:0;" class="text-muted"> Fracture </p>
-            <span>3 Days Ago</span>
-        </div>
 
-        <div style="margin-left:80px;" class="stat">
-           <h1>18:23 </h1>
-           <h3 class="text-muted"> Minutes</h3>
+        <div class="container row">
+            <div class="avatar">
+                <i class="fa fa-area-chart fa-5x" aria-hidden="true"></i>
+            </div>
+            <div class="personal">
+                <h2 style="margin:0;">{{matchData.mapLoaded.gametype}}</h2>
+                <p style="margin:0;" class="text-muted">{{matchData.mapLoaded.name}}</p>
+            </div>
+
+            <div class="pull-right text-center">
+                <h1>{{timeElapsed}}</h1>
+                <h3 class="text-muted" style="text-transform: uppercase">Time</h3>
+            </div>
         </div>
-        </span>
 
     </div>
 
@@ -36,13 +37,13 @@
                             <th class="trright">KDR</th>
                         </tr>
                     </thead>
-                    <tbody style="background-color: #d8e4ec" class="tableContent">
+                    <tbody ng-class="team.won ? 'table-victory' : 'table-defeat'" class="player-stats-table">
                         <tr ng-repeat="playerStat in team.members">
 
                             <td colspan="1" class="player-icon" style="width: 32px;">
                                 <img style="width: 32px;" src="https://crafatar.com/renders/head/{{playerStat.uuid}}?size=32&overlay" alt="avatar">
                             </td>
-                            <td colspan="2" class="player-name" style="width: 32px; padding-top: 15px;">
+                            <td colspan="2" class="player-name">
                                 <a href="/{{playerStat.name}}">{{playerStat.name}}</a>
                             </td>
                             <td class="player-kills">
@@ -72,12 +73,12 @@
                     <tr ng-repeat="death in matchData.deathsLoaded">
                         <!-- Player Kill Avatar -->
                         <td ng-show="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/profile"> <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.killerLoaded.uuid}}?size=32&overlay" alt="avatar"> </a>
+                            <a href="/{{death.killerLoaded.name}}"> <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.killerLoaded.uuid}}?size=32&overlay" alt="avatar"> </a>
                         </td>
 
                         <!-- Wilderness Kill Avatar -->
                         <td ng-hide="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/profile"> <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar"> </a>
+                            <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar">
                         </td>
 
                         <!-- Player Kill Message-->
@@ -91,7 +92,7 @@
                         </td>
 
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/profile"><img style="width: 32px;" src="https://crafatar.com/avatars/{{death.playerLoaded.uuid}}?size=32&overlay" alt="avatar"></a>
+                            <a href="/{{deat.playerLoaded.name}}"><img style="width: 32px;" src="https://crafatar.com/avatars/{{death.playerLoaded.uuid}}?size=32&overlay" alt="avatar"></a>
                         </td>
                     </tr>
                 </table>
@@ -99,11 +100,11 @@
         </div>
 
         <div class="col-md-7">
-            <div class="kill-feed">
+            <div class="chat-feed">
                  <table class="table">
                     <tr ng-repeat="chat in matchData.match.chat">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{chat.uuid}}?size=32&overlay" alt="avatar">
+                            <a href="/{{chat.username}}"><img style="width: 32px;" src="https://crafatar.com/avatars/{{chat.uuid}}?size=32&overlay" alt="avatar"></a>
                         </td>
                         <td class="playername" style="width: 32px; padding-top:15px; ">
                             <a href="/{{chat.username}}"><p>{{chat.username}}</p> </a>

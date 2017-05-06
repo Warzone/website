@@ -61,3 +61,26 @@
     font-weight: lighter;
     font-size: 14px;
 }
+
+.player-stats-table td {
+    padding-top: 15px;
+}
+
+.player-stats-table .player-icon {
+    width: 32px;
+}
+
+.player-stats-table .player-name,
+.player-stats-table .player-kills,
+.player-stats-table .player-deaths,
+.player-stats-table .player-kdr {
+    padding-top: 15px;
+}
+
+.table-victory {
+    background-color: #a3cfec;
+}
+
+.table-defeat {
+    background-color: #e2b6b3;
+}

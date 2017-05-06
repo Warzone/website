@@ -46,26 +46,36 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.player = null;
     $scope.deaths = new Array();
     $scope.matches = new Array();
+    $scope.recentMatches = new Array();
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
-            console.log('profile data: ' + JSON.stringify(response.data, null, 2));
 
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
-            $scope.matches = response.data.matches;
+
+
+            $http.get(config.api.url + '/mc/match/latest/' + $routeParams.name)
+                .then(function(response) {
+                    console.log('recent matches data: ' + JSON.stringify(response.data, null, 2));
+                    $scope.recentMatches = response.data;
+                    console.log('recent matches size: ' + $scope.recentMatches.length)
+                })
         })
 }]);
 
-app.controller('matchController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', function($scope, $http, $routeParams, moment) {
     console.log('loading player page (' + $routeParams.id + ')');
     $scope.matchData = null;
+    $scope.timeElapsed = "";
 
     $http.get(config.api.url + '/mc/match/' + $routeParams.id)
         .then(function(response) {
             console.log('match data: ' + JSON.stringify(response.data, null, 2));
 
             $scope.matchData = response.data;
+
+            $scope.timeElapsed = toMMSS(Math.floor($scope.matchData.miscData.timeElapsed / 1000));
         })
 }]);
 
@@ -86,11 +96,14 @@ app.controller('navbarController', function($scope, $location) {
 
 app.controller('landingController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
 
-    $http.get(config.api.url + '/mc/deaths/latest')
+    $http.get(config.api.url + '/mc/death/latest')
         .then(function(response) {
-            console.log('deaths data: ' + JSON.stringify(response.data, null, 2));
-
             $scope.deaths = response.data;
+
+            $http.get(config.api.url + '/mc/match/latest')
+                .then(function(response) {
+                    $scope.recentMatches = response.data;
+                })
         })
 
 
@@ -147,3 +160,14 @@ app.directive('head', ['$rootScope','$compile',
         };
     }
 ]);
+
+var toMMSS = function (sec_num) {
+    var hours   = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+    return minutes + ':' + seconds;
+}
