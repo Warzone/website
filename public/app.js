@@ -60,6 +60,13 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
                 $scope.player.kdr = ($scope.player.kills / $scope.player.deaths).toFixed(2)
             }
 
+            if(!$scope.player.wins) {
+                $scope.player.wins = 0;
+            }
+            if(!$scope.player.kills) {
+                $scope.player.kills = 0;
+            }
+
             if(!$scope.player.deaths) {
                 $scope.player.deaths = 0;
                 $scope.player.kdr = $scope.player.kills / 1
