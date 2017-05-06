@@ -25,7 +25,7 @@
                             Fracture
                         </td>
                         <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            4 / 6 Players
+                           2 Min Ago
                         </td>
                         <td class="kill-feed-message text-right" style="padding-top: 15px;">
                           8:26
@@ -40,7 +40,7 @@
                             Vengeance
                         </td>
                         <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            5 / 6 Players
+                            5 Min Ago
                         </td>
                         <td class="kill-feed-message text-right" style="padding-top: 15px;">
                           13:41
@@ -55,7 +55,7 @@
                             Castle
                         </td>
                         <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            6 / 6 Players
+                            20 Min Ago
                         </td>
                         <td class="kill-feed-message text-right" style="padding-top: 15px;">
                           3:34
@@ -73,12 +73,12 @@
 
                         <!-- Player Kill Avatar -->
                         <td ng-show="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
-                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.killerLoaded.uuid}}?size=32&overlay" alt="avatar">
+                            <a href="/profile"> <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.killerLoaded.uuid}}?size=32&overlay" alt="avatar"> </a>
                         </td>
 
                         <!-- Wilderness Kill Avatar -->
                         <td ng-hide="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
-                            <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar">
+                            <a href="/profile"> <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar"> </a>
                         </td>
 
                         <!-- Player Kill Message-->
@@ -92,7 +92,7 @@
                         </td>
 
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.playerLoaded.uuid}}?size=32&overlay" alt="avatar">
+                            <a href="/profile"><img style="width: 32px;" src="https://crafatar.com/avatars/{{death.playerLoaded.uuid}}?size=32&overlay" alt="avatar"></a>
                         </td>
                     </tr>
                 </table>
