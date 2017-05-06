@@ -21,3 +21,7 @@
 .navbar-brand:focus {
     color: #000;
 }
+
+.icon-bar {
+    background-color: #000;
+}
