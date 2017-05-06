@@ -56,3 +56,11 @@
     line-height: 75px;
     text-align: center;
 }
+
+p {
+    margin-top: 0;
+}
+
+.firsthr{
+    margin-bottom: 10px;
+}
