@@ -17,6 +17,7 @@
     color: #000;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover,
+.navbar-brand:focus {
     color: #000;
 }
