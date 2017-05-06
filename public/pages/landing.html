@@ -69,48 +69,30 @@
         <div class="col-md-4">
             <div class="kill-feed">
                 <table class="table">
-                    <tr>
+                    <tr ng-repeat="death in deaths">
+
+                        <!-- Player Kill Avatar -->
+                        <td ng-show="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
+                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.killerLoaded.uuid}}?size=32&overlay" alt="avatar">
+                        </td>
+
+                        <!-- Wilderness Kill Avatar -->
+                        <td ng-hide="{{death.killerLoaded}}" class="kill-feed-item-player" style="width: 32px;">
+                            <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar">
+                        </td>
+
+                        <!-- Player Kill Message-->
+                        <td ng-show="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px;">
+                            <a href="/{{death.killerLoaded.name}}">{{death.killerLoaded.name}}</a> killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
+                        </td>
+
+                        <!-- Wilderness Kill Message-->
+                        <td ng-hide="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px;">
+                            Wilderness killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
+                        </td>
+
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            Luuke killed Vovl
-                        </td>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/8deddf84a8bd4ca384a96a9e8b2e4cd6?size=100" alt="avatar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            Luuke killed Vovl
-                        </td>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/8deddf84a8bd4ca384a96a9e8b2e4cd6?size=100" alt="avatar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            Luuke killed Vovl
-                        </td>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/8deddf84a8bd4ca384a96a9e8b2e4cd6?size=100" alt="avatar">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="kill-feed-message text-center" style="padding-top: 15px;">
-                            Luuke killed Vovl
-                        </td>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/8deddf84a8bd4ca384a96a9e8b2e4cd6?size=100" alt="avatar">
+                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{death.playerLoaded.uuid}}?size=32&overlay" alt="avatar">
                         </td>
                     </tr>
                 </table>

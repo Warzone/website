@@ -24,7 +24,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'leaderboardController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
         })
-        .when('/profile', {
+        .when('/:name', {
             templateUrl: 'pages/profile.html',
             controller: 'profileController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
@@ -39,6 +39,22 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         });
 
     $locationProvider.html5Mode(true);
+}]);
+
+app.controller('profileController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    console.log('loading player page (' + $routeParams.name + ')');
+    $scope.player = null;
+    $scope.deaths = new Array();
+    $scope.matches = new Array();
+
+    $http.get(config.api.url + '/mc/player/' + $routeParams.name)
+        .then(function(response) {
+            console.log('profile data: ' + JSON.stringify(response.data, null, 2));
+
+            $scope.player = response.data.user;
+            $scope.deaths = response.data.deaths;
+            $scope.matches = response.data.matches;
+        })
 }]);
 
 // determines which navbar template to load.
@@ -57,6 +73,15 @@ app.controller('navbarController', function($scope, $location) {
 });
 
 app.controller('landingController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
+
+    $http.get(config.api.url + '/mc/deaths/latest')
+        .then(function(response) {
+            console.log('deaths data: ' + JSON.stringify(response.data, null, 2));
+
+            $scope.deaths = response.data;
+        })
+
+
     console.log('landing initialized');
 }]);
 
