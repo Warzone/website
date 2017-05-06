@@ -54,6 +54,25 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
 
+            if($scope.player.deaths == 0) {
+                $scope.player.kdr = $scope.player.kills / 1
+            } else {
+                $scope.player.kdr = ($scope.player.kills / $scope.player.deaths).toFixed(2)
+            }
+
+            if($scope.player.deaths == 0) {
+                $scope.player.kdr = $scope.player.kills / 1
+            } else {
+                $scope.player.kdr = ($scope.player.kills / $scope.player.deaths).toFixed(2)
+            }
+
+            if($scope.player.losses == 0) {
+                $scope.player.wr = $scope.player.wins / 1
+            } else {
+                $scope.player.wr = ($scope.player.wins / $scope.player.losses).toFixed(2)
+            }
+
+
 
             $http.get(config.api.url + '/mc/match/latest/' + $routeParams.name)
                 .then(function(response) {

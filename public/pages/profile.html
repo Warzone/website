@@ -1,36 +1,40 @@
 <div class="container">
     <div class="header">
-        <div class="avatar">
-        <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/body/{{player.uuid}}?overlay" src="https://crafatar.com/renders/body/iSprux?overlay" alt="avatar">
-        </div>
-        <div class="personal">
-            <h2 style="margin:0;">{{player.name}}</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/body/{{player.uuid}}?overlay" src="https://crafatar.com/renders/body/iSprux?overlay" alt="avatar">
+                    <span style="font-size: 20px; padding-left: 5px;">{{player.name}}</span>
+                </div>
+                <div class="stat">
+                    <h2>{{player.kills}}</h2>
+                    <h4 class="text-muted">Kills</h4>
+                </div>
+                <div class="stat">
+                    <h2>{{player.deaths}}</h2>
+                    <h4 class="text-muted">Deaths</h4>
+                </div>
+                <div class="stat">
+                    <h2>{{player.kdr}}</h2>
+                    <h4 class="text-muted">K/D</h4>
+                </div>
+
+                <div class="stat">
+                    <h2>{{player.wins}}</h2>
+                    <h4 class="text-muted">Wins</h4>
+                </div>
+                <div class="stat">
+                    <h2>{{player.losses}}</h2>
+                    <h4 class="text-muted">Losses</h4>
+                </div>
+                <div class="stat">
+                    <h2>{{player.wr}}</h2>
+                    <h4 class="text-muted">W/L</h4>
+                </div>
+            </div>
         </div>
 
-        <div class="stats">
-           <h1>123 </h1>
-           <h3 class="text-muted"> Kills</h3>
-        </div>
-                <div class="stat">
-           <h1>4 </h1>
-           <h3 class="text-muted"> Deaths </h3>
-        </div>
-        <div class="stat">
-           <h1>30.75 </h1>
-           <h3 class="text-muted"> K/D</h3>
-        </div>
-        <div style="margin-left:80px;" class="stat">
-           <h1>23 </h1>
-           <h3 class="text-muted"> Wins</h3>
-        </div>
-                <div class="stat">
-           <h1>2</h1>
-           <h3 class="text-muted"> Losses </h3>
-        </div>
-        <div class="stat">
-           <h1>11.5</h1>
-           <h3 class="text-muted"> W/L</h3>
-        </div>
     </div>
 
     <hr class="firsthr">

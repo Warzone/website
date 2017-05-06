@@ -38,23 +38,10 @@
     
 }
 
-.stats{
-    display:inline-block;
-    margin-left: 80px;
-    vertical-align:center;
-    justify-content: middle;
-    line-height: 75px;
+.stat {
+    display: inline-block;
     text-align: center;
-}
-
-
-.stat{
-    display:inline-block;
-    margin-left: 20px;
-    vertical-align:center;
-    justify-content: middle;
-    line-height: 75px;
-    text-align: center;
+    margin: 0px 10px;
 }
 
 p {
