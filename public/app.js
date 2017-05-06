@@ -24,15 +24,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'leaderboardController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
         })
-        .when('/:name', {
-            templateUrl: 'pages/profile.html',
-            controller: 'profileController',
-            css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
-        })
         .when('/match', {
             templateUrl: 'pages/match.html',
             controller: 'matchController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/match.css']
+        })
+        .when('/:name', {
+            templateUrl: 'pages/profile.html',
+            controller: 'profileController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/profile.css']
         })
         .otherwise( {
             redirectTo : '/'
