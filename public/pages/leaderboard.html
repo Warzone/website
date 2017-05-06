@@ -8,8 +8,8 @@
 
         <tbody>
             <tr ng-repeat="user in topPlayers">
-                <td class="user-head" style="width: 32px;"><img src="https://crafatar.com/avatars/{{user.uuid}}?size=32&overlay"></td>
-                <td class="user-name" style="width: 100px; padding-top: 15px;">{{user.name}}</td>
+                <td class="user-head" style="width: 32px;"><a href="/profile"><img src="https://crafatar.com/avatars/{{user.uuid}}?size=32&overlay"></a></td>
+                <td class="user-name" style="width: 100px; padding-top: 15px;"><a href="/profile">{{user.name}}</a></td>
                 <td class="user-position text-center">
                     <div>{{$index + 1}}</div>
                     <div class="text-muted">Rank</div>
