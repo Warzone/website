@@ -24,7 +24,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'leaderboardController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/leaderboard.css']
         })
-        .when('/match', {
+        .when('/match/:id', {
             templateUrl: 'pages/match.html',
             controller: 'matchController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/match.css']
@@ -54,6 +54,18 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
             $scope.matches = response.data.matches;
+        })
+}]);
+
+app.controller('matchController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    console.log('loading player page (' + $routeParams.id + ')');
+    $scope.matchData = null;
+
+    $http.get(config.api.url + '/mc/match/' + $routeParams.id)
+        .then(function(response) {
+            console.log('match data: ' + JSON.stringify(response.data, null, 2));
+
+            $scope.matchData = response.data;
         })
 }]);
 

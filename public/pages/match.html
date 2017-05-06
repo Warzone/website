@@ -7,23 +7,6 @@
             <h2 style="margin:0;"> KOTH </h2>
             <p style="margin:0;" class="text-muted"> Fracture </p>
             <span>3 Days Ago</span>
-
-        </div>
-
-
-        <span style="">
-        <div style="margin-left:80px;" class="stat">
-            <h1><i class="fa fa-trophy" aria-hidden="true"></i>  Team 1 </h1>
-            <h2 style="color:green;"> Victorious </h2>
-        </div>
-
-                <div style="margin-left:20px;" class="stat">
-            <h1> Vs</h1>
-        </div>
-
-        <div style="margin-left:20px;" class="stat">
-            <h1> Team 2 </h1>
-            <h2 style="color:darkred;"> Defeat </h2>
         </div>
 
         <div style="margin-left:80px;" class="stat">
@@ -38,249 +21,40 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div style="inline-block" class="col-md-6">
-    <h2 style="display:inline-block;"> Team 1 </h2>
-    <h3 style="display:inline-block; float:right" >47 / <span>12</span> </h2>
-        </div>
-        <div style="inline-block"  class="col-md-6">
-    <h2 style="display:inline-block;">Team 2 </h2>
-    <h3 style="display:inline-block; float:right;"> 12 / 47 </h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row" style="min-height: 200px;">
+        <div class="col-md-6" ng-repeat="team in matchData.teamsLoaded">
+            <h3 style="">{{team.name}} <span class="text-muted">24 / 23</span>
+                <span ng-show="team.winners" class="label label-success label-result pull-right">Victory</span>
+                <span ng-show="!team.winners" class="label label-danger label-result pull-right">Defeat</span></h3>
             <div class="gamestats">
                 <table class="table game-lose">
                     <thead>
                         <tr>
                             <th colspan="3">Player</th>
-                            <th class="trright">K/D</th>
                             <th class="trright">Kills</th>
                             <th class="trright">Death</th>
-                            <th class="trright">Objective </th>
+                            <th class="trright">KDR</th>
                         </tr>
                     </thead>
                     <tbody style="background-color: #d8e4ec" class="tableContent">
-                    <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                    </tbody>
+                        <tr ng-repeat="playerStat in team.members">
 
-                </table>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="gamestats">
-                <table class="table game-lose">
-                    <thead>
-                        <tr>
-                            <th colspan="3">Player</th>
-                            <th class="trright">K/D</th>
-                            <th class="trright">Kills</th>
-                            <th class="trright">Death</th>
-                            <th class="trright">Objective </th>
+                            <td colspan="1" class="player-icon" style="width: 32px;">
+                                <img style="width: 32px;" src="https://crafatar.com/renders/head/{{playerStat.uuid}}?size=32&overlay" alt="avatar">
+                            </td>
+                            <td colspan="2" class="player-name" style="width: 32px; padding-top: 15px;">
+                                <a href="/{{playerStat.name}}">{{playerStat.name}}</a>
+                            </td>
+                            <td class="player-kills">
+                                {{playerStat.kills}}
+                            </td>
+                            <td class="player-deaths">
+                                {{playerStat.deaths}}
+                            </td>
+                            <td class="player-kdr">
+                                {{playerStat.kdr}}
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody style="background-color: #e9e0e0;"class="tableContent">
-                    <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
-                                        <tr>
-                        <td colspan="1" class="playericon" style="width: 32px; ">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/head/iSprux?overlay" src="https://crafatar.com/renders/head/iSprux?overlay" alt="avatar">
-                        </td>
-                        <td colspan="2" class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Sprux</p> </a>
-                        </td>
-                        <td class="KD" style="padding-top: 15px;">
-                            7
-                        </td>
-                        <td class="Kills" style="padding-top: 15px;">
-                            14
-                        </td>
-                        <td class="Deaths" style="padding-top: 15px;">
-                            2
-                        </td>
-                        <td class="Objective" style="padding-top: 15px;">
-                            2
-                        </td>
-                    </tr>
                     </tbody>
 
                 </table>
@@ -291,6 +65,7 @@
 
 <div class="container">
     <div class="row">
+        <!-- Kill Feed -->
         <div class="col-md-4">
             <div class="kill-feed">
                 <table class="table">
@@ -377,50 +152,18 @@
         </div>
 
         <div class="col-md-8">
-            Chat Logs
             <div class="kill-feed">
                  <table class="table">
-                    <tr>
+                    <tr ng-repeat="chat in matchData.match.chat">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
+                            <img style="width: 32px;" src="https://crafatar.com/avatars/{{chat.uuid}}?size=32&overlay" alt="avatar">
                         </td>
-                        <td class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Luuke</p> </a>
+                        <td class="playername" style="width: 32px; padding-top:15px; ">
+                            <a href="/{{chat.username}}"><p>{{chat.username}}</p> </a>
                         </td>
-                        <td class="kill-feed-message" style="padding-top: 15px;">
-                            Vovl is a stupid n******
-                        </td>
+                        <td class="kill-feed-message" style="padding-top: 15px;">{{chat.message}}</td>
                         <td class="kill-feed-item-player" style="padding-top:15px;width: 32px;">
-                            <p class="text-muted">3:27 </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Luuke</p> </a>
-                        </td>
-                        <td class="kill-feed-message" style="padding-top: 15px;">
-                            ez gg
-                        </td>
-                        <td class="kill-feed-item-player" style="padding-top:15px;width: 32px;">
-                            <p class="text-muted">3:28 </p>
-                        </td>
-                    </tr>
-
-                     <tr>
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/avatars/$?size=100" src="https://crafatar.com/avatars/853c80ef3c3749fdaa49938b674adae6?size=100" alt="avatar">
-                        </td>
-                        <td class="playername" style="width: 32px;padding-top:15px; ">
-                            <a href="/profile"><p> Luuke</p> </a>
-                        </td>
-                        <td class="kill-feed-message" style="padding-top: 15px;">
-                            *************************************************
-***************************************************************
-                        <td class="kill-feed-item-player" style="padding-top:15px;width: 32px;">
-                            <p class="text-muted">3:28 </p>
+                            <p class="text-muted">{{chat.matchTime}}</p>
                         </td>
                     </tr>
                 </table>
