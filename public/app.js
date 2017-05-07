@@ -2,7 +2,7 @@ var app = angular.module('TeamGG', ['ngRoute', 'angularMoment']);
 
 config = {
     api: {
-        url: "http://149.56.28.29:3000"
+        url: "http://api.team.gg:3000"
     }
 }
 
