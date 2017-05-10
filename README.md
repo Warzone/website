@@ -2,7 +2,6 @@
 
 
 ## To do list
----
 1. More info on homepage
 2. Fix online players statistic
 2. Leaderboard Page rank sorting
@@ -18,7 +17,6 @@
   7.
 
 ## Ideas
----
 1. Incentify youtube, twitch, playmaking on Team.gg
   - Highlight videos, channels somewhere on homepage or seperate page
 2. Github updates live on website. Just like discord.
