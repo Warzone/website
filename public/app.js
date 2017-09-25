@@ -115,8 +115,7 @@ app.controller('navbarController', function($scope, $location) {
                 break;
             default:
                 $scope.templateUrl = 'templates/navbar/navbarDefault.html';
-        }
-      })
+        }  
     })
 });
 
