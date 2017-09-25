@@ -1,4 +1,4 @@
-var app = angular.module('Warzone', ['ngRoute', 'angularMoment']);
+var app = angular.module('TeamGG', ['ngRoute', 'angularMoment']);
 
 config = {
     api: {
@@ -115,7 +115,7 @@ app.controller('navbarController', function($scope, $location) {
                 break;
             default:
                 $scope.templateUrl = 'templates/navbar/navbarDefault.html';
-        }  
+        }
         }
     })
 });
