@@ -1,10 +1,10 @@
-var app = angular.module('TeamGG', ['ngRoute', 'angularMoment']);
+var app = angular.module('Warzone', ['ngRoute', 'angularMoment']);
 
 config = {
     api: {
         url: "https://api.team.gg"
     }
-}
+};
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     console.log('route provider');
@@ -129,7 +129,7 @@ app.controller('landingController', ['$scope', '$http', 'moment', function($scop
                 .then(function(response) {
                     $scope.recentMatches = response.data;
                 })
-        })
+        });
 
 
     console.log('landing initialized');
@@ -147,7 +147,7 @@ app.controller('leaderboardController', ['$scope', '$http', 'moment', function($
             .then(function(response) {
                 $scope.topPlayers = response.data;
             })
-    }
+    };
 
     $scope.updateLeaderboard("kills");
 }]);
@@ -195,4 +195,4 @@ var toMMSS = function (sec_num) {
     if (minutes < 10) {minutes = "0"+minutes;}
     if (seconds < 10) {seconds = "0"+seconds;}
     return minutes + ':' + seconds;
-}
+};

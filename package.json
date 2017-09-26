@@ -1,8 +1,9 @@
 {
-  "name": "league.gg-web",
+  "name": "warzone-web",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "repository": "https://github.com/WarzoneMC/Website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
