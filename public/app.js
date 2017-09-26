@@ -2,7 +2,7 @@ var app = angular.module('Warzone', ['ngRoute', 'angularMoment']);
 
 config = {
     api: {
-        url: "https://api.team.gg"
+        url: "https://api.warz.one"
     }
 };
 
