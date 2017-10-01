@@ -27,9 +27,9 @@ body {
     font-weight: 600;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1012px) {
     .container {
-        width: 870px;
+        width: 1012px;
     }
 }
 
