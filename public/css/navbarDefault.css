@@ -1,25 +1,26 @@
 .navbar .navbar-right a {
-    color: #000;
+    color: #fff;
     -webkit-transition: all 0.1s;
     transition: all 0.1s
 }
 
 .navbar .navbar-right a:hover {
-    color: #72c572;
+    color: #7094E7;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
-    background-color: #fff;
+    background-color: #2F3136;
+    
 }
 
 .navbar-brand {
     font-size: 28px;
-    color: #000;
+    color: #fff;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #000;
+    color: #fff;
 }
 
 .icon-bar {

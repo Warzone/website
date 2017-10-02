@@ -22,9 +22,15 @@
     font-weight: 800;
 }
 
+.text-muted{
+    color: #cacaca;
+}
+
 body {
     font-family: 'proximanova';
     font-weight: 600;
+    background-color: #2F3136;
+    color: #fff;
 }
 
 @media (min-width: 1012px) {
