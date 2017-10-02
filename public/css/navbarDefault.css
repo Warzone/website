@@ -1,7 +1,11 @@
+.navbar {
+    margin-bottom: 0px;
+}
+
 .navbar .navbar-right a {
     color: #fff;
     -webkit-transition: all 0.1s;
-    transition: all 0.1s
+    transition: all 0.1s;
 }
 
 .navbar .navbar-right a:hover {
