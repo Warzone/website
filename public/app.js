@@ -241,5 +241,3 @@ var toMMSS = function (sec_num) {
       ]
   });
 
-  
-      
