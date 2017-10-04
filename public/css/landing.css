@@ -37,3 +37,7 @@
     width:250px;
     margin:10px 0px;
 }
+
+.slick-list,.branding-1,.slide-slide {
+    outline: none !important;
+}
