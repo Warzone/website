@@ -41,3 +41,7 @@
 .slick-list,.branding-1,.slide-slide {
     outline: none !important;
 }
+
+.row {
+    margin-right: 0px;
+}
