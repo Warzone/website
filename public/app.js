@@ -29,6 +29,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             controller: 'matchController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/match.css']
         })
+        .when('/privacy', {
+            templateUrl: 'pages/privacy.html',
+            controller: 'matchController',
+            css: ['css/app.css', 'css/navbarDefault.css', 'css/privacy.css']
+        })
         .when('/rules', {
             templateUrl: 'pages/rules.html',
             controller: 'matchController',
