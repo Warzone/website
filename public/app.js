@@ -241,3 +241,40 @@ var toMMSS = function (sec_num) {
       ]
   });
 
+  $('.regular2').slick({
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    infinite: true,
+    pauseOnHover: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ]
+  });
