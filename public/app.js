@@ -243,7 +243,7 @@ var toMMSS = function (sec_num) {
 
   $('.regular2').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3500,
     infinite: true,
@@ -259,7 +259,7 @@ var toMMSS = function (sec_num) {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          arrows: true
+          arrows: false
         }
       },
       {

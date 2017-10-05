@@ -45,3 +45,12 @@
 .row {
     margin-right: 0px;
 }
+
+.slick-prev{
+    left: 25px;
+    z-index: 100;
+}
+
+.slick-next{
+    right: 25px;
+}
