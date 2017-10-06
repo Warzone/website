@@ -58,3 +58,11 @@
 .slick-next{
     right: 25px;
 }
+
+.regular2 .slick-dots{
+    bottom: 45px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}

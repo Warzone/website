@@ -242,7 +242,7 @@ var toMMSS = function (sec_num) {
   });
 
   $('.regular2').slick({
-    dots: false,
+    dots: true,
     fade: true,
     arrows: false,
     autoplay: true,
@@ -259,7 +259,7 @@ var toMMSS = function (sec_num) {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
           arrows: false
         }
       },
