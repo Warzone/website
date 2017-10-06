@@ -66,3 +66,7 @@
 .regular2.slick-dotted.slick-slider {
     margin-bottom: 0px;
 }
+
+body{
+    padding-top: 50px !important;   
+}
