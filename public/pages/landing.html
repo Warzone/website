@@ -104,12 +104,12 @@
                         </td>
 
                         <!-- Player Kill Message-->
-                        <td ng-show="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px;">
+                        <td ng-show="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px; height:51px;">
                             <a href="/{{death.killerLoaded.name}}">{{death.killerLoaded.name}}</a> killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
                         </td>
 
                         <!-- Wilderness Kill Message-->
-                        <td ng-hide="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px;">
+                        <td ng-hide="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px; height:51px;">
                             Wilderness killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
                         </td>
 
