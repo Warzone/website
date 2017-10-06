@@ -30,8 +30,8 @@
     font-size:18px;
 }
 
-.branding-1 a:hover{
-    
+.branding-1 a:hover, a:active, a:focus{
+    outline: none !important;
 }
 
 /* image section */
