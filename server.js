@@ -24,3 +24,4 @@ app.get('*', function(req, res) {
 // listen (start app with node server.js)
 app.listen(config.port);
 console.log("App listening on port " + config.port);
+

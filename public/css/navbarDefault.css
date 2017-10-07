@@ -10,11 +10,11 @@
 }
 
 .navbar .navbar-right a:hover {
-    color: #7094E7;
+    color: #2daadf;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
-    background-color: #2F3136;
+    background-color: #282a2d;
     
 }
 

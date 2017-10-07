@@ -1,4 +1,4 @@
-var app = angular.module('Warzone', ['ngRoute', 'angularMoment']);
+var app = angular.module('Warzone', ['ngRoute', 'angularMoment', 'ngMaterial']);
 
 config = {
     api: {
@@ -279,3 +279,5 @@ var toMMSS = function (sec_num) {
       }
       ]
   });
+
+

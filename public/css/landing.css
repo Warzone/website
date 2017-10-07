@@ -30,9 +30,8 @@
     font-size:18px;
 }
 
-.branding-1 a:hover, a:active, a:focus{
+.branding-1 a:hover,a:active,a:focus{
     outline: none !important;
-    color: #66a066;
 }
 
 /* image section */
