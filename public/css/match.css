@@ -85,3 +85,12 @@
 .table-defeat {
     background-color: #dc948f;
 }
+
+thead{
+    background-color: #272727;
+}
+
+.gamestats{
+    margin-top:15px;
+}
+
