@@ -52,10 +52,11 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.deaths = new Array();
     $scope.matches = new Array();
     $scope.recentMatches = new Array();
+    $scope.loading = true;
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
-
+            $scope.loading = false;
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
 
