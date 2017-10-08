@@ -4,9 +4,11 @@
         <h3 class="text-muted">Player Leaderboard</h3>
         <h3 class="header-title">The highest ranked players on Warzone</h3>
     </div>
-    <div id="loading" style="margin-left:46%; margin-bottom: 30px;">
+    
+    <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
     <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
     </div>
+
     <table class="table leaderboard-table">
 
         <tbody>
@@ -29,14 +31,3 @@
         </tbody>
     </table>
 </div>
-
-<script language="javascript" type="text/javascript">
-    document.getElementById('loading').style.display = 'block';
-    $(window).load(function() {
-    console.log('leaderboard loaded');
-    setTimeout(function(){
-    console.log('1 seconds');
-    document.getElementById('loading').style.display = 'none';
-    }, 1000);
- });
-</script>   

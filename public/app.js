@@ -149,10 +149,12 @@ app.controller('playController', ['$scope', '$http', 'moment', function($scope, 
 
 app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
     $scope.topPlayers = new Array();
+    $scope.loading = true;
 
     $scope.updateLeaderboard = function(category) {
         $http.get(config.api.url + '/mc/leaderboard/' + category)
             .then(function(response) {
+                $scope.loading = false;
                 $scope.topPlayers = response.data;
             })
     };
