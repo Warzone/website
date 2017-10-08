@@ -27,7 +27,7 @@
 }
 
 body {
-    font-family: 'europa';
+    font-family: 'europa', sans-serif;
     font-weight: 600;
     background-color: #2F3136;
     color: #fff;
