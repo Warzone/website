@@ -19,6 +19,9 @@
     </div>
 
     <hr>
+    <div id="loading" style="margin-left:46%; margin-bottom: 30px;">
+            <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+    </div>
 </div>
 
 <div class="container">
@@ -122,3 +125,14 @@
         </div>
     </div>
 </div>
+
+<script language="javascript" type="text/javascript">
+    document.getElementById('loading').style.display = 'block';
+    $(window).load(function() {
+    console.log('match loaded');
+    setTimeout(function(){
+    console.log('1 seconds');
+    document.getElementById('loading').style.display = 'none';
+    }, 1000);
+ });
+</script>   
