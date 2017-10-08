@@ -100,9 +100,11 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
 app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', function($scope, $http, $routeParams, moment) {
     console.log('loading player page (' + $routeParams.id + ')');
     $scope.matchData = null;
+    $scope.loading = true;
 
     $http.get(config.api.url + '/mc/match/' + $routeParams.id)
-        .then(function(response) {
+        .then(function (response) {
+            $scope.loading = false;
             console.log('match data: ' + JSON.stringify(response.data, null, 2));
 
             $scope.matchData = response.data;
