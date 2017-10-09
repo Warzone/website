@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <img class="tryit" style="width: 32px;" data-src="https://crafatar.com/renders/body/{{player.uuid}}?overlay" src="https://crafatar.com/renders/body/iSprux?overlay" alt="avatar">
-                    <span style="font-size: 20px; padding-left: 5px;">{{player.name}}</span>
+                    <span style="font-size: 20px; padding-left: 15px;">{{player.name}}</span>
                 </div>
                 <div class="stat">
                     <h2>{{player.kills}}</h2>
@@ -37,7 +37,10 @@
 
     </div>
 
-    <hr class="firsthr">
+
+    <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+            <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+    </div>
 </div>
 
 <div class="container">

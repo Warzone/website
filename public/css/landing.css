@@ -1,12 +1,9 @@
 .jumbotron.header {
-    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);
     background-position: center left;
     height: 300px;
     color: #fff;
-    text-align: left;
-    /*font-family: 'roboto', sans-serif;*/
+    text-align: center;
     background-size: cover;
-
 }
 
 .header h2{
@@ -32,9 +29,42 @@
     font-size:18px;
 }
 
+.branding-1 a:hover,a:active,a:focus{
+    outline: none !important;
+}
+
 /* image section */
 .branding-2 img {
     height:130px;
     width:250px;
     margin:10px 0px;
+}
+
+.slick-list,.branding-1,.slide-slide,.slick-track,.slick-slider,.header-1,.header, .jumbotron {
+    outline: none !important;
+}
+
+.row {
+    margin-right: 0px;
+}
+
+.slick-prev{
+    left: 25px;
+    z-index: 100;
+}
+
+.slick-next{
+    right: 25px;
+}
+
+.regular2 .slick-dots{
+    bottom: 45px;
+}
+
+.regular2.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+body{
+    padding-top: 50px !important;   
 }

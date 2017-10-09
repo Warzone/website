@@ -31,6 +31,7 @@
 .header{
     height:75px;
     display:inline-block;
+
 }
 
 .container h2,h3,h4,h1{
@@ -78,9 +79,18 @@
 }
 
 .table-victory {
-    background-color: #a3cfec;
+    background-color: #81b7da;
 }
 
 .table-defeat {
-    background-color: #e2b6b3;
+    background-color: #dc948f;
 }
+
+thead{
+    background-color: #272727;
+}
+
+.gamestats{
+    margin-top:15px;
+}
+

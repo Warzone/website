@@ -1,4 +1,5 @@
 
+
 .jumbotron.public-connect {
     background-color: #433381;
     color: #fff;
@@ -29,8 +30,12 @@
 }
 
 .header{
-    height:75px;
-    display:inline-block;
+    height: 75px;
+    display: inline-block;
+    background-color: rgba(37, 37, 37, 0.71);
+    padding-top: 10px;
+    box-shadow: 1px 1px 1px black;
+    margin-bottom: 25px;
 }
 
 .header h2,h3,h4,h1{

@@ -1,4 +1,4 @@
-var app = angular.module('Warzone', ['ngRoute', 'angularMoment']);
+var app = angular.module('Warzone', ['ngRoute', 'angularMoment', 'ngMaterial']);
 
 config = {
     api: {
@@ -52,10 +52,11 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.deaths = new Array();
     $scope.matches = new Array();
     $scope.recentMatches = new Array();
+    $scope.loading = true;
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
-
+            $scope.loading = false;
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
 
@@ -100,9 +101,11 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
 app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', function($scope, $http, $routeParams, moment) {
     console.log('loading player page (' + $routeParams.id + ')');
     $scope.matchData = null;
+    $scope.loading = true;
 
     $http.get(config.api.url + '/mc/match/' + $routeParams.id)
-        .then(function(response) {
+        .then(function (response) {
+            $scope.loading = false;
             console.log('match data: ' + JSON.stringify(response.data, null, 2));
 
             $scope.matchData = response.data;
@@ -146,10 +149,12 @@ app.controller('playController', ['$scope', '$http', 'moment', function($scope, 
 
 app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
     $scope.topPlayers = new Array();
+    $scope.loading = true;
 
     $scope.updateLeaderboard = function(category) {
         $http.get(config.api.url + '/mc/leaderboard/' + category)
             .then(function(response) {
+                $scope.loading = false;
                 $scope.topPlayers = response.data;
             })
     };
@@ -201,3 +206,83 @@ var toMMSS = function (sec_num) {
     if (seconds < 10) {seconds = "0"+seconds;}
     return minutes + ':' + seconds;
 };
+
+
+
+    $('.regular').slick({
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    infinite: true,
+    pauseOnHover: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ]
+  });
+
+  $('.regular2').slick({
+    dots: true,
+    fade: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    infinite: true,
+    pauseOnHover: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      ]
+  });
+
+

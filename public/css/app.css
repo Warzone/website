@@ -22,14 +22,22 @@
     font-weight: 800;
 }
 
-body {
-    font-family: 'proximanova';
-    font-weight: 600;
+.text-muted{
+    color: #cacaca;
 }
 
-@media (min-width: 992px) {
+body {
+    font-family: 'europa', sans-serif;
+    font-weight: 600;
+    background-color: #2F3136;
+    color: #fff;
+    padding-top: 70px;
+    height: auto !important;
+}
+
+@media (min-width: 1012px) {
     .container {
-        width: 870px;
+        width: 1012px;
     }
 }
 
@@ -39,15 +47,6 @@ body {
 
 .btn {
     border-radius: 0px;
-}
-
-.btn-purple {
-    background-color: #433381;
-    color: #fff;
-}
-.btn-purple:hover {
-    background-color: #414293;
-    color: #fff;
 }
 
 .page-title {
@@ -65,14 +64,50 @@ body {
     text-transform: uppercase;
 }
 
-.footerhr{
+hr{
     margin-bottom: 20px;
+    border-top: 1px solid #4a4949 !important;
 }
 
 #teamggfooter{
     margin-top:10px;
 }
 
-a.green {
-    color: #72c572;
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid #4a4949;
+}
+
+
+
+.btn:active, .btn:focus, .btn-lrg:active, .btn-lrg:focus {
+    outline:none !important;
+}
+
+.btn-purple {
+    background-color: #9148d3;
+    outline: none;
+    border-color: #9148d3;
+    color: #fff;
+}
+
+.btn-purple:hover, .btn-purple:active, .btn-purple:focus {
+    background-color: #753aab;
+    outline: none;
+    border-color: #753aab;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #2daadf !important;
+    outline: none;
+    border-color: #2daadf !important;
+    color: #fff;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+    background-color: #2692bf !important;
+    outline: none;
+    border-color: #2692bf !important;
+    color: #fff;
 }
