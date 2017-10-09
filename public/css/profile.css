@@ -5,8 +5,8 @@
     color: #fff;
 }
 .avatar{
-    display: inline-block;
-    vertical-align:top;
+    padding-top:4px;
+    margin-left:10px;
 }
 
 .personal{
@@ -33,7 +33,6 @@
     height: 75px;
     display: inline-block;
     background-color: rgba(37, 37, 37, 0.71);
-    padding-top: 10px;
     box-shadow: 1px 1px 1px black;
     margin-bottom: 25px;
 }
@@ -47,6 +46,8 @@
     display: inline-block;
     text-align: center;
     margin: 0px 10px;
+    padding: 10px;
+    
 }
 
 p {
