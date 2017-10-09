@@ -90,7 +90,9 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
 
 
             $http.get(config.api.url + '/mc/match/latest/' + $routeParams.name)
+                
                 .then(function(response) {
+                    
                     console.log('recent matches data: ' + JSON.stringify(response.data, null, 2));
                     $scope.recentMatches = response.data;
                     console.log('recent matches size: ' + $scope.recentMatches.length)
@@ -128,13 +130,14 @@ app.controller('navbarController', function($scope, $location) {
 });
 
 app.controller('landingController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
-
+    $scope.loading = true;    
     $http.get(config.api.url + '/mc/death/latest')
         .then(function(response) {
             $scope.deaths = response.data;
-
+            $scope.loading = false;            
             $http.get(config.api.url + '/mc/match/latest')
                 .then(function(response) {
+                    $scope.loading = false;                    
                     $scope.recentMatches = response.data;
                 })
         });

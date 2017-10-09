@@ -65,12 +65,15 @@
             Recent Matches
             <div class="recent-matches">
                 <table class="table">
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+                                <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+                        </div>
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
                             <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
                         </td>
-                        <td class="kill-feed-message " style="padding-top:15px; width:150px">
+                        <td class="kill-feed-message " style="padding-top:15px; width:180px">
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
                             {{match.loadedMap.name}}
                         </td>
@@ -93,6 +96,9 @@
             Recent Kills
             <div class="kill-feed">
                 <table class="table">
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+                                <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+                        </div>
                     <tr ng-repeat="death in deaths">
 
                         <!-- Player Kill Avatar -->
