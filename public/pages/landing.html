@@ -6,7 +6,7 @@
     
     <div class="regular2">
         
-        <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);">
+        <div class="jumbotron header" style=" background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);">
             <div class="header-1">
                 <h2>COMPETE</h2>
                 <h4 style="text-transform: uppercase" class="">Challenge <span class="" style="color: lightgreen;">the players</span> currently competing.</h4>
@@ -51,13 +51,6 @@
     </div>
 
     <div class="row">
-        <div class="col-md-8">
-
-        </div>
-
-    </div>
-
-    <div class="row">
 
         <!-- Recent Matches -->
         <div class="container">
@@ -65,12 +58,15 @@
             Recent Matches
             <div class="recent-matches">
                 <table class="table">
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+                                <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+                        </div>
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
                             <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
                         </td>
-                        <td class="kill-feed-message " style="padding-top:15px; width:150px">
+                        <td class="kill-feed-message " style="padding-top:15px; width:180px">
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
                             {{match.loadedMap.name}}
                         </td>
@@ -93,6 +89,9 @@
             Recent Kills
             <div class="kill-feed">
                 <table class="table">
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+                                <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+                        </div>
                     <tr ng-repeat="death in deaths">
 
                         <!-- Player Kill Avatar -->
