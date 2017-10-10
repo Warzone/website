@@ -1,4 +1,43 @@
-.jumbotron.public-connect {
-    background-color: #9148d3;
+
+
+.main-page {
+    background-color: rgba(27, 27, 27, 0.34);
+    padding:50px;
+}
+
+#play {
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+body {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
+    background-position: center left;
     color: #fff;
+    text-align: center;
+    background-size: cover;
+}
+
+.header-title {
+    
+}
+
+.page-title {
+    padding-bottom: 20px;
+    padding-top: 0vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;  
+    margin-left: 40px;
+}
+
+.footer hr{
+    border-top: 0px solid #4a4949 !important;
+    margin-top: 0px;
+}
+
+.md-primary span {
+    padding: 10px;
 }
