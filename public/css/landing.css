@@ -65,6 +65,11 @@
     margin-bottom: 0px;
 }
 
-body{
+body{ 
     padding-top: 50px !important;   
+}
+
+.table-head {
+    margin-bottom: 5px !important;
+
 }
