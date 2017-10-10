@@ -2,7 +2,7 @@
 
 .main-page {
     background-color: rgba(27, 27, 27, 0.34);
-    padding:50px;
+    padding:4em;
 }
 
 #play {
@@ -28,9 +28,7 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;  
-    margin-left: 40px;
+
 }
 
 .footer hr{
