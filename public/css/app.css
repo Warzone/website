@@ -126,23 +126,18 @@ footer {
     padding-right: 0px;
 }
 
-@media screen and (max-width : 768px) {
-    #left-footer {
-        border-right: none;
-        margin-bottom: 20px;
+@media screen and (max-width : 1000px) {
+    .left-footer {
+
     }
 
-    .footer-nav {
-        padding-left: 0px;
+    .center-footer {
+        text-align: left !important;
+        -webkit-padding-start: 40px !important;
     }
 
-    .footer-imgs-container {
-        float: none !important;
-        text-align: left;
-    }
-
-    .footer-imgs {
-        padding-left: 0px;
+    .right-footer {
+        text-align: left !important;
     }
 }
 
