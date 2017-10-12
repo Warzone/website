@@ -1,25 +1,12 @@
 
 
 .main-page {
-    background-color: rgba(27, 27, 27, 0.34);
-    padding:4em;
-}
-
-#play {
-    margin-top: 30px; 
-    margin-bottom: 30px;
+    padding:3.5em;
+    margin-top: 50px;
 }
 
 body {
-    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
-    background-position: center left;
-    color: #fff;
-    text-align: center;
-    background-size: cover;
-}
-
-.header-title {
-    
+    padding-top: 50px;
 }
 
 .page-title {
@@ -27,15 +14,22 @@ body {
     padding-top: 0vh;
 }
 
-.footer {
-
-}
-
-.footer hr{
-    border-top: 0px solid #4a4949 !important;
-    margin-top: 0px;
-}
 
 .md-primary span {
     padding: 10px;
+}
+
+.background {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    min-height: 100% !important;
+    height: 100vh;
+    overflow: auto;
+}
+
+footer {
+    margin-top: 0px !important;
 }

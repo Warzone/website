@@ -69,10 +69,6 @@ hr{
     border-top: 1px solid #4a4949 !important;
 }
 
-#teamggfooter{
-    margin-top:10px;
-}
-
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     border-top: 1px solid #4a4949;
@@ -110,4 +106,80 @@ hr{
     outline: none;
     border-color: #2692bf !important;
     color: #fff;
+}
+
+
+/* ********************* */
+/* ****** FOOTER ******* */
+/* ********************* */
+
+
+footer {
+    background-color: #1A1B1D;
+    padding:25px;
+}
+
+#left-footer {
+    /*border-right: 1px solid white;*/
+    margin-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media screen and (max-width : 1000px) {
+    .left-footer {
+
+    }
+
+    .center-footer {
+        text-align: left !important;
+        -webkit-padding-start: 40px !important;
+    }
+
+    .right-footer {
+        text-align: left !important;
+    }
+}
+
+footer img {
+    height:35px;
+    width: 35px;
+    margin: 8px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top:20px;
+}
+
+.footer-nav hr {
+    margin: 0px;
+    width:50%;
+    text-align: center;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, .7);
+    transition: all .3s ease;
+    font-size:15px;
+    font-weight:300;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.footer-nav a:hover, .footer-nav a:focus {
+    color: #eee;
+    transition: all .3s ease;
+}
+
+.footer-nav-head {
+    color: #ffffff; 
+    font-size:1.4rem;
+    font-weight:bold;
+    letter-spacing: .15em;
+}
+
+footer .col-md-3{
+    padding-right: 0px;
+    padding-left: 0px;
 }
