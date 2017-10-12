@@ -1,7 +1,6 @@
 
 
 .main-page {
-    background-color: rgba(27, 27, 27, 0.34);
     padding:3.5em;
     margin-top: 50px;
 }
@@ -22,7 +21,7 @@ body {
 
 .background {
     background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
-    background-position: center left;
+    background-position: center;
     color: #fff;
     text-align: center;
     background-size: cover;
