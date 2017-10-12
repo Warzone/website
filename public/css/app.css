@@ -22,7 +22,7 @@
     font-weight: 800;
 }
 
-.text-muted{
+.text-muted {
     color: #cacaca;
 }
 
@@ -64,7 +64,7 @@ body {
     text-transform: uppercase;
 }
 
-hr{
+hr {
     margin-bottom: 20px;
     border-top: 1px solid #4a4949 !important;
 }
@@ -173,7 +173,7 @@ footer ul {
 }
 
 .footer-nav-head {
-    color: #ffffff; 
+    color: #ffffff;
     font-size:1.4rem;
     font-weight:bold;
     letter-spacing: .15em;
