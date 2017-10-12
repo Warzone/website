@@ -1,8 +1,8 @@
 
 
 .main-page {
-    background-color: rgba(27, 27, 27, 0.34);
-    padding:4em;
+    background-color: rgba(27, 27, 27, 0); /* 0.34 */
+    padding: 4em;
 }
 
 #play {
@@ -11,8 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
-    background-position: center left;
+    background: rgb(47, 49, 54) url(https://i.imgur.com/rMB613Q.png) center;
     color: #fff;
     text-align: center;
     background-size: cover;
@@ -31,7 +30,7 @@ body {
 
 }
 
-.footer hr{
+.footer hr {
     border-top: 0px solid #4a4949 !important;
     margin-top: 0px;
 }

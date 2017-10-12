@@ -22,7 +22,7 @@
     font-weight: 800;
 }
 
-.text-muted{
+.text-muted {
     color: #cacaca;
 }
 
@@ -64,12 +64,12 @@ body {
     text-transform: uppercase;
 }
 
-hr{
+hr {
     margin-bottom: 20px;
     border-top: 1px solid #4a4949 !important;
 }
 
-#teamggfooter{
+#teamggfooter {
     margin-top:10px;
 }
 

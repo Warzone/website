@@ -1,22 +1,24 @@
-.header h2{
+.header h2 {
     font-size: 80px;
     opacity: .9;
 }
 
-.header h4{
+.header h4 {
     font-size: 20px;
     opacity: .9;
     padding-left: 5px;
 }
 
 .branding-1 {
-    color:white;padding:20px; background-color:#433381;
+    color: white;
+    padding: 20px;
+    background-color: #433381;
 }
 
 .branding-1 h2 {
-    color:#72c572;
+    color: #72c572;
 }
 
 .branding-1 p {
-    font-size:18px;
+    font-size: 18px;
 }

@@ -3,15 +3,16 @@
     background-color: #433381;
     color: #fff;
 }
-.avatar{
+
+.avatar {
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
 }
 
-.personal{
-    display:inline-block;
-    margin-left:20px;
-    vertical-align:top;
+.personal {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
 }
 
 .rank {
@@ -28,32 +29,31 @@
     background-color: #2A2E34;
 }
 
-.header{
-    height:75px;
-    display:inline-block;
-
+.header {
+    height: 75px;
+    display: inline-block;
 }
 
-.container h2,h3,h4,h1{
+.container h2,h3,h4,h1 {
     margin: 0;
     
 }
 
-.stats{
-    display:inline-block;
+.stats {
+    display: inline-block;
     margin-left: 80px;
-    vertical-align:center;
-    justify-content: middle;
+    vertical-align: center;
+    justify-content: center;
     line-height: 75px;
     text-align: center;
 }
 
 
-.stat{
-    display:inline-block;
+.stat {
+    display: inline-block;
     margin-left: 20px;
-    vertical-align:center;
-    justify-content: middle;
+    vertical-align: center;
+    justify-content: center;
     line-height: 75px;
     text-align: center;
 }
@@ -86,11 +86,11 @@
     background-color: #dc948f;
 }
 
-thead{
+thead {
     background-color: #272727;
 }
 
-.gamestats{
-    margin-top:15px;
+.gamestats {
+    margin-top: 15px;
 }
 
