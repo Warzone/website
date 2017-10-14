@@ -1,3 +1,20 @@
+.md-warn span {
+    padding: 10px;
+}
+
+.md-warn {
+    background-color: #9148d3 !important;
+    outline: none;
+    border-color: #9148d3 !important;
+    color: #fff !important;
+}
+
+.md-warn:hover, .md-warn:active, .md-warn:focus {
+    background-color: #753aab !important;
+    outline: none;
+    border-color: #753aab !important;
+    color: #fff !important;
+}
 
 .jumbotron.public-connect {
     background-color: #433381;
