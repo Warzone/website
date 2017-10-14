@@ -12,12 +12,13 @@
                 <h4 style="text-transform: uppercase" class="">Challenge <span class="" style="color: lightgreen;">the players</span> currently competing.</h4>
             </div>
 
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/play"> 
+                View Top Players
+            </md-button>
         </div>
 
         <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://i.ytimg.com/vi/vjidR6jRu30/maxresdefault.jpg);">
@@ -26,12 +27,13 @@
                 <h4 style="text-transform: uppercase" class="">Dominate <span class="" style="color: lightgreen;">the leaderboards</span>.</h4>
             </div>
     
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/play"> 
+                View Top Players
+            </md-button>
         </div>
             
         <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);">
@@ -40,12 +42,13 @@
                 <h4 style="text-transform: uppercase" class="">Face <span class="" style="color: lightgreen;">tough</span> opponents already playing.</h4>
             </div>
         
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/play"> 
+                View Top Players
+            </md-button>
         </div>
 
     </div>
@@ -64,7 +67,10 @@
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
+                            <md-button class="md-warn" style="margin: 0px; padding:0px;" href="/match/{{match.match._id}}"> 
+                                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="left"  >Match Details</md-tooltip> 
+                                View
+                            </md-button>
                         </td>
                         <td class="kill-feed-message " style="padding-top:15px; width:180px">
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
