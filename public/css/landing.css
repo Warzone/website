@@ -20,19 +20,7 @@
     color: #fff !important;
 }
 
-.md-primary {
-    background-color: #2daadf !important;
-    outline: none;
-    border-color: #2daadf !important;
-    color: #fff !important;
-}
 
-.md-primary:hover, .md-primary:active, .md-primary:focus {
-    background-color: #2692bf !important;
-    outline: none;
-    border-color: #2692bf !important;
-    color: #fff !important;
-}
 
 .jumbotron.header {
     background-position: center left;
@@ -60,7 +48,7 @@
 }
 
 .branding-1 h2 {
-    color: #72c572;
+    color: #87d1f1;
 }
 
 .branding-1 p {
