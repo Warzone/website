@@ -122,6 +122,7 @@ app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', 
 // determines which navbar template to load.
 app.controller('navbarController', function($scope, $location) {
     $scope.$on('$locationChangeSuccess', function() {
+      
         var path = $location.path(); 
 
         switch(path) {

@@ -1,7 +1,9 @@
 
 
 .main-page {
+
     padding: 3.5em;
+
     margin-top: 50px;
 }
 
@@ -20,6 +22,7 @@ body {
 }
 
 .background {
+
     background: rgb(47, 49, 54) url(https://i.imgur.com/rMB613Q.png) center;
 
     color: #fff;
