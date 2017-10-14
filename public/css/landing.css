@@ -22,6 +22,9 @@
 
 .recent-matches .md-warn {
     min-width: 60px !important;
+    line-height: 34px !important;
+    min-height: 34px !important;
+    text-transform: none;
 }
 
 .jumbotron.header {
