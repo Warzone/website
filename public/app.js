@@ -58,10 +58,14 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.matches = [];
     $scope.recentMatches = [];
     $scope.loading = true;
+    $scope.loadingHide = false; 
+
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
             $scope.loading = false;
+            $scope.loadingHide = true; 
+
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
 
@@ -109,10 +113,15 @@ app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', 
     console.log('loading player page (' + $routeParams.id + ')');
     $scope.matchData = null;
     $scope.loading = true;
+    $scope.loadingHide = false; 
+
+
 
     $http.get(config.api.url + '/mc/match/' + $routeParams.id)
         .then(function (response) {
             $scope.loading = false;
+            $scope.loadingHide = true; 
+
             console.log('match data: ' + JSON.stringify(response.data, null, 2));
 
             $scope.matchData = response.data;
@@ -122,6 +131,7 @@ app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', 
 // determines which navbar template to load.
 app.controller('navbarController', function($scope, $location) {
     $scope.$on('$locationChangeSuccess', function() {
+      
         var path = $location.path(); 
 
         switch(path) {

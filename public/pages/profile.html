@@ -1,11 +1,11 @@
 <div class="container">
-    <div class="header">
+    <div class="header" ng-if="loadingHide">
 
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <img class="tryit avatar" style="width: 40px;" data-src="https://crafatar.com/renders/body/{{player.uuid}}?overlay" src="https://crafatar.com/renders/body/iSprux?overlay" alt="avatar">
-                    <span style="font-size: 28px; padding-left: 15px;padding-top:15px;">{{player.name}}</span>
+                    <span style="font-size: 28px; padding-left: 15px;padding-top:15px;color:white;">{{player.name}}</span>
                 </div>
                 <div class="stat">
                     <h2>{{player.kills}}</h2>
@@ -38,12 +38,12 @@
     </div>
 
 
-    <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+    <div ng-if="loading" id="loading" style="margin-left:46%; margin-top: 75px;">
             <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
     </div>
 </div>
 
-<div class="container">
+<div class="container" ng-if="loadingHide">
     <div class="row">
         
         <div class="col-md-5">
@@ -87,7 +87,11 @@
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
+                            <md-button class="md-warn" style="margin: 0px; padding:0px;" href="/match/{{match.match._id}}"> 
+
+                                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="left"  >Match Details</md-tooltip> 
+                                View
+                            </md-button>
                         </td>
                         <td class="kill-feed-message " style="padding-top:15px; width:180px">
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -

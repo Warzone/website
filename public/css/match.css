@@ -78,6 +78,10 @@
     padding-top: 15px;
 }
 
+.game-lose {
+    color: white;
+}
+
 .table-victory {
     background-color: #81b7da;
 }

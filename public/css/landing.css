@@ -1,3 +1,32 @@
+.md-primary span {
+    padding: 10px;
+}
+
+.md-warn span {
+    padding: 10px;
+}
+
+.md-warn {
+    background-color: #9148d3 !important;
+    outline: none;
+    border-color: #9148d3 !important;
+    color: #fff !important;
+}
+
+.md-warn:hover, .md-warn:active, .md-warn:focus {
+    background-color: #753aab !important;
+    outline: none;
+    border-color: #753aab !important;
+    color: #fff !important;
+}
+
+.recent-matches .md-warn {
+    min-width: 60px !important;
+    line-height: 34px !important;
+    min-height: 34px !important;
+    text-transform: none;
+}
+
 .jumbotron.header {
     background-position: center left;
     height: 300px;
@@ -20,11 +49,11 @@
 .branding-1 {
     color: white;
     padding: 20px;
-    background-color: #433381;
+    background-color: #334481;
 }
 
 .branding-1 h2 {
-    color: #72c572;
+    color: #87d1f1;
 }
 
 .branding-1 p {

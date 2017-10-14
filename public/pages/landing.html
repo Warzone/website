@@ -9,43 +9,48 @@
         <div class="jumbotron header" style=" background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);">
             <div class="header-1">
                 <h2>COMPETE</h2>
-                <h4 style="text-transform: uppercase" class="">Challenge <span class="" style="color: lightgreen;">the players</span> currently competing.</h4>
+                <h4 style="text-transform: uppercase" class="">Challenge <span class="" style="color: #87d1f1;">the players</span> currently competing.</h4>
             </div>
 
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="bottom"  >Minecraft 1.8+</md-tooltip>
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+                View Top Players
+                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="bottom"  >Leaderboards</md-tooltip>
+            </md-button>
         </div>
 
         <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://i.ytimg.com/vi/vjidR6jRu30/maxresdefault.jpg);">
             <div class="header-1">
                 <h2>Fight</h2>
-                <h4 style="text-transform: uppercase" class="">Dominate <span class="" style="color: lightgreen;">the leaderboards</span>.</h4>
+                <h4 style="text-transform: uppercase" class="">Dominate <span class="" style="color: #87d1f1;">the leaderboards</span>.</h4>
             </div>
     
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+                View Top Players
+            </md-button>
         </div>
             
         <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);">
             <div class="header-1">
                 <h2>Challenge</h2>
-                <h4 style="text-transform: uppercase" class="">Face <span class="" style="color: lightgreen;">tough</span> opponents already playing.</h4>
+                <h4 style="text-transform: uppercase" class="">Face <span class="" style="color: #87d1f1;">tough</span> opponents already playing.</h4>
             </div>
         
-            <a class="btn btn-lrg btn-success" href="/play">
-            Enter A Match
-            </a>
-            <a class="btn btn-lrg btn-purple" href="/leaderboard">
-            View Top Players
-            </a>
+            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+                Enter a Match 
+            </md-button>
+
+            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+                View Top Players
+            </md-button>
         </div>
 
     </div>
@@ -58,13 +63,16 @@
             <p class="table-head">Recent Matches</p> 
             <div class="recent-matches">
                 <table class="table">
-                    <div ng-if="loading" id="loading_matches" style="margin-left:46%; margin-bottom: 30px;">
-                        <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
-                    </div>
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+                                <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
+                        </div>
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/match/{{match.match._id}}" type="button" class="btn btn-purple">View</a>
+                            <md-button class="md-warn" style="margin: 0px; padding:0px;" href="/match/{{match.match._id}}"> 
+                                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="left"  >Match Details</md-tooltip> 
+                                View
+                            </md-button>
                         </td>
                         <td class="kill-feed-message " style="padding-top:15px; width:180px">
                             <span style="font-weight:bolder">{{match.loadedMap.gametype}}</span> -
@@ -89,7 +97,7 @@
             <p class="table-head">Recent Kills</p>
             <div class="kill-feed">
                 <table class="table">
-                        <div ng-if="loading" id="loading_kills" style="margin-left:46%; margin-bottom: 30px;">
+                        <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
                                 <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
                         </div>
                     <tr ng-repeat="death in deaths">
@@ -104,12 +112,12 @@
                             <a href="/profile"> <img style="width: 32px;" src="https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32&overlay" alt="avatar"> </a>
                         </td>
 
-                        <!-- Player Kill Message -->
+                        <!-- Player Kill Message-->
                         <td ng-show="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px; height:51px;">
                             <a href="/{{death.killerLoaded.name}}">{{death.killerLoaded.name}}</a> killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
                         </td>
 
-                        <!-- Wilderness Kill Message -->
+                        <!-- Wilderness Kill Message-->
                         <td ng-hide="{{death.killerLoaded}}" class="kill-feed-message text-center" style="padding-top: 15px; height:51px;">
                             Wilderness killed <a href="/{{death.playerLoaded.name}}">{{death.playerLoaded.name}}</a>
                         </td>
@@ -129,44 +137,44 @@
     <div class="regular">
         <div class="branding-1 text-center">
             <h2>Warzone</h2>
-
             <p>Built by the community, for the community.</p>
-            <p>Contribute to our open source code on <a target="_blank" style="color:#72c572;" href="https://github.com/WarzoneMC"><u>Github</u></a></p>
+            <p>Contribute to our open source code on <a target="_blank" style="color:#87d1f1;" href="https://github.com/WarzoneMC"><u>Github</u></a></p>
         </div>
         <div class="branding-1 text-center">
-            <h2>Join the Community</h2>
-            <p>One of our most distinctive aspects is our community.</p>
+                <h2>Join the Community</h2>
+                <p>One of our most distinctive aspects is our community.</p>
     
-            <p>Discuss, talk, and interact with the community on our <u><a target="_blank" style="color:#72c572;" href="https://discord.gg/3gGZzvb">Discord</a></u></p>
+                <p>Discuss, talk, and interact with the community on our <u><a target="_blank" style="color:#87d1f1;" href="https://discord.gg/3gGZzvb">Discord</a></u></p>
         </div>
         <div class="branding-1 text-center">
-            <h2>Climb the Leaderboards</h2>
-            <p>We offer a competitive edge to our standard gameplay.</p>
+                <h2>Climb the Leaderboards</h2>
+                <p>We offer a competitive edge to our standard gameplay.</p>
     
-            <p>Level up and show your skill on our <u><a target="_blank" style="color:#72c572;" href="https://warz.one/leaderboard">Leaderboard</a></u></p>
+                <p>Level up and show your skill on our <u><a target="_blank" style="color:#87d1f1;" href="https://warz.one/leaderboard">Leaderboard</a></u></p>
         </div>   
     </div>
 </div>
 
-<div class="container">
+
+    <div class="container">
     <div class="text-center row branding-2">
         <div class="col-md-4">
             <h3>Match Details</h3>
-            <img src="https://i.imgur.com/0N5yGOV.png">
-            <p class="text-muted">Fully detailed kill feed, chat logs, and statistics of in game events.</p>
+            <img src="https://i.imgur.com/0N5yGOV.png"> </img>
+            <p class="text-muted">Fully detailed kill feed, chat logs, and statistics of the players in game.  </p>
         </div>
          <div class="col-md-4">
              <h3>Profile Stats</h3>
-            <img src="https://i.imgur.com/ozg7teT.png">
-            <p class="text-muted">K/D and W/L statistics with recent kills and matches to track your progress.</p>
+            <img src="https://i.imgur.com/ozg7teT.png"> </img>
+            <p class="text-muted">K/D and W/L statistics with recent kills and matches to track your progress. </p>
         </div>
         <div class="col-md-4">
             <h3>Automated Matches</h3>
-            <img src="https://i.imgur.com/DnobRWZ.png">
-            <p class="text-muted">Play at any time to refine your pvp skills!</p>
+            <img src="https://i.imgur.com/DnobRWZ.png"> </img>
+            <p class="text-muted">24/7 practice servers to refine your pvp skills!  </p>
         </div>
     </div>
-    </div>
+</div>
 
 </div>
 
