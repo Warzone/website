@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="header">
+    <div class="header" ng-if="loadingHide">
 
         <div class="container">
             <div class="row">
@@ -38,12 +38,12 @@
     </div>
 
 
-    <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+    <div ng-if="loading" id="loading" style="margin-left:46%; margin-top: 75px;">
             <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
     </div>
 </div>
 
-<div class="container">
+<div class="container" ng-if="loadingHide">
     <div class="row">
         
         <div class="col-md-5">

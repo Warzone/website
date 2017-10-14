@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="header">
+    <div class="header" ng-if="loadingHide">
 
         <div class="container row">
             <div class="avatar">
@@ -15,16 +15,16 @@
                 <h3 class="text-muted" style="text-transform: uppercase">Time</h3>
             </div>
         </div>
-
+        <hr>
     </div>
 
-    <hr>
-    <div ng-if="loading" id="loading" style="margin-left:46%; margin-bottom: 30px;">
+
+    <div ng-if="loading" id="loading" style="margin-left:46%; margin-top: 75px;">
             <md-progress-circular class="spinner" md-mode="indeterminate"></md-progress-circular>
     </div>
 </div>
 
-<div class="container">
+<div class="container" >
     <div class="row" style="min-height: 200px;">
         <div class="col-md-6" ng-repeat="team in matchData.teamsLoaded">
             <h3 style="">{{team.name}} <span class="text-muted">{{team.kills}} / {{team.deaths}}</span>
@@ -67,7 +67,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" ng-if="loadingHide">
 
     <div class="row">
         <!-- Kill Feed -->
