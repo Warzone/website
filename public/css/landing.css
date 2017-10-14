@@ -1,3 +1,39 @@
+.md-primary span {
+    padding: 10px;
+}
+
+.md-warn span {
+    padding: 10px;
+}
+
+.md-warn {
+    background-color: #9148d3 !important;
+    outline: none;
+    border-color: #9148d3 !important;
+    color: #fff !important;
+}
+
+.md-warn:hover, .md-warn:active, .md-warn:focus {
+    background-color: #753aab !important;
+    outline: none;
+    border-color: #753aab !important;
+    color: #fff !important;
+}
+
+.md-primary {
+    background-color: #2daadf !important;
+    outline: none;
+    border-color: #2daadf !important;
+    color: #fff !important;
+}
+
+.md-primary:hover, .md-primary:active, .md-primary:focus {
+    background-color: #2692bf !important;
+    outline: none;
+    border-color: #2692bf !important;
+    color: #fff !important;
+}
+
 .jumbotron.header {
     background-position: center left;
     height: 300px;
