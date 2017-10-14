@@ -20,7 +20,9 @@
     color: #fff !important;
 }
 
-
+.recent-matches .md-warn {
+    min-width: 60px !important;
+}
 
 .jumbotron.header {
     background-position: center left;
@@ -44,7 +46,7 @@
 .branding-1 {
     color: white;
     padding: 20px;
-    background-color: #433381;
+    background-color: #334481;
 }
 
 .branding-1 h2 {

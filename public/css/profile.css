@@ -16,6 +16,10 @@
     color: #fff !important;
 }
 
+.md-warn {
+    min-width: 60px !important;
+}
+
 .jumbotron.public-connect {
     background-color: #433381;
     color: #fff;
