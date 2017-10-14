@@ -88,6 +88,8 @@
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
                             <md-button class="md-warn" style="margin: 0px; padding:0px;" href="/match/{{match.match._id}}"> 
+
+                                <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="left"  >Match Details</md-tooltip> 
                                 View
                             </md-button>
                         </td>

@@ -34,7 +34,6 @@
     color: #fff !important;
 }
 
-
 .jumbotron.header {
     background-position: center left;
     height: 300px;
@@ -43,38 +42,40 @@
     background-size: cover;
 }
 
-.header h2{
+.header h2 {
     font-size: 80px;
     opacity: .9;
 }
 
-.header h4{
+.header h4 {
     font-size: 20px;
     opacity: .9;
     padding-left: 5px;
 }
 
 .branding-1 {
-    color:white;padding:20px; background-color:#433381;
+    color: white;
+    padding: 20px;
+    background-color: #433381;
 }
 
 .branding-1 h2 {
-    color:#72c572;
+    color: #72c572;
 }
 
 .branding-1 p {
-    font-size:18px;
+    font-size: 18px;
 }
 
-.branding-1 a:hover,a:active,a:focus{
+.branding-1 a:hover, a:active, a:focus {
     outline: none !important;
 }
 
 /* image section */
 .branding-2 img {
-    height:130px;
-    width:250px;
-    margin:10px 0px;
+    height: 130px;
+    width: 250px;
+    margin: 10px 0px;
 }
 
 .slick-list,.branding-1,.slide-slide,.slick-track,.slick-slider,.header-1,.header, .jumbotron {
@@ -85,16 +86,16 @@
     margin-right: 0px;
 }
 
-.slick-prev{
+.slick-prev {
     left: 25px;
     z-index: 100;
 }
 
-.slick-next{
+.slick-next {
     right: 25px;
 }
 
-.regular2 .slick-dots{
+.regular2 .slick-dots {
     bottom: 45px;
 }
 
@@ -102,7 +103,7 @@
     margin-bottom: 0px;
 }
 
-body{ 
+body {
     padding-top: 50px !important;   
 }
 

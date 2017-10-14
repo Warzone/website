@@ -54,9 +54,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 app.controller('profileController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     console.log('loading player page (' + $routeParams.name + ')');
     $scope.player = null;
-    $scope.deaths = new Array();
-    $scope.matches = new Array();
-    $scope.recentMatches = new Array();
+    $scope.deaths = [];
+    $scope.matches = [];
+    $scope.recentMatches = [];
     $scope.loading = true;
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
@@ -65,33 +65,33 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
 
-            if($scope.player.deaths == 0) {
-                $scope.player.kdr = $scope.player.kills / 1
+            if ($scope.player.deaths === 0) {
+                $scope.player.kdr = $scope.player.kills
             } else {
                 $scope.player.kdr = ($scope.player.kills / $scope.player.deaths).toFixed(2)
             }
 
-            if(!$scope.player.wins) {
+            if (!$scope.player.wins) {
                 $scope.player.wins = 0;
             }
-            if(!$scope.player.kills) {
+
+            if (!$scope.player.kills) {
                 $scope.player.kills = 0;
             }
 
-            if(!$scope.player.deaths) {
+            if (!$scope.player.deaths) {
                 $scope.player.deaths = 0;
-                $scope.player.kdr = $scope.player.kills / 1
+                $scope.player.kdr = $scope.player.kills
             } else {
                 $scope.player.kdr = ($scope.player.kills / $scope.player.deaths).toFixed(2)
             }
 
-            if(!$scope.player.losses) {
+            if (!$scope.player.losses) {
                 $scope.player.losses = 0;
-                $scope.player.wr = $scope.player.wins / 1
+                $scope.player.wr = $scope.player.wins
             } else {
                 $scope.player.wr = ($scope.player.wins / $scope.player.losses).toFixed(2)
             }
-
 
 
             $http.get(config.api.url + '/mc/match/latest/' + $routeParams.name)
@@ -122,7 +122,8 @@ app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', 
 // determines which navbar template to load.
 app.controller('navbarController', function($scope, $location) {
     $scope.$on('$locationChangeSuccess', function() {
-        var path = $location.path();  
+      
+        var path = $location.path(); 
 
         switch(path) {
             case '/upcoming':
@@ -156,7 +157,7 @@ app.controller('playController', ['$scope', '$http', 'moment', function($scope, 
 }]);
 
 app.controller('leaderboardController', ['$scope', '$http', 'moment', function($scope, $http, moment) {
-    $scope.topPlayers = new Array();
+    $scope.topPlayers = [];
     $scope.loading = true;
 
     $scope.updateLeaderboard = function(category) {
@@ -251,11 +252,11 @@ var toMMSS = function (sec_num) {
           slidesToScroll: 1
         }
       }
-      ]
+    ]
   });
 
   $('.regular2').slick({
-    dots: true,
+    dots: false,
     fade: true,
     arrows: false,
     autoplay: true,
@@ -272,7 +273,7 @@ var toMMSS = function (sec_num) {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows: false
         }
       },
@@ -290,7 +291,7 @@ var toMMSS = function (sec_num) {
           slidesToScroll: 1
         }
       }
-      ]
+    ]
   });
 
 
