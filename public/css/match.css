@@ -11,8 +11,16 @@
 
 .personal {
     display: inline-block;
-    margin-left: 20px;
+    /*margin-left: 20px; */
     vertical-align: top;
+}
+
+.personal p {
+    font-weight: 100;
+}
+
+.personal h2 {
+    font-weight: bolder;
 }
 
 .rank {
@@ -78,10 +86,11 @@
     padding-top: 15px;
 }
 
-.game-lose {
-    color: white;
+th {
+    border-bottom: 1px solid #4a4949 !important;
 }
 
+/*
 .table-victory {
     background-color: #81b7da;
 }
@@ -93,7 +102,7 @@
 thead {
     background-color: #272727;
 }
-
+*/
 .gamestats {
     margin-top: 15px;
 }
