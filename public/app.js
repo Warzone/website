@@ -68,6 +68,7 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
             $scope.loading = false;
             $scope.loadingHide = true;
 
+
             $scope.notFound = response.data.notFound;
             $scope.loadingHide = false;
             if ($scope.notFound == true) {
@@ -77,6 +78,7 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
             } else {
                 $scope.loadingHide = true;
             }
+
 
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
