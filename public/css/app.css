@@ -126,13 +126,17 @@ footer {
     padding-right: 0px;
 }
 
-@media screen and (max-width : 1000px) {
+@media screen and (max-width : 985px) {
     .left-footer {
-
+        
     }
 
     .center-footer {
         text-align: left !important;
+
+    }
+
+    .center-footer ul {
         -webkit-padding-start: 40px !important;
     }
 
