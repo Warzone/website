@@ -31,12 +31,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })
         .when('/privacy', {
             templateUrl: 'pages/privacy.html',
-            controller: 'matchController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/privacy.css']
         })
         .when('/rules', {
             templateUrl: 'pages/rules.html',
-            controller: 'matchController',
             css: ['css/app.css', 'css/navbarDefault.css', 'css/rules.css']
         })
         .when('/:name', {
@@ -51,6 +49,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $locationProvider.html5Mode(true);
 }]);
 
+
+
 app.controller('profileController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     console.log('loading player page (' + $routeParams.name + ')');
     $scope.player = null;
@@ -58,13 +58,14 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.matches = [];
     $scope.recentMatches = [];
     $scope.loading = true;
-    $scope.loadingHide = false; 
+    $scope.loadingHide = false;
 
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
             $scope.loading = false;
-            $scope.loadingHide = true; 
+            $scope.loadingHide = true;
+
 
             $scope.player = response.data.user;
             $scope.deaths = response.data.deaths;
@@ -106,8 +107,11 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
                     $scope.recentMatches = response.data;
                     console.log('recent matches size: ' + $scope.recentMatches.length)
                 })
+                
         })
 }]);
+
+
 
 app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', function($scope, $http, $routeParams, moment) {
     console.log('loading player page (' + $routeParams.id + ')');
