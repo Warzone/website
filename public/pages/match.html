@@ -36,7 +36,7 @@
 <div class="container" >
     <div class="row" style="min-height: 200px;">
         <div class="col-md-6" ng-repeat="team in matchData.teamsLoaded">
-            <h3 style="font-weight: bolder">{{team.name}} <span class="text-muted" style="font-weight:100">{{team.kills}} / {{team.deaths}}</span>
+            <h3 style="font-weight: bolder">{{team.name}} <span class="text-muted" style="font-weight:100;margin-left:5px;">{{team.kills}} / {{team.deaths}}</span>
                 <span ng-show="team.won" class="label label-success label-result pull-right">Victory</span>
                 <span ng-show="!team.won" class="label label-danger label-result pull-right">Defeat</span></h3>
             <div class="gamestats">
