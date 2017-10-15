@@ -1,7 +1,13 @@
 <div class="container">
+
+    <div class="text-center" ng-if="playerFound">
+        <h2 style="margin-top:25px;"><span style="color:white;">{{playerName}}</span> could not be found</h2>
+    </div>
+
     <div class="header" ng-if="loadingHide">
 
         <div class="container">
+            
             <div class="row">
                 <div class="col-md-4">
                     <img class="tryit avatar" style="width: 40px;" data-src="https://crafatar.com/renders/body/{{player.uuid}}?overlay" src="https://crafatar.com/renders/body/iSprux?overlay" alt="avatar">

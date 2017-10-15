@@ -52,6 +52,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 
 app.controller('profileController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+
     console.log('loading player page (' + $routeParams.name + ')');
     $scope.player = null;
     $scope.deaths = [];
@@ -59,12 +60,24 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
     $scope.recentMatches = [];
     $scope.loading = true;
     $scope.loadingHide = false;
+    $scope.playerFound = false;
 
 
     $http.get(config.api.url + '/mc/player/' + $routeParams.name)
         .then(function(response) {
             $scope.loading = false;
             $scope.loadingHide = true;
+
+
+            $scope.notFound = response.data.notFound;
+            $scope.loadingHide = false;
+            if ($scope.notFound == true) {
+                $scope.loadingHide = false;
+                $scope.playerFound = true;
+                $scope.playerName = $routeParams.name;
+            } else {
+                $scope.loadingHide = true;
+            }
 
 
             $scope.player = response.data.user;
@@ -109,22 +122,43 @@ app.controller('profileController', ['$scope', '$http', '$routeParams', function
                 })
                 
         })
+
 }]);
 
 
 
 app.controller('matchController', ['$scope', '$http', '$routeParams', 'moment', function($scope, $http, $routeParams, moment) {
     console.log('loading player page (' + $routeParams.id + ')');
+    $scope.routeLength = $routeParams.id.length;
     $scope.matchData = null;
     $scope.loading = true;
     $scope.loadingHide = false; 
+    $scope.matchFound = false;
+    $scope.matchInvalid = false;
 
+    if ($routeParams.id.length > 24 ) {
+        $scope.loadingHide = false;
+        $scope.loading = false;
+        $scope.matchInvalid = true;
+        $scope.matchId = $routeParams.id;
+    }
 
 
     $http.get(config.api.url + '/mc/match/' + $routeParams.id)
         .then(function (response) {
             $scope.loading = false;
             $scope.loadingHide = true; 
+
+            $scope.notFound = response.data.notFound;
+            $scope.loadingHide = false;
+            if ($scope.notFound == true ) {
+                $scope.loadingHide = false;
+                $scope.loading = false;
+                $scope.matchFound = true;
+                $scope.matchId = $routeParams.id;
+            } else {
+                $scope.loadingHide = true;
+            }
 
             console.log('match data: ' + JSON.stringify(response.data, null, 2));
 

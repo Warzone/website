@@ -1,18 +1,27 @@
 <div class="container">
+
+        <div class="text-center" ng-if="matchFound">
+                <h2 style="margin-top:25px;">Match <span style="color:white;">{{matchId}}</span> could not be found</h2>
+            </div>
+
+        <div class="text-center" ng-if="matchInvalid">
+                <h2 style="margin-top:25px;">Match <span style="color:white;">{{matchId}}</span> exceeds 24 hex characters</h2>
+            </div>
+
     <div class="header" ng-if="loadingHide">
 
         <div class="container row">
-            <div class="avatar">
+            <!-- <div class="avatar">
                 <i class="fa fa-area-chart fa-5x" aria-hidden="true"></i>
-            </div>
+            </div> -->
             <div class="personal">
                 <h2 style="margin:0;">{{matchData.mapLoaded.gametype}}</h2>
                 <p style="margin:0;" class="text-muted">{{matchData.mapLoaded.name}}</p>
             </div>
 
-            <div class="pull-right text-center">
-                <h1>{{matchData.timeElapsed}}</h1>
-                <h3 class="text-muted" style="text-transform: uppercase">Time</h3>
+            <div class="pull-right text-right">
+                <h1 style="font-weight: bolder">{{matchData.timeElapsed}}</h1>
+                <h3 class="text-muted" style="font-weight:100; text-transform: uppercase">Time</h3>
             </div>
         </div>
         <hr>
@@ -27,7 +36,7 @@
 <div class="container" >
     <div class="row" style="min-height: 200px;">
         <div class="col-md-6" ng-repeat="team in matchData.teamsLoaded">
-            <h3 style="">{{team.name}} <span class="text-muted">{{team.kills}} / {{team.deaths}}</span>
+            <h3 style="font-weight: bolder">{{team.name}} <span class="text-muted" style="font-weight:100;margin-left:5px;">{{team.kills}} / {{team.deaths}}</span>
                 <span ng-show="team.won" class="label label-success label-result pull-right">Victory</span>
                 <span ng-show="!team.won" class="label label-danger label-result pull-right">Defeat</span></h3>
             <div class="gamestats">
