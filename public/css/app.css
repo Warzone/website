@@ -22,6 +22,54 @@
     font-weight: 800;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.md-button.md-default-theme.md-warn.md-raised, .md-button.md-warn.md-raised, .md-button.md-default-theme.md-warn.md-fab, .md-button.md-warn.md-fab {
+    background-color: #9148d3 !important;
+    color: #fff;
+}
+
+.md-button.md-default-theme.md-warn, .md-button.md-warn {
+    color: #fff !important;
+}
+
+/*From Landing.css BEGINNING*/
+
+.header-slide1 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);
+}
+
+.header-slide2 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://i.ytimg.com/vi/vjidR6jRu30/maxresdefault.jpg);
+}
+
+.header-slide3 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
+}
+
+.jumbotron.header {
+    background-position: center left;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+}
+
+.header h2 {
+    font-size: 80px;
+    opacity: .9;
+}
+
+.header h4 {
+    font-size: 20px;
+    opacity: .9;
+    padding-left: 5px;
+}
+
+/*From Landing.css END */
+
 .text-muted {
     color: #cacaca;
 }

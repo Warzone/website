@@ -27,6 +27,33 @@
     text-transform: none;
 }
 
+
+.regular2 .color {
+    color: #87d1f1;
+}
+
+.table .md-warn {
+    margin: 0px; 
+    padding:0px;
+}
+
+.table .md-button {
+    margin: 0px; 
+    padding:0px;
+}
+
+.header-slide1 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);
+}
+
+.header-slide2 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://i.ytimg.com/vi/vjidR6jRu30/maxresdefault.jpg);
+}
+
+.header-slide3 {
+    background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);
+}
+
 .jumbotron.header {
     background-position: center left;
     height: 300px;
