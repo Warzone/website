@@ -22,6 +22,10 @@
     font-weight: 800;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+  }
+
 .text-muted {
     color: #cacaca;
 }
