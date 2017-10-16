@@ -1,54 +1,53 @@
-
-    
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 <div class="" >
     <!--image-->
     
     <div class="regular2">
         
-        <div class="jumbotron header" style=" background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://static.trueachievements.com/customimages/016732.jpg);">
+        <div class="jumbotron header header-slide1">
             <div class="header-1">
                 <h2>COMPETE</h2>
-                <h4 style="text-transform: uppercase" class="">Challenge <span class="" style="color: #87d1f1;">the players</span> currently competing.</h4>
+                <h4 style="text-transform: uppercase" >Challenge <span class="color" >the players</span> currently competing.</h4>
             </div>
 
-            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+            <md-button class="md-raised md-primary" href="/play"> 
                 Enter a Match 
                 <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="bottom"  >Minecraft 1.8+</md-tooltip>
             </md-button>
 
-            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+            <md-button class="md-raised md-warn" href="/leaderboard"> 
                 View Top Players
                 <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="bottom"  >Leaderboards</md-tooltip>
             </md-button>
         </div>
 
-        <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://i.ytimg.com/vi/vjidR6jRu30/maxresdefault.jpg);">
+        <div class="jumbotron header header-slide2" >
             <div class="header-1">
                 <h2>Fight</h2>
-                <h4 style="text-transform: uppercase" class="">Dominate <span class="" style="color: #87d1f1;">the leaderboards</span>.</h4>
+                <h4 style="text-transform: uppercase" >Dominate <span class="color" >the leaderboards</span>.</h4>
             </div>
     
-            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+            <md-button class="md-raised md-primary"  href="/play"> 
                 Enter a Match 
             </md-button>
 
-            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+            <md-button class="md-raised md-warn"  href="/leaderboard"> 
                 View Top Players
             </md-button>
         </div>
             
-        <div class="jumbotron header" style="background-image: linear-gradient( rgba(123,123,123, 0.4), rgba(0,0,0, 0.7) ), url(https://minecraftworld.files.wordpress.com/2013/05/minecraft-jack-o-lantern-background.jpg);">
+        <div class="jumbotron header header-slide3" >
             <div class="header-1">
                 <h2>Challenge</h2>
-                <h4 style="text-transform: uppercase" class="">Face <span class="" style="color: #87d1f1;">tough</span> opponents already playing.</h4>
+                <h4 style="text-transform: uppercase" >Face <span class="color" >tough</span> opponents already playing.</h4>
             </div>
         
-            <md-button class="md-raised md-primary" style="margin-bottom:15px; padding:2px;" href="/play"> 
+            <md-button class="md-raised md-primary"  href="/play"> 
                 Enter a Match 
             </md-button>
 
-            <md-button class="md-raised md-warn" style="background-color: ; margin-bottom:15px; padding:2px;" href="/leaderboard"> 
+            <md-button class="md-raised md-warn"  href="/leaderboard"> 
                 View Top Players
             </md-button>
         </div>
@@ -69,7 +68,7 @@
 
                     <tr ng-repeat="match in recentMatches">
                         <td class="kill-feed-item-player" style="width: 32px;">
-                            <md-button class="md-warn" style="margin: 0px; padding:0px;" href="/match/{{match.match._id}}"> 
+                            <md-button class="md-warn" href="/match/{{match.match._id}}"> 
                                 <md-tooltip id="copy-tooltip-msg"  md-visible="" md-direction="left"  >Match Details</md-tooltip> 
                                 View
                             </md-button>
