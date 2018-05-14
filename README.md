@@ -17,6 +17,6 @@ This site is built using AngularJS
     - Team association shown on player profile
 
 ## Ideas
-1. Incentify youtube, twitch, playmaking on Team.gg
+1. Incentify youtube, twitch, playmaking on Warzone
     - Highlight videos, channels somewhere on homepage or seperate page
 2. Github updates live on website. Just like discord
