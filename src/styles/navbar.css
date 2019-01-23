@@ -1,0 +1,31 @@
+.nav-grow { flex-grow: 1; }
+.nav {
+  background-color: #282a2d !important;
+}
+.nav-logo {
+  height: auto;
+  width: 25px;
+  float: left;
+  margin-right: 10px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-button {
+  margin-left: auto;
+  text-transform: none;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: normal;
+  outline: none;
+}
+.nav-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 28px;
+  font-weight: 600;
+  outline: none;
+}
