@@ -11,3 +11,8 @@
 .jumbotron-header { font-size: 70px; color: white; text-align: center; padding-top: 52px; user-select: none; font-weight: 500; }
 .jumbotron-buttons { text-align: center; }
 .jumbotron-button-divider { width: 15px; height: auto; display: inline-block; }
+
+.jumbotron-no-overflow { overflow: hidden; }
+
+.jumbotron-slide-in-right { overflow: hidden; animation: slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both; }
+ @keyframes jumbotron-slide-in-right{ 0% {-webkit-transform: translateX(1000px); transform: translateX(1000px); opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px); transform: translateX(1000px); opacity: 0 } 100% { -webkit-transform: translateX(0); transform: translateX(0); opacity:1 } }

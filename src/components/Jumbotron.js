@@ -1,37 +1,44 @@
 import React, { Component } from 'react';
 import '../styles/jumbotron.css';
 import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
+import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 
 class Jumbotron extends Component {
   constructor() {
     super();
 
     this.state = {
-      heading: 'PLAY',
+      heading: 'Play',
       hidden: false
     }
   }
 
-  initialiseSlideChanger() {
+  async initialiseSlideChanger() {
     if (this.slideChanger) clearInterval(this.slideChanger);
+    let headingElement = document.getElementById('jumbotron-header');
+    headingElement.classList.add('jumbotron-slide-in-right');
     this.slideChanger = setInterval(() => {
       let newHeading;
       switch (this.state.heading) {
-        case 'PLAY':
-          newHeading = 'COMPETE';
+        case 'Play':
+          newHeading = 'Compete';
           console.log(newHeading);
           break;
-        case 'COMPETE':
+        case 'Compete':
           newHeading = '???';
           console.log(newHeading);
+          headingElement.classList.add('jumbotron-slide-in-right');
           break;
         case '???':
-          newHeading = 'PLAY';
+          newHeading = 'Play';
           console.log(newHeading);
           break;
         default:
-          newHeading = 'PLAY';
+          newHeading = 'Play';
       }
+      headingElement.classList.remove('jumbotron-slide-in-right');
       this.setState({ heading: newHeading });
       console.log('set state');
     }, 15000);
@@ -45,8 +52,8 @@ class Jumbotron extends Component {
     return false;
   }
 
-  componentDidMount() {
-    this.initialiseSlideChanger();
+  async componentDidMount() {
+    await this.initialiseSlideChanger();
     document.addEventListener('visibilitychange', (e) => {
       if (document.hidden) return this.tryDisableSlideChanger();
       return this.initialiseSlideChanger();
@@ -56,15 +63,19 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className='jumbotron'>
-        <h1 className='jumbotron-header'>{this.state.heading}</h1>
+        <div><h1 className='jumbotron-header' id='jumbotron-header'>{this.state.heading}</h1></div>
         <div className='jumbotron-buttons'>
-          <Button variant='contained' color='primary'>
+        <Tooltip disableFocusListener disableTouchListener title='Minecraft 1.8+'>
+          <Button variant='contained' color='primary' component={Link} to='/play'>
             Enter a match
           </Button>
-          <div className='jumbotron-button-divider'></div>
-          <Button variant='contained' color='secondary'>
+        </Tooltip>
+        <div className='jumbotron-button-divider'></div>
+        <Tooltip disableFocusListener disableTouchListener title='View leaderboards'>
+          <Button variant='contained' color='secondary' component={Link} to='/leaderboard'>
             View top players
           </Button>
+        </Tooltip>
         </div>
       </div>
     );
