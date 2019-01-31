@@ -1,0 +1,13 @@
+.jumbotron { 
+  margin: 0; 
+  min-height: 300px; 
+  width: 100%; 
+  /* background-image: url(https://i.imgur.com/rMB613Q.png); */
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient( rgba(123,123,123, 0.2), rgba(0,0,0.0, 0.2) ), url(https://cdn.discordapp.com/attachments/403740901106778122/539998344848605185/2019-01-29_20.40.28.png);
+}
+
+.jumbotron-header { font-size: 70px; color: white; text-align: center; padding-top: 52px; user-select: none; font-weight: 500; }
+.jumbotron-buttons { text-align: center; }
+.jumbotron-button-divider { width: 15px; height: auto; display: inline-block; }
