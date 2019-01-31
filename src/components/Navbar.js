@@ -8,10 +8,10 @@ import '../styles/navbar.css';
 class Navbar extends Component {
   render() {
     return (
-      <AppBar position='absolute' className='nav' elevation={1}>
+      <AppBar position='fixed' className='nav' elevation={1}>
         <Toolbar variant='dense'>
           <div className='container nav-container'>
-            <img className='nav-logo' src='warzone.svg' alt='Warzone logo' />
+            <img className='nav-logo' src='img/warzone.svg' alt='Warzone logo' />
             <Typography variant='h6' color='inherit' className='nav-grow'>
               <Link to='/' className='nav-link'>
                 Warzone
