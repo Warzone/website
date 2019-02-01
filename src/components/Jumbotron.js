@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/jumbotron.css';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
-import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
 
 class Jumbotron extends Component {
@@ -63,19 +62,19 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className='jumbotron'>
-        <div><h1 className='jumbotron-header' id='jumbotron-header'>{this.state.heading}</h1></div>
-        <div className='jumbotron-buttons'>
-        <Tooltip disableFocusListener disableTouchListener title='Minecraft 1.8+'>
-          <Button variant='contained' color='primary' component={Link} to='/play'>
-            Enter a match
-          </Button>
-        </Tooltip>
-        <div className='jumbotron-button-divider'></div>
-        <Tooltip disableFocusListener disableTouchListener title='View leaderboards'>
-          <Button variant='contained' color='secondary' component={Link} to='/leaderboard'>
-            View top players
-          </Button>
-        </Tooltip>
+        <div><h1 className='jumbotron-header center' id='jumbotron-header'>{this.state.heading}</h1></div>
+        <div className='center'>
+          <Tooltip disableFocusListener disableTouchListener title='Minecraft 1.8+'>
+            <Button variant='contained' color='primary' component={Link} to='/play'>
+              Enter a match
+            </Button>
+          </Tooltip>
+          <div className='jumbotron-button-divider'></div>
+          <Tooltip disableFocusListener disableTouchListener title='View leaderboards'>
+            <Button variant='contained' color='secondary' component={Link} to='/leaderboard'>
+              View top players
+            </Button>
+          </Tooltip>
         </div>
       </div>
     );
