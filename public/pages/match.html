@@ -112,25 +112,5 @@
                 </table>
             </div>
         </div>
-
-        <div class="col-md-7">
-          <p class="text-head">Chat Feed</p>
-            <div class="chat-feed">
-                 <table class="table">
-                    <tr ng-repeat="chat in matchData.match.chat">
-                        <td class="kill-feed-item-player" style="width: 32px;">
-                            <a href="/{{chat.username}}"><img style="width: 32px;" src="https://crafatar.com/avatars/{{chat.uuid}}?size=32&overlay" alt="avatar"></a>
-                        </td>
-                        <td class="playername" style="width: 32px; padding-top:15px; ">
-                            <a href="/{{chat.username}}"><p>{{chat.username}}</p> </a>
-                        </td>
-                        <td class="kill-feed-message" style="padding-top: 15px;">{{chat.message}}</td>
-                        <td class="kill-feed-item-player" style="padding-top:15px;width: 32px;">
-                            <p class="text-muted">{{chat.matchTime}}</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 </div>
