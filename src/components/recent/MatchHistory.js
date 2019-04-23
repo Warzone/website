@@ -7,7 +7,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import TableRow from '@material-ui/core/TableRow';
 import People from '@material-ui/icons/People';
 import { Link } from 'react-router-dom';
-import '../../styles/recent/match-history.css';
+import '../../styles/components/recent/match-history.css';
 
 class MatchHistory extends Component {
   render() {

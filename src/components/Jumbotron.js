@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/jumbotron.css';
+import '../styles/components/jumbotron.css';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 import { Link } from 'react-router-dom';

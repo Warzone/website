@@ -5,7 +5,7 @@ import TableCell from '@material-ui/core/TableCell';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import TableRow from '@material-ui/core/TableRow';
 import { Link } from 'react-router-dom';
-import '../../styles/recent/kill-history.css';
+import '../../styles/components/recent/kill-history.css';
 
 class KillHistory extends Component {
   render() {

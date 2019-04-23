@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../styles/home.css';
-import Jumbotron from './Jumbotron';
-import RecentGrid from './recent/RecentGrid';
+import '../styles/pages/home.css';
+import Jumbotron from '../components/Jumbotron';
+import RecentGrid from '../components/recent/RecentGrid';
 
 class Home extends Component {
   render() {
