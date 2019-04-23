@@ -5,13 +5,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { Link } from 'react-router-dom';
 
 class Jumbotron extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      heading: 'Play',
-      hidden: false
-    }
+  state = {
+    heading: 'Play'
   }
 
   async initialiseSlideChanger() {
