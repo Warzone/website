@@ -1,0 +1,6 @@
+.match-history { color: #fdf9f1; width: 100%; overflow-x: auto; overflow-y: hidden; }
+.match-history-table { min-width: 700; }
+.match-history-table-cell { color: #fdf9f1 !important; padding: 0 0 0 !important; font-size: inherit !important; border-bottom: 0 !important; border-top: 1px solid #4a4949 !important; }
+.match-history-table-cell-icon { vertical-align: bottom; }
+.match-history-loading { margin: 16; }
+.match-history-view-button { background-color: #9148d3 !important; color: white !important; padding-right: 0px; }
