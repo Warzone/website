@@ -23,7 +23,7 @@ class MatchHistory extends Component {
             {this.props.matches.map(match => (
               <TableRow key={match.match._id}>
                 <TableCell className='match-history-table-cell' component='th' scope='row'>
-                  <Button component={Link} to={`/m/${match.match._id}`} variant='contained' className='match-history-view-button'>View</Button>
+                  <Button component={Link} to={`/match/${match.match._id}`} variant='contained' className='match-history-view-button'>View</Button>
                 </TableCell>
                 <TableCell align='left' className='match-history-table-cell'>
                   <strong>{match.loadedMap.gametype}</strong>
