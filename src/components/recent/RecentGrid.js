@@ -10,28 +10,24 @@ class RecentGrid extends Component {
   }
 
   async componentDidMount() {
-    var matchRes, matchJson, killRes, killJson;
+    let matchRes, matchJson, killRes, killJson;
+
+    // cache recent matches for entire session
     if (!window.sessionStorage.getItem('recent_matches')) {
       matchRes = await fetch(config.API_BASE + '/mc/match/latest');
       matchJson = await matchRes.json();
       window.sessionStorage.setItem('recent_matches', JSON.stringify(matchJson));
     } else matchJson = JSON.parse(window.sessionStorage.getItem('recent_matches'));
+
+    // cache recent kills for entire session
     if (!window.sessionStorage.getItem('recent_kills')) {
       killRes = await fetch(config.API_BASE + '/mc/death/latest');
       killJson = await killRes.json();
       window.sessionStorage.setItem('recent_kills', JSON.stringify(killJson));
     } else killJson = JSON.parse(window.sessionStorage.getItem('recent_kills'));
+
     this.setState({ recentMatches: matchJson, recentKills: killJson });
   }
-
-  // setupBeforeUnloadListener = () => {
-  //   window.addEventListener('beforeunload', (e) => {
-  //       e.preventDefault();
-  //       window.localStorage.removeItem('recent_kills');
-  //       window.localStorage.removeItem('recent_matches');
-  //       return null;
-  //   });
-  // };
 
   render() {
     return (
