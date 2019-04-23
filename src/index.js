@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import './grid.css';
+import './global.css';
+import './styles/grid.css';
 import App from './App';
 import conf from './config.json';
 
