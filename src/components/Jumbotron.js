@@ -16,7 +16,7 @@ class Jumbotron extends Component {
 
   async initialiseSlideChanger() {
     if (this.slideChanger) clearInterval(this.slideChanger);
-    let headingElement = document.getElementById('jumbotron-header');
+    var headingElement = document.getElementById('jumbotron-header');
     headingElement.classList.add('jumbotron-slide-in-right');
     this.slideChanger = setInterval(() => {
       let newHeading;
@@ -57,6 +57,10 @@ class Jumbotron extends Component {
       if (document.hidden) return this.tryDisableSlideChanger();
       return this.initialiseSlideChanger();
     });
+  }
+
+  componentWillUnmount() {
+    this.tryDisableSlideChanger();
   }
 
   render() {
