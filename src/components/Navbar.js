@@ -18,8 +18,8 @@ class Navbar extends Component {
               </Link>
             </Typography>
             <Link to='/play' className='nav-button'>Play</Link>
-            <Link to='/store' className='nav-button'>Store</Link>
-            <Link to='/forum' className='nav-button'>Forum</Link>
+            <a href='https://tgmwarzone.tebex.io/' className='nav-button'>Store</a>
+            <a href='https://warzone.forums.gg/' className='nav-button'>Forum</a>
             <Link to='/leaderboard' className='nav-button'>Leaderboard</Link>
           </div>
         </Toolbar>
