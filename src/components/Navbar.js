@@ -17,20 +17,20 @@ class Navbar extends Component {
               alt='Warzone logo'
             />
             <Typography variant='h6' color='inherit' className='nav-grow'>
-              <Link to='/' className='nav-link'>
+              <Link to='/' className='nav-link white'>
                 Warzone
               </Link>
             </Typography>
-            <Link to='/play' className='nav-button'>
+            <Link to='/play' className='nav-button white'>
               Play
             </Link>
-            <a href='https://tgmwarzone.tebex.io/' className='nav-button'>
+            <a href='https://tgmwarzone.tebex.io/' className='nav-button white'>
               Store
             </a>
-            <a href='https://discord.gg/uCxjNhS' className='nav-button'>
+            <a href='https://discord.gg/uCxjNhS' className='nav-button white'>
               Discord
             </a>
-            <Link to='/leaderboard' className='nav-button'>
+            <Link to='/leaderboard' className='nav-button white'>
               Leaderboard
             </Link>
           </div>

@@ -63,7 +63,7 @@ class Jumbotron extends Component {
     return (
       <div className='jumbotron'>
         <div>
-          <h1 className='jumbotron-header center' id='jumbotron-header'>
+          <h1 className='jumbotron-header white center' id='jumbotron-header'>
             {this.state.heading}
           </h1>
         </div>
@@ -76,7 +76,7 @@ class Jumbotron extends Component {
             <Button
               variant='contained'
               color='primary'
-              className='jumbotron-button'
+              className='white'
               component={Link}
               to='/play'
             >
@@ -92,7 +92,7 @@ class Jumbotron extends Component {
             <Button
               variant='contained'
               color='secondary'
-              className='jumbotron-button'
+              className='white'
               component={Link}
               to='/leaderboard'
             >

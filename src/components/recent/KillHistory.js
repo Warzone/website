@@ -46,7 +46,7 @@ class KillHistory extends Component {
                         'Wilderness'
                       ) : (
                         <Link
-                          className='kill-history-link'
+                          className='kill-history-link white'
                           to={`/p/${kill.killerLoaded.name}`}
                         >
                           {kill.killerLoaded.name}
@@ -55,7 +55,7 @@ class KillHistory extends Component {
                     </strong>{' '}
                     killed{' '}
                     <Link
-                      className='kill-history-link'
+                      className='kill-history-link white'
                       to={`/p/${kill.playerLoaded.name}`}
                     >
                       <strong>{kill.playerLoaded.name}</strong>

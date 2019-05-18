@@ -22,7 +22,6 @@
 .nav-button {
   margin-left: auto;
   text-transform: none;
-  color: white;
   text-decoration: none;
   margin-right: 20px;
   font-weight: normal;
@@ -30,7 +29,6 @@
 }
 
 .nav-link {
-  color: inherit;
   text-decoration: inherit;
   font-size: 24px;
   font-weight: 600;
