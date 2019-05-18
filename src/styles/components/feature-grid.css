@@ -1,0 +1,10 @@
+.feature-grid-image {
+  width: 100%;
+  height: 140px;
+  border-radius: 2px;
+  transition: transform .2s;
+}
+
+.feature-grid-image:hover {
+  transform: scale(1.03);
+}
