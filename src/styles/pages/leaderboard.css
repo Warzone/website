@@ -1,16 +1,3 @@
-.leaderboard {
-  margin-top: 100px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 3%;
-}
-
-.leaderboard-table {
-  min-width: 700;
-}
-
 .leaderboard-table-cell {
   color: #cacaca !important;
   font-size: 14px !important;
@@ -27,10 +14,6 @@
 
 .leaderboard-loading {
   margin: 16;
-}
-
-.leaderboard-link {
-  text-decoration: none;
 }
 
 .leaderboard-rank {

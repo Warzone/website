@@ -7,7 +7,7 @@ import FeatureGrid from '../components/FeatureGrid';
 class Home extends Component {
   render() {
     return (
-      <div className='home'>
+      <div className='home page'>
         <Jumbotron />
         <div className='container'>
           <RecentGrid style={{ marginBottom: '3%' }} />

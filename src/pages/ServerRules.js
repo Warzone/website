@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import "../styles/pages/server-rules.css";
 
 class ServerRules extends Component {
   render() {
     return (
-      <div className="server-rules">
+      <div className="page">
         <div className="container">
           <div>
             <h1>Server Rules</h1>

@@ -32,7 +32,7 @@ class Leaderboard extends Component {
 
   render() {
     return (
-      <div className='leaderboard'>
+      <div className='page center'>
         <div className='container'>
           <h1>Leaderboard</h1>
           <h3>The highest ranked players on Warzone</h3>

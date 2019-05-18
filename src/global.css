@@ -29,3 +29,13 @@ ul {
 .bold {
   font-weight: bold;
 }
+.page {
+  margin-top: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
