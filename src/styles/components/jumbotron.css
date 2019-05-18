@@ -10,6 +10,7 @@
 
 .jumbotron-header { font-size: 75px; color: white; padding-top: 52px; user-select: none; font-weight: 500; }
 .jumbotron-button-divider { width: 15px; height: auto; display: inline-block; }
+.jumbotron-button { color: white !important; }
 
 .jumbotron-no-overflow { overflow: hidden; }
 
