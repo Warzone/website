@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import '../styles/pages/server-rules.css';
+import React, { Component } from "react";
+import "../styles/pages/server-rules.css";
 
 class ServerRules extends Component {
   render() {
     return (
-      <div className='server-rules'>
-        <div className='container'>
+      <div className="server-rules">
+        <div className="container">
           <div>
             <h1>Server Rules</h1>
             <p>
@@ -132,15 +132,15 @@ class ServerRules extends Component {
           </div>
           <br />
           <div>
-            If you wish to{' '}
-            <span className='underline'>appeal a punishment</span> or{' '}
-            <span className='underline'>report a player</span>, please post in{' '}
+            If you wish to{" "}
+            <span className="underline">appeal a punishment</span> or{" "}
+            <span className="underline">report a player</span>, please post in{" "}
             <a
-              href='https://discord.gg/uCxjNhS'
-              className='white bold no-text-decoration'
+              href="https://discord.gg/uCxjNhS"
+              className="white bold no-text-decoration"
             >
               our Discord server
-            </a>{' '}
+            </a>{" "}
             to the relevant channel.
           </div>
         </div>
