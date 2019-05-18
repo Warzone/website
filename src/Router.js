@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import React, { Component } from 'react';
 import Leaderboard from './pages/Leaderboard';
+import Footer from './components/Footer';
 
 class Router extends Component {
   render() {
@@ -15,6 +16,8 @@ class Router extends Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/leaderboard' component={Leaderboard} />
           </Switch>
+
+          <Footer />
         </div>
       </BrowserRouter>
     );
