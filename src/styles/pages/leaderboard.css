@@ -1,4 +1,4 @@
-.leaderboards {
+.leaderboard {
   margin-top: 100px;
   top: 0;
   left: 0;
@@ -7,11 +7,11 @@
   padding-bottom: 3%;
 }
 
-.leaderboards-table {
+.leaderboard-table {
   min-width: 700;
 }
 
-.leaderboards-table-cell {
+.leaderboard-table-cell {
   color: #cacaca !important;
   font-size: 14px !important;
   border-bottom: 0 !important;
@@ -19,25 +19,25 @@
   padding: 8px;
 }
 
-.leaderboards-player-head {
+.leaderboard-player-head {
   padding-right: 15px !important;
   width: 32px;
   vertical-align: middle;
 }
 
-.leaderboards-loading {
+.leaderboard-loading {
   margin: 16;
 }
 
-.leaderboards-link {
+.leaderboard-link {
   color: #fdf9f1 !important;
   text-decoration: none;
 }
 
-.leaderboards-rank {
+.leaderboard-rank {
   font-size: 20px !important;
 }
 
-.leaderboards > .container > h3 {
+.leaderboard > .container > h3 {
   padding-bottom: 2%;
 }

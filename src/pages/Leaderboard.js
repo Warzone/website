@@ -32,7 +32,7 @@ class Leaderboards extends Component {
 
   render() {
     return (
-      <div className='leaderboards'>
+      <div className='leaderboard'>
         <div className='container'>
           <h1>Leaderboards</h1>
           <h3>The highest ranked players on Warzone</h3>
@@ -41,23 +41,23 @@ class Leaderboards extends Component {
               <CircularProgress />
             </div>
           )}
-          <Table className='leaderboards-table'>
+          <Table className='leaderboard-table'>
             <TableBody>
               {this.state.leaderboard.map((player) => (
                 <TableRow key={player._id}>
                   <TableCell
-                    className='leaderboards-table-cell'
+                    className='leaderboard-table-cell'
                     component='td'
                     scope='row'
                   >
                     <img
-                      className='leaderboards-player-head'
+                      className='leaderboard-player-head'
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt='Player head'
                     />
                     <strong>
                       <Link
-                        className='leaderboards-link'
+                        className='leaderboard-link'
                         to={`/p/${player.name}`}
                       >
                         {player.name}
@@ -65,7 +65,7 @@ class Leaderboards extends Component {
                     </strong>
                   </TableCell>
                   <TableCell
-                    className='leaderboards-table-cell leaderboards-rank'
+                    className='leaderboard-table-cell leaderboard-rank'
                     component='td'
                   >
                     #
@@ -74,7 +74,7 @@ class Leaderboards extends Component {
                     </strong>
                   </TableCell>
                   <TableCell
-                    className='leaderboards-table-cell center'
+                    className='leaderboard-table-cell center'
                     component='td'
                   >
                     <strong>{player.kills}</strong>
@@ -82,7 +82,7 @@ class Leaderboards extends Component {
                     kills
                   </TableCell>
                   <TableCell
-                    className='leaderboards-table-cell center'
+                    className='leaderboard-table-cell center'
                     component='td'
                   >
                     <strong>{player.wins}</strong>
