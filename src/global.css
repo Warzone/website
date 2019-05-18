@@ -29,3 +29,5 @@ ul {
 .bold {
   font-weight: bold;
 }
+
+.test-commit-double-quotes { background-image: url("https://i.imgur.com/aO3wBVZ.jpg") }
