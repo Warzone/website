@@ -10,6 +10,7 @@ class Jumbotron extends Component {
   }
 
   async initialiseSlideChanger() {
+    if (window.location.pathname !== '/') return;
     if (this.slideChanger) clearInterval(this.slideChanger);
     var headingElement = document.getElementById('jumbotron-header');
     headingElement.classList.add('jumbotron-slide-in-right');
@@ -64,13 +65,13 @@ class Jumbotron extends Component {
         <div><h1 className='jumbotron-header center' id='jumbotron-header'>{this.state.heading}</h1></div>
         <div className='center'>
           <Tooltip disableFocusListener disableTouchListener title='Minecraft 1.8+'>
-            <Button variant='contained' color='primary' component={Link} to='/play'>
+            <Button variant='contained' color='primary' className='jumbotron-button' component={Link} to='/play'>
               Enter a match
             </Button>
           </Tooltip>
           <div className='jumbotron-button-divider'></div>
-          <Tooltip disableFocusListener disableTouchListener title='View leaderboards'>
-            <Button variant='contained' color='secondary' component={Link} to='/leaderboard'>
+          <Tooltip disableFocusListener disableTouchListener title='View leaderboard'>
+            <Button variant='contained' color='secondary' className='jumbotron-button' component={Link} to='/leaderboard'>
               View top players
             </Button>
           </Tooltip>
