@@ -1,0 +1,43 @@
+.leaderboards {
+  margin-top: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.leaderboards-table {
+  min-width: 700;
+}
+
+.leaderboards-table-cell {
+  color: #cacaca !important;
+  font-size: 14px !important;
+  border-bottom: 0 !important;
+  border-top: 1px solid #4a4949 !important;
+  padding: 8px;
+}
+
+.leaderboards-player-head {
+  padding-right: 15px !important;
+  width: 32px;
+  vertical-align: middle;
+}
+
+.leaderboards-loading {
+  margin: 16;
+}
+
+.leaderboards-link {
+  color: #fdf9f1 !important;
+  text-decoration: none;
+}
+
+.leaderboards-rank {
+  font-size: 20px !important;
+}
+
+.leaderboards > .container > h3 {
+  padding-bottom: 2%;
+}
