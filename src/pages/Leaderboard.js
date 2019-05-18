@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import '../styles/pages/leaderboard.css';
 import { config } from '../';
 
-class Leaderboards extends Component {
+class Leaderboard extends Component {
   state = {
     leaderboard: []
   };
@@ -34,7 +34,7 @@ class Leaderboards extends Component {
     return (
       <div className='leaderboard'>
         <div className='container'>
-          <h1>Leaderboards</h1>
+          <h1>Leaderboard</h1>
           <h3>The highest ranked players on Warzone</h3>
           {this.state.leaderboard.length === 0 && (
             <div className='center'>
@@ -99,4 +99,4 @@ class Leaderboards extends Component {
   }
 }
 
-export default Leaderboards;
+export default Leaderboard;
