@@ -55,29 +55,29 @@ class Leaderboard extends Component {
                       src={`https://crafatar.com/avatars/${player.uuid}`}
                       alt='Player head'
                     />
-                    <strong>
+                    <span className='bold'>
                       <Link
                         className='leaderboard-link white'
                         to={`/p/${player.name}`}
                       >
                         {player.name}
                       </Link>
-                    </strong>
+                    </span>
                   </TableCell>
                   <TableCell
                     className='leaderboard-table-cell leaderboard-rank'
                     component='td'
                   >
                     #
-                    <strong>
+                    <span className='bold'>
                       {this.state.leaderboard.indexOf(player) + 1}
-                    </strong>
+                    </span>
                   </TableCell>
                   <TableCell
                     className='leaderboard-table-cell center'
                     component='td'
                   >
-                    <strong>{player.kills}</strong>
+                    <span className='bold'>{player.kills}</span>
                     <br />
                     kills
                   </TableCell>
@@ -85,7 +85,7 @@ class Leaderboard extends Component {
                     className='leaderboard-table-cell center'
                     component='td'
                   >
-                    <strong>{player.wins}</strong>
+                    <span className='bold'>{player.wins}</span>
                     <br />
                     wins
                   </TableCell>

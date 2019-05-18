@@ -40,7 +40,7 @@ class MatchHistory extends Component {
                     </Button>
                   </TableCell>
                   <TableCell align='left' className='match-history-table-cell'>
-                    <strong>{match.loadedMap.gametype}</strong>
+                    <span className='bold'>{match.loadedMap.gametype}</span>
                   </TableCell>
                   <TableCell className='match-history-table-cell' align='left'>
                     {match.loadedMap.name}

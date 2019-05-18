@@ -41,7 +41,7 @@ class KillHistory extends Component {
                     />
                   </TableCell>
                   <TableCell className='kill-history-table-cell'>
-                    <strong>
+                    <span className='bold'>
                       {!kill.killerLoaded ? (
                         'Wilderness'
                       ) : (
@@ -52,13 +52,13 @@ class KillHistory extends Component {
                           {kill.killerLoaded.name}
                         </Link>
                       )}
-                    </strong>{' '}
+                    </span>{' '}
                     killed{' '}
                     <Link
                       className='kill-history-link white'
                       to={`/p/${kill.playerLoaded.name}`}
                     >
-                      <strong>{kill.playerLoaded.name}</strong>
+                      <span className='bold'>{kill.playerLoaded.name}</span>
                     </Link>
                   </TableCell>
                   <TableCell className='kill-history-table-cell'>
