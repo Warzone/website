@@ -10,7 +10,7 @@ class Router extends Component {
       <BrowserRouter>
         <div>
           <Navbar />
-          
+
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/leaderboard' component={Leaderboard} />

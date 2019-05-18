@@ -1,4 +1,6 @@
-.nav-grow { flex-grow: 1; }
+.nav-grow {
+  flex-grow: 1;
+}
 
 .nav {
   background-color: #282a2d !important;

@@ -11,16 +11,28 @@ class Navbar extends Component {
       <AppBar position='fixed' className='nav' elevation={1}>
         <Toolbar variant='dense'>
           <div className='container nav-container'>
-            <img className='nav-logo' src='img/warzone.svg' alt='Warzone logo' />
+            <img
+              className='nav-logo'
+              src='img/warzone.svg'
+              alt='Warzone logo'
+            />
             <Typography variant='h6' color='inherit' className='nav-grow'>
               <Link to='/' className='nav-link'>
                 Warzone
               </Link>
             </Typography>
-            <Link to='/play' className='nav-button'>Play</Link>
-            <a href='https://tgmwarzone.tebex.io/' className='nav-button'>Store</a>
-            <a href='https://discord.gg/uCxjNhS' className='nav-button'>Discord</a>
-            <Link to='/leaderboard' className='nav-button'>Leaderboard</Link>
+            <Link to='/play' className='nav-button'>
+              Play
+            </Link>
+            <a href='https://tgmwarzone.tebex.io/' className='nav-button'>
+              Store
+            </a>
+            <a href='https://discord.gg/uCxjNhS' className='nav-button'>
+              Discord
+            </a>
+            <Link to='/leaderboard' className='nav-button'>
+              Leaderboard
+            </Link>
           </div>
         </Toolbar>
       </AppBar>

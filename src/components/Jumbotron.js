@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Jumbotron extends Component {
   state = {
     heading: 'Play'
-  }
+  };
 
   async initialiseSlideChanger() {
     if (window.location.pathname !== '/') return;
@@ -62,16 +62,40 @@ class Jumbotron extends Component {
   render() {
     return (
       <div className='jumbotron'>
-        <div><h1 className='jumbotron-header center' id='jumbotron-header'>{this.state.heading}</h1></div>
+        <div>
+          <h1 className='jumbotron-header center' id='jumbotron-header'>
+            {this.state.heading}
+          </h1>
+        </div>
         <div className='center'>
-          <Tooltip disableFocusListener disableTouchListener title='Minecraft 1.8+'>
-            <Button variant='contained' color='primary' className='jumbotron-button' component={Link} to='/play'>
+          <Tooltip
+            disableFocusListener
+            disableTouchListener
+            title='Minecraft 1.8+'
+          >
+            <Button
+              variant='contained'
+              color='primary'
+              className='jumbotron-button'
+              component={Link}
+              to='/play'
+            >
               Enter a match
             </Button>
           </Tooltip>
-          <div className='jumbotron-button-divider'></div>
-          <Tooltip disableFocusListener disableTouchListener title='View leaderboard'>
-            <Button variant='contained' color='secondary' className='jumbotron-button' component={Link} to='/leaderboard'>
+          <div className='jumbotron-button-divider' />
+          <Tooltip
+            disableFocusListener
+            disableTouchListener
+            title='View leaderboard'
+          >
+            <Button
+              variant='contained'
+              color='secondary'
+              className='jumbotron-button'
+              component={Link}
+              to='/leaderboard'
+            >
               View top players
             </Button>
           </Tooltip>

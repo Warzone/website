@@ -1,18 +1,62 @@
-.jumbotron { 
-  margin: 0; 
-  min-height: 300px; 
-  width: 100%; 
+.jumbotron {
+  margin: 0;
+  min-height: 300px;
+  width: 100%;
   margin-bottom: 20px;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient( rgba(123,123,123, 0.2), rgba(0,0,0.0, 0.2) ), url('https://i.imgur.com/Sc5Gkkn.jpg');
+  background-image: linear-gradient(
+      rgba(123, 123, 123, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('https://i.imgur.com/Sc5Gkkn.jpg');
 }
 
-.jumbotron-header { font-size: 75px; color: white; padding-top: 52px; user-select: none; font-weight: 500; }
-.jumbotron-button-divider { width: 15px; height: auto; display: inline-block; }
-.jumbotron-button { color: white !important; }
+.jumbotron-header {
+  font-size: 75px;
+  color: white;
+  padding-top: 52px;
+  user-select: none;
+  font-weight: 500;
+}
+.jumbotron-button-divider {
+  width: 15px;
+  height: auto;
+  display: inline-block;
+}
+.jumbotron-button {
+  color: white !important;
+}
 
-.jumbotron-no-overflow { overflow: hidden; }
+.jumbotron-no-overflow {
+  overflow: hidden;
+}
 
-.jumbotron-slide-in-right { overflow: hidden; animation: slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both; }
- @keyframes jumbotron-slide-in-right{ 0% {-webkit-transform: translateX(1000px); transform: translateX(1000px); opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px); transform: translateX(1000px); opacity: 0 } 100% { -webkit-transform: translateX(0); transform: translateX(0); opacity:1 } }
+.jumbotron-slide-in-right {
+  overflow: hidden;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes jumbotron-slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
