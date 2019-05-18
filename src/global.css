@@ -20,3 +20,6 @@ h6 {
 ul {
   padding-left: 0px;
 }
+.underline { text-decoration: underline; }
+.no-text-decoration { text-decoration: none; }
+.bold { font-weight: bold; }
