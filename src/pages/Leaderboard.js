@@ -57,7 +57,7 @@ class Leaderboard extends Component {
                     />
                     <strong>
                       <Link
-                        className='leaderboard-link'
+                        className='leaderboard-link white'
                         to={`/p/${player.name}`}
                       >
                         {player.name}
