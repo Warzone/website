@@ -5,18 +5,20 @@ import React, { Component } from "react";
 import Leaderboard from "./pages/Leaderboard";
 import Footer from "./components/Footer";
 import ServerRules from "./pages/ServerRules";
+import NotFound from "./pages/NotFound";
 
 class Router extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className='flex-wrapper'>
           <Navbar />
 
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/leaderboard" component={Leaderboard} />
             <Route exact path="/rules" component={ServerRules} />
+            <Route component={NotFound} />
           </Switch>
 
           <Footer />

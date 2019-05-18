@@ -17,6 +17,9 @@ h6 {
 .white {
   color: white !important;
 }
+.red {
+  color: crimson;
+}
 ul {
   padding-left: 0px;
 }
@@ -30,7 +33,7 @@ ul {
   font-weight: bold;
 }
 .page {
-  margin-top: 100px;
+  margin-top: 60px;
   top: 0;
   left: 0;
   width: 100%;
@@ -38,4 +41,12 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* We need to wrap the site with flexbox to make sure the footer is always at the bottom of the page */
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
