@@ -58,7 +58,7 @@ class Footer extends Component {
                   </Link>
                 </li>
                 <li className='right'>
-                  <Link className='footer-link' to='/privacy-policy'>
+                  <Link className='footer-link' to='/privacy'>
                     Privacy Policy
                   </Link>
                 </li>
