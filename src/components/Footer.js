@@ -45,7 +45,7 @@ class Footer extends Component {
             </div>
             <div className='col-4 center footer-logo-wrapper'>
               <img
-                src='img/warzone.svg'
+                src='/img/warzone.svg'
                 alt='Warzone logo'
                 className='footer-logo-image'
               />
