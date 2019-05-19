@@ -8,6 +8,7 @@ import ServerRules from './pages/ServerRules';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Play from './pages/Play';
+import ScrollToTopRoute from './components/ScrollToTopRoute';
 
 class Router extends Component {
   render() {
@@ -17,12 +18,12 @@ class Router extends Component {
           <Navbar />
 
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/leaderboard' component={Leaderboard} />
-            <Route exact path='/rules' component={ServerRules} />
-            <Route exact path='/privacy' component={PrivacyPolicy} />
-            <Route exact path='/play' component={Play} />
-            <Route component={NotFound} />
+            <ScrollToTopRoute exact path='/' component={Home} />
+            <ScrollToTopRoute exact path='/leaderboard' component={Leaderboard} />
+            <ScrollToTopRoute exact path='/rules' component={ServerRules} />
+            <ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
+            <ScrollToTopRoute exact path='/play' component={Play} />
+            <ScrollToTopRoute component={NotFound} />
           </Switch>
 
           <Footer />
