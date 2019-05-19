@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import ServerRules from './pages/ServerRules';
 import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Play from './pages/Play';
 
 class Router extends Component {
   render() {
@@ -20,6 +21,7 @@ class Router extends Component {
             <Route exact path='/leaderboard' component={Leaderboard} />
             <Route exact path='/rules' component={ServerRules} />
             <Route exact path='/privacy' component={PrivacyPolicy} />
+            <Route exact path='/play' component={Play} />
             <Route component={NotFound} />
           </Switch>
 

@@ -5,7 +5,14 @@ import '../styles/components/footer.css';
 class Footer extends Component {
   render() {
     return (
-      <div className='footer'>
+      <div
+        // Add .play-footer if on Play page to remove the margin top from the footer
+        className={`footer${
+          window.location.pathname.toLowerCase() === '/play'
+            ? ' play-footer'
+            : ''
+        }`}
+      >
         <div className='container'>
           <div className='row'>
             <div className='col-4'>

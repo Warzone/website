@@ -1,0 +1,47 @@
+.play-background {
+  background: rgb(47, 49, 54) url(https://i.imgur.com/rMB613Q.png) center;
+  min-height: 100% !important;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  padding-top: 10%;
+}
+.play {
+  margin-top: 0px;
+}
+.play-footer {
+  margin-top: 0px;
+}
+
+.play > div > div > h2 > button {
+  color: white;
+}
+.play > div > div > h2 {
+  font-weight: 500;
+}
+.play > div > div > h3 {
+  font-weight: 250;
+}
+.play-highlight {
+  background-color: #1e2c35;
+  padding: 4px;
+}
+/* Make it not look like a normal button */
+.play-connect-button {
+  border: 0;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  color: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
