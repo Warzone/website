@@ -4,7 +4,7 @@ This site is built using ReactJS. This ties with Warzone's [TGM](https://github.
 
 ## Website Setup
 
-1. Get the [api](https://github.com/WarzoneMC/api and a server connected to the api running the [TGM](https://github.com/WarzoneMC/Warzone) plugin setup and running correctly. The api is what the website communicates with to get the stats of the players.
+1. Get the [api](https://github.com/WarzoneMC/api) and a server connected to the api running the [TGM](https://github.com/WarzoneMC/Warzone) plugin setup and running correctly. The api is what the website communicates with to get the stats of the players.
 
 2. Make sure you have node.js setup on the server. Type `npm install` in the root folder of the node app to install all of the website's required dependencies.
 
