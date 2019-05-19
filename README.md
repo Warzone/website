@@ -1,16 +1,29 @@
 ## Website
 
-This site is built using ReactJS. This ties with Warzone's [TGM](https://github.com/WarzoneMC/Warzone) project to display multiple leaderboards, individual players stats, as well as detailed stats on each game played and the in-depth stats of each game.
+Warzone's website is built with React. This ties with Warzone's [TGM](https://github.com/WarzoneMC/Warzone) project to display information like player leaderboards, individual player stats, as well as detailed match info.
 
-## Website Setup
+## Contributing
 
-1. Get the [api](https://github.com/WarzoneMC/api) and a server connected to the api running the [TGM](https://github.com/WarzoneMC/Warzone) plugin setup and running correctly. The api is what the website communicates with to get the stats of the players.
+### Setup
 
-2. Make sure you have node.js setup on the server. Type `npm install` in the root folder of the node app to install all of the website's required dependencies.
+1. Setup the [API](https://github.com/WarzoneMC/api) and a server connected to the API running the [TGM](https://github.com/WarzoneMC/Warzone) plugin setup and running correctly. The API is what the website communicates with to get info like player stats and match info.
 
-3. Create a `config.json` and include all needed information such as the port to run the webserver on.
+2. Make sure you have Node.js installed on the server. Run `yarn` (or `npm install`) to install all of the dependencies.
 
-4. Run the app by typing `node app.js` in the `src` folder or by typing `pm2 start app.js` if you are using PM2.
+3. Create a `config.json` **in the src/ directory** that looks like this:
+
+```json
+{
+  "API_BASE": "YOUR_API_URL"
+}
+```
+
+4. Start the development server with `yarn start` (or `npm run start`). You can also build the project with `yarn build` (or `npm run build`).
+
+### Developer Notes
+
+- We use [Prettier](https://prettier.io/). If you want to setup Prettier locally make sure to use our `.prettierrc`. This is optional as we have a GitHub bot that formats commits if they're not already formatted correctly.
+- The site was not built with self-hosting in mind. This means important links like the Discord server and store are hardcoded at the moment.
 
 ## Other Contributors
 
