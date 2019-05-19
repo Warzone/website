@@ -7,6 +7,7 @@ class PrivacyPolicy extends Component {
         <div className='container'>
           <div>
             <h1>Privacy Policy</h1>
+            <span className='bold'>This page was last updated on May 19th, 2019 (minor grammatical changes).</span>
             <p>
               By using our (Warzone) Service, information may be collected
               and/or stored in numerous ways:
