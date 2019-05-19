@@ -19,7 +19,11 @@ class Router extends Component {
 
           <Switch>
             <ScrollToTopRoute exact path='/' component={Home} />
-            <ScrollToTopRoute exact path='/leaderboard' component={Leaderboard} />
+            <ScrollToTopRoute
+              exact
+              path='/leaderboard'
+              component={Leaderboard}
+            />
             <ScrollToTopRoute exact path='/rules' component={ServerRules} />
             <ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
             <ScrollToTopRoute exact path='/play' component={Play} />
