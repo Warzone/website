@@ -11,5 +11,5 @@ This is a complete rewrite of the Warzone website in React. This README will be 
 - [ ] Player info page
 - [x] Leaderboards page
 - [ ] Play page
-- [ ] Privacy policy page
+- [x] Privacy policy page
 - [x] Rules page
