@@ -7,6 +7,7 @@ class ServerRules extends Component {
         <div className='container'>
           <div>
             <h1>Server Rules</h1>
+            <span className='bold'>This page was last updated on May 18th, 2019 (minor grammatical changes).</span>
             <p>
               Failure to follow any of the rules listed on this page may result
               in a punishment on your Minecraft or Discord account. If you have
