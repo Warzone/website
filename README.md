@@ -11,6 +11,7 @@ Warzone's website is built with React. This ties with Warzone's [TGM](https://gi
 2. Make sure you have Node.js installed on the server. Run `yarn` (or `npm install`) to install all of the dependencies.
 
 3. Create a `config.json` **in the src/ directory** that looks like this:
+
 ```json
 {
   "API_BASE": "YOUR_API_URL"
@@ -20,6 +21,7 @@ Warzone's website is built with React. This ties with Warzone's [TGM](https://gi
 4. Start the development server with `yarn start` (or `npm run start`). You can also build the project with `yarn build` (or `npm run build`).
 
 ### Developer Notes
+
 - We use [Prettier](https://prettier.io/). If you want to setup Prettier locally make sure to use our `.prettierrc`. This is optional as we have a GitHub bot that formats commits if they're not already formatted correctly.
 - The site was not built with self-hosting in mind. This means important links like the Discord server and store are hardcoded at the moment.
 
