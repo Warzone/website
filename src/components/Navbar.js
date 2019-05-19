@@ -13,7 +13,7 @@ class Navbar extends Component {
           <div className='container nav-container'>
             <img
               className='nav-logo'
-              src='img/warzone.svg'
+              src='/img/warzone.svg'
               alt='Warzone logo'
             />
             <Typography variant='h6' color='inherit' className='nav-grow'>
