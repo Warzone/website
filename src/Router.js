@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import React, { Component } from 'react';
@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Play from './pages/Play';
 import ScrollToTopRoute from './components/ScrollToTopRoute';
+import MatchInfo from './pages/MatchInfo';
 
 class Router extends Component {
   render() {
@@ -27,6 +28,7 @@ class Router extends Component {
             <ScrollToTopRoute exact path='/rules' component={ServerRules} />
             <ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
             <ScrollToTopRoute exact path='/play' component={Play} />
+            <ScrollToTopRoute exact path='/m/:mid' component={MatchInfo} />
             <ScrollToTopRoute component={NotFound} />
           </Switch>
 

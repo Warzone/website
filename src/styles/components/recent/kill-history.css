@@ -5,10 +5,10 @@
   overflow-y: hidden;
 }
 .kill-history-table {
-  min-width: 700;
+  /* min-width: 700px; */
 }
 .kill-history-table-cell {
-  text-align: center !important;
+  /* text-align: center !important; */
   color: #cacaca !important;
   padding: 0 0 0 !important;
   font-size: 14px !important;

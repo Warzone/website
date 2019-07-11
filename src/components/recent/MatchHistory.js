@@ -32,7 +32,7 @@ class MatchHistory extends Component {
                   >
                     <Button
                       component={Link}
-                      to={`/match/${match.match._id}`}
+                      to={`/m/${match.match._id}`}
                       variant='contained'
                       className='match-history-view-button white'
                     >

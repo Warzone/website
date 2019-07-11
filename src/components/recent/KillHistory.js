@@ -24,7 +24,7 @@ class KillHistory extends Component {
               {this.props.kills.map((kill) => (
                 <TableRow key={kill._id}>
                   <TableCell
-                    className='kill-history-table-cell'
+                    className='kill-history-table-cell center'
                     component='th'
                     scope='row'
                   >
@@ -40,7 +40,7 @@ class KillHistory extends Component {
                       alt='Player head'
                     />
                   </TableCell>
-                  <TableCell className='kill-history-table-cell'>
+                  <TableCell className='kill-history-table-cell center'>
                     <span className='bold'>
                       {!kill.killerLoaded ? (
                         'Wilderness'
@@ -61,7 +61,7 @@ class KillHistory extends Component {
                       <span className='bold'>{kill.playerLoaded.name}</span>
                     </Link>
                   </TableCell>
-                  <TableCell className='kill-history-table-cell'>
+                  <TableCell className='kill-history-table-cell center'>
                     <img
                       className='kill-history-player-head'
                       src={`https://crafatar.com/avatars/${
