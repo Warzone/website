@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Clock from '@material-ui/icons/Timer';
-import matchJson from '../match.json';
 import '../styles/pages/match-info.css';
+import { config } from '../';
 // import MatchTeams from '../components/match/MatchTeams';
 
 class MatchInfo extends Component {
@@ -16,11 +16,10 @@ class MatchInfo extends Component {
   };
 
   async componentDidMount() {
-    // let matchJson, matchRes;
-    // matchRes = await fetch(`${config.API_BASE}/mc/match/${this.props.match.params.mid}`);
-    // if (!matchRes.ok) return console.error('Error fetching match: ' + matchRes.status);
-    // matchJson = await matchRes.json();
-    // this.setState({ match: matchJson });
+    let matchJson, matchRes;
+    matchRes = await fetch(`${config.API_BASE}/mc/match/${this.props.match.params.mid}`);
+    if (!matchRes.ok) return console.error('Error fetching match: ' + matchRes.status);
+    matchJson = await matchRes.json();
     this.setState({ match: matchJson });
     console.log(matchJson);
   }
