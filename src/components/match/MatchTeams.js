@@ -14,7 +14,11 @@ class MatchTeams extends Component {
             <TableBody>
               {match.match.teamMappings.map((player) => (
                 <TableRow key={player.player}>
-                  <TableCell component='th' scope='row' className='kill-history-table-cell'>
+                  <TableCell
+                    component='th'
+                    scope='row'
+                    className='kill-history-table-cell'
+                  >
                     <span>{getPlayerById(player.player).name}</span>
                   </TableCell>
                 </TableRow>
