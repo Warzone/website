@@ -1,0 +1,29 @@
+.player-info > div > div > div > div > h3 {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.player-info > div > div > div > div > h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.player-info > div > div > div > div:nth-child(3) > h1 {
+  float: right;
+  padding-top: 5%;
+}
+
+.player-name {
+	padding: 2vh !important;
+	font-size: 28px;
+	vertical-align: middle !important;
+	justify-self: center;
+	align-self: center;
+}
+
+.player-info-stats {
+	background-color: #28282a;
+	box-shadow: 1px 1px 1px black;
+}

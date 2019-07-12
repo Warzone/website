@@ -10,6 +10,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Play from './pages/Play';
 import ScrollToTopRoute from './components/ScrollToTopRoute';
 import MatchInfo from './pages/MatchInfo';
+import PlayerInfo from './pages/PlayerInfo';
 
 class Router extends Component {
   render() {
@@ -29,6 +30,7 @@ class Router extends Component {
             <ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
             <ScrollToTopRoute exact path='/play' component={Play} />
             <ScrollToTopRoute exact path='/m/:mid' component={MatchInfo} />
+            <ScrollToTopRoute exact path='/p/:pid' component={PlayerInfo} />
             <ScrollToTopRoute component={NotFound} />
           </Switch>
 
