@@ -16,14 +16,14 @@
 }
 
 .player-name {
-	padding: 2vh !important;
-	font-size: 28px;
-	vertical-align: middle !important;
-	justify-self: center;
-	align-self: center;
+  padding: 2vh !important;
+  font-size: 28px;
+  vertical-align: middle !important;
+  justify-self: center;
+  align-self: center;
 }
 
 .player-info-stats {
-	background-color: #28282a;
-	box-shadow: 1px 1px 1px black;
+  background-color: #28282a;
+  box-shadow: 1px 1px 1px black;
 }
