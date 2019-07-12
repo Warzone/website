@@ -65,9 +65,7 @@ class PlayerInfo extends Component {
                       </span>
                     </div>
                     <div className='col-2 center'>
-                      <h1 className='no-padding-margin'>
-                        {player.user.wins}
-                      </h1>
+                      <h1 className='no-padding-margin'>{player.user.wins}</h1>
                       <span style={{ fontSize: '15px', textAlign: 'center' }}>
                         Wins
                       </span>
