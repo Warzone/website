@@ -17,8 +17,11 @@ class MatchInfo extends Component {
 
   async componentDidMount() {
     let matchJson, matchRes;
-    matchRes = await fetch(`${config.API_BASE}/mc/match/${this.props.match.params.mid}`);
-    if (!matchRes.ok) return console.error('Error fetching match: ' + matchRes.status);
+    matchRes = await fetch(
+      `${config.API_BASE}/mc/match/${this.props.match.params.mid}`
+    );
+    if (!matchRes.ok)
+      return console.error('Error fetching match: ' + matchRes.status);
     matchJson = await matchRes.json();
     this.setState({ match: matchJson });
     console.log(matchJson);
