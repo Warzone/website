@@ -43,15 +43,17 @@ class PlayerInfo extends Component {
               <PlayerStatsRow player={player} />
               <div class='row'>
                 <div class='col-6'>
-									<div>Recent Kills</div>
+                  <div>Recent Kills</div>
                   <KillHistory
-                    kills={player.deaths.sort((a, b) => a.date - b.date).reverse()}
+                    kills={player.deaths
+                      .sort((a, b) => a.date - b.date)
+                      .reverse()}
                   />
                 </div>
                 <div class='col-6'>
-									<div>Recent Matches</div>
-									<MatchHistory matches={this.state.recentMatches} />
-								</div>
+                  <div>Recent Matches</div>
+                  <MatchHistory matches={this.state.recentMatches} />
+                </div>
               </div>
             </div>
           )}
