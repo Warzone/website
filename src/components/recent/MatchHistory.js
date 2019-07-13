@@ -47,7 +47,8 @@ class MatchHistory extends Component {
                     {match.loadedMap.name}
                   </TableCell>
                   <TableCell className='match-history-table-cell' align='left'>
-									<Timer className='match-history-table-cell-icon' />{' '}{match.timeElapsed}
+                    <Timer className='match-history-table-cell-icon' />{' '}
+                    {match.timeElapsed}
                   </TableCell>
                   <TableCell className='match-history-table-cell' align='left'>
                     {match.matchSize}{' '}
