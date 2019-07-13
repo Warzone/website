@@ -16,11 +16,11 @@
 }
 
 .player-name {
-	padding: 2vh !important;
-	font-size: 28px;
-	vertical-align: middle !important;
-	justify-self: center;
-	align-self: center;
+  padding: 2vh !important;
+  font-size: 28px;
+  vertical-align: middle !important;
+  justify-self: center;
+  align-self: center;
 }
 
 .player-info-stats {
