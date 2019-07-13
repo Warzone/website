@@ -6,6 +6,7 @@ import TableCell from '@material-ui/core/TableCell';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import TableRow from '@material-ui/core/TableRow';
 import People from '@material-ui/icons/People';
+import Timer from '@material-ui/icons/Timer';
 import { Link } from 'react-router-dom';
 import '../../styles/components/recent/match-history.css';
 
@@ -46,7 +47,7 @@ class MatchHistory extends Component {
                     {match.loadedMap.name}
                   </TableCell>
                   <TableCell className='match-history-table-cell' align='left'>
-                    {match.timeElapsed}
+									<Timer className='match-history-table-cell-icon' />{' '}{match.timeElapsed}
                   </TableCell>
                   <TableCell className='match-history-table-cell' align='left'>
                     {match.matchSize}{' '}
