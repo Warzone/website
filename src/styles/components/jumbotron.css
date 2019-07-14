@@ -9,7 +9,7 @@
       rgba(123, 123, 123, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('https://i.imgur.com/Sc5Gkkn.jpg');
+    url('/img/jumbotron-bg.webp');
 }
 
 .jumbotron-header {
