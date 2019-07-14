@@ -1,9 +1,9 @@
 {
-  "tabWidth": 2,
-  "useTabs": true,
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "none",
-  "arrowParens": "always",
-  "jsxSingleQuote": true
+	"tabWidth": 2,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"arrowParens": "always",
+	"jsxSingleQuote": true
 }
