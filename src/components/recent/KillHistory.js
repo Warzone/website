@@ -35,7 +35,7 @@ class KillHistory extends Component {
 													? `https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838`
 													: `https://crafatar.com/avatars/${
 															kill.killerLoaded.uuid
-														}`
+													  }`
 											}
 											alt='Player head'
 										/>
