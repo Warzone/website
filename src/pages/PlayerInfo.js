@@ -7,13 +7,19 @@ import KillHistory from '../components/recent/KillHistory';
 import MatchHistory from '../components/recent/MatchHistory';
 
 class PlayerInfo extends Component {
+  constructor() {
+    super();
+
+    this.componentWillReceiveProps = this.componentWillReceiveProps.bind(this);
+  }
+
   state = {
     player: null,
     recentMatches: []
   };
 
-  async componentDidMount() {
-    let playerName = this.props.match.params.pid;
+  async componentDidMount(nextProps = { match: { params: { pid: null } } }) {
+    let playerName = nextProps.match.params.pid || this.props.match.params.pid;
     let playerJson, playerRes;
     playerRes = await fetch(`${config.API_BASE}/mc/player/${playerName}`);
     if (!playerRes.ok)
@@ -26,6 +32,11 @@ class PlayerInfo extends Component {
     matchRes = await fetch(`${config.API_BASE}/mc/match/latest/${playerName}`);
     matchJson = await matchRes.json();
     this.setState({ recentMatches: matchJson });
+  }
+
+  async componentWillReceiveProps(nextProps) {
+    this.setState({ player: null });
+    await this.componentDidMount(nextProps);
   }
 
   render() {
@@ -41,8 +52,8 @@ class PlayerInfo extends Component {
           {player && (
             <div>
               <PlayerStatsRow player={player} />
-              <div class='row'>
-                <div class='col-6'>
+              <div className='row'>
+                <div className='col-6'>
                   <div>Recent Kills</div>
                   <KillHistory
                     kills={player.deaths
@@ -50,7 +61,7 @@ class PlayerInfo extends Component {
                       .reverse()}
                   />
                 </div>
-                <div class='col-6'>
+                <div className='col-6'>
                   <div>Recent Matches</div>
                   <MatchHistory matches={this.state.recentMatches} />
                 </div>
