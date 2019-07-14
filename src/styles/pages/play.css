@@ -1,5 +1,5 @@
 .play-background {
-  background: rgb(47, 49, 54) url(https://i.imgur.com/rMB613Q.png) center;
+  background: rgb(47, 49, 54) url('/img/play-bg.webp') center;
   min-height: 100% !important;
   background-size: cover;
   height: 100vh;
