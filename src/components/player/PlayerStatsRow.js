@@ -32,8 +32,7 @@ class PlayerStatsRow extends Component {
             </div>
             <div className='col-2 center'>
               <h1 className='no-padding-margin'>
-                {Math.round((player.user.kills / player.user.deaths) * 100) /
-                  100}
+                {player.user.kdr}
               </h1>
               <span className='player-info-stat-title'>K/D</span>
             </div>
@@ -47,8 +46,7 @@ class PlayerStatsRow extends Component {
             </div>
             <div className='col-2 center'>
               <h1 className='no-padding-margin'>
-                {Math.round((player.user.wins / player.user.losses) * 100) /
-                  100}
+                {player.user.wlr}
               </h1>
               <span className='player-info-stat-title'>W/L</span>
             </div>

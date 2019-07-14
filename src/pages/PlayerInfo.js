@@ -5,6 +5,7 @@ import '../styles/pages/player-info.css';
 import PlayerStatsRow from '../components/player/PlayerStatsRow';
 import KillHistory from '../components/recent/KillHistory';
 import MatchHistory from '../components/recent/MatchHistory';
+import NotFound from './NotFound';
 
 class PlayerInfo extends Component {
   constructor() {
@@ -15,7 +16,8 @@ class PlayerInfo extends Component {
 
   state = {
     player: null,
-    recentMatches: []
+    recentMatches: [],
+    notFound: false
   };
 
   async componentDidMount(nextProps = { match: { params: { pid: null } } }) {
@@ -25,6 +27,35 @@ class PlayerInfo extends Component {
     if (!playerRes.ok)
       return console.error('Error fetching player: ' + playerRes.status);
     playerJson = await playerRes.json();
+    if (playerJson.notFound) return this.setState({ notFound: true });
+
+    // Handle edge cases like 0 losses, 0 wins, 0 kills, 0 deaths
+    if (playerJson.deaths === 0) {
+      playerJson.user.kdr = playerJson.user.kills;
+    } else {
+      playerJson.user.kdr = (playerJson.user.kills / playerJson.deaths).toFixed(
+        2
+      );
+    }
+    if (!playerJson.user.wins) playerJson.user.wins = 0;
+    if (!playerJson.user.kills) playerJson.user.kills = 0;
+    if (!playerJson.user.deaths) {
+      playerJson.user.deaths = 0;
+      playerJson.user.kdr = playerJson.user.kills;
+    } else {
+      playerJson.user.kdr = (
+        playerJson.user.kills / playerJson.user.deaths
+      ).toFixed(2);
+    }
+    if (!playerJson.user.losses) {
+      playerJson.user.losses = 0;
+      playerJson.user.wlr = playerJson.user.wins;
+    } else {
+      playerJson.user.wlr = (
+        playerJson.user.wins / playerJson.user.losses
+      ).toFixed(2);
+    }
+
     this.setState({ player: playerJson });
     console.log(playerJson);
 
@@ -40,11 +71,12 @@ class PlayerInfo extends Component {
   }
 
   render() {
-    let { player } = this.state;
+    let { player, notFound } = this.state;
     return (
       <div className='player-info page'>
         <div className='container'>
-          {!player && (
+          {notFound && <NotFound />}
+          {!player && !notFound && (
             <div className='center'>
               <CircularProgress />
             </div>
