@@ -31,9 +31,7 @@ class PlayerStatsRow extends Component {
               <span className='player-info-stat-title'>Deaths</span>
             </div>
             <div className='col-2 center'>
-              <h1 className='no-padding-margin'>
-                {player.user.kdr}
-              </h1>
+              <h1 className='no-padding-margin'>{player.user.kdr}</h1>
               <span className='player-info-stat-title'>K/D</span>
             </div>
             <div className='col-2 center'>
@@ -45,9 +43,7 @@ class PlayerStatsRow extends Component {
               <span className='player-info-stat-title'>Losses</span>
             </div>
             <div className='col-2 center'>
-              <h1 className='no-padding-margin'>
-                {player.user.wlr}
-              </h1>
+              <h1 className='no-padding-margin'>{player.user.wlr}</h1>
               <span className='player-info-stat-title'>W/L</span>
             </div>
           </div>
