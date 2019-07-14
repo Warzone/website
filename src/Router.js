@@ -13,32 +13,32 @@ import MatchInfo from './pages/MatchInfo';
 import PlayerInfo from './pages/PlayerInfo';
 
 class Router extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div className='flex-wrapper'>
-          <Navbar />
+	render() {
+		return (
+			<BrowserRouter>
+				<div className='flex-wrapper'>
+					<Navbar />
 
-          <Switch>
-            <ScrollToTopRoute exact path='/' component={Home} />
-            <ScrollToTopRoute
-              exact
-              path='/leaderboard'
-              component={Leaderboard}
-            />
-            <ScrollToTopRoute exact path='/rules' component={ServerRules} />
-            <ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
-            <ScrollToTopRoute exact path='/play' component={Play} />
-            <ScrollToTopRoute exact path='/m/:mid' component={MatchInfo} />
-            <ScrollToTopRoute exact path='/p/:pid' component={PlayerInfo} />
-            <ScrollToTopRoute component={NotFound} />
-          </Switch>
+					<Switch>
+						<ScrollToTopRoute exact path='/' component={Home} />
+						<ScrollToTopRoute
+							exact
+							path='/leaderboard'
+							component={Leaderboard}
+						/>
+						<ScrollToTopRoute exact path='/rules' component={ServerRules} />
+						<ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
+						<ScrollToTopRoute exact path='/play' component={Play} />
+						<ScrollToTopRoute exact path='/m/:mid' component={MatchInfo} />
+						<ScrollToTopRoute exact path='/p/:pid' component={PlayerInfo} />
+						<ScrollToTopRoute component={NotFound} />
+					</Switch>
 
-          <Footer />
-        </div>
-      </BrowserRouter>
-    );
-  }
+					<Footer />
+				</div>
+			</BrowserRouter>
+		);
+	}
 }
 
 export default Router;

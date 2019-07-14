@@ -1,36 +1,36 @@
 .nav-grow {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .nav {
-  background-color: #282a2d !important;
+	background-color: #282a2d !important;
 }
 
 .nav-logo {
-  height: auto;
-  width: 25px;
-  float: left;
-  margin-right: 10px;
+	height: auto;
+	width: 25px;
+	float: left;
+	margin-right: 10px;
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
 .nav-button {
-  margin-left: auto;
-  text-transform: none;
-  text-decoration: none;
-  margin-right: 20px;
-  font-weight: normal;
-  outline: none;
+	margin-left: auto;
+	text-transform: none;
+	text-decoration: none;
+	margin-right: 20px;
+	font-weight: normal;
+	outline: none;
 }
 
 .nav-link {
-  text-decoration: inherit;
-  font-size: 24px;
-  font-weight: 600;
-  outline: none;
+	text-decoration: inherit;
+	font-size: 24px;
+	font-weight: 600;
+	outline: none;
 }

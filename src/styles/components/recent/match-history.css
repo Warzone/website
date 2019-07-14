@@ -1,23 +1,23 @@
 .match-history {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  color: #cacaca;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	color: #cacaca;
 }
 .match-history-table {
-  min-width: 700;
+	min-width: 700;
 }
 .match-history-table-cell {
-  color: #cacaca !important;
-  padding: 0 0 0 !important;
-  font-size: inherit !important;
-  border-bottom: 0 !important;
-  border-top: 1px solid #4a4949 !important;
+	color: #cacaca !important;
+	padding: 0 0 0 !important;
+	font-size: inherit !important;
+	border-bottom: 0 !important;
+	border-top: 1px solid #4a4949 !important;
 }
 .match-history-table-cell-icon {
-  vertical-align: bottom;
+	vertical-align: bottom;
 }
 .match-history-view-button {
-  background-color: #9148d3 !important;
-  padding-right: 0px;
+	background-color: #9148d3 !important;
+	padding-right: 0px;
 }

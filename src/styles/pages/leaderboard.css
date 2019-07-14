@@ -1,21 +1,21 @@
 .leaderboard-table-cell {
-  color: #cacaca !important;
-  font-size: 14px !important;
-  border-bottom: 0 !important;
-  border-top: 1px solid #4a4949 !important;
-  padding: 8px;
+	color: #cacaca !important;
+	font-size: 14px !important;
+	border-bottom: 0 !important;
+	border-top: 1px solid #4a4949 !important;
+	padding: 8px;
 }
 
 .leaderboard-player-head {
-  padding-right: 15px !important;
-  width: 32px;
-  vertical-align: middle;
+	padding-right: 15px !important;
+	width: 32px;
+	vertical-align: middle;
 }
 
 .leaderboard-rank {
-  font-size: 20px !important;
+	font-size: 20px !important;
 }
 
 .leaderboard > .container > h3 {
-  padding-bottom: 2%;
+	padding-bottom: 2%;
 }
