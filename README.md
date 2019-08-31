@@ -14,7 +14,7 @@ Warzone's website is built with React. This ties in with Warzone's [TGM](https:/
 
 ```json
 {
-  "API_BASE": "YOUR_API_URL"
+	"API_BASE": "YOUR_API_URL"
 }
 ```
 
