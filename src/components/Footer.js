@@ -36,7 +36,7 @@ class Footer extends Component {
 								<li className='left'>
 									<a
 										className='footer-link'
-										href='https://tgmwarzone.tebex.io/'
+										href='https://warz.one/store'
 									>
 										Store
 									</a>
