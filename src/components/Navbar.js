@@ -24,7 +24,7 @@ class Navbar extends Component {
 						<Link to='/play' className='nav-button white'>
 							Play
 						</Link>
-						<a href='https://tgmwarzone.tebex.io/' className='nav-button white'>
+						<a href='https://warz.one/store' className='nav-button white'>
 							Store
 						</a>
 						<a href='https://discord.gg/uCxjNhS' className='nav-button white'>
