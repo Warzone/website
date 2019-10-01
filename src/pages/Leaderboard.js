@@ -52,7 +52,7 @@ class Leaderboard extends Component {
 									>
 										<img
 											className='leaderboard-player-head'
-											src={`https://crafatar.com/avatars/${player.uuid}`}
+											src={`https://crafatar.com/avatars/${player.uuid}?size=32`}
 											alt='Player head'
 										/>
 										<span className='bold'>

@@ -32,10 +32,10 @@ class KillHistory extends Component {
 											className='kill-history-player-head'
 											src={
 												!kill.killerLoaded
-													? `https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838`
+													? `https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32`
 													: `https://crafatar.com/avatars/${
 															kill.killerLoaded.uuid
-													  }`
+													  }?size=32`
 											}
 											alt='Player head'
 										/>
@@ -66,7 +66,7 @@ class KillHistory extends Component {
 											className='kill-history-player-head'
 											src={`https://crafatar.com/avatars/${
 												kill.playerLoaded.uuid
-											}`}
+											}?size=32`}
 											alt='Player head'
 										/>
 									</TableCell>
