@@ -13,12 +13,17 @@ class KillHistory extends Component {
 			<div className='kill-history'>
 				<h4>{this.props.title}</h4>
 				{/* <hr /> */}
-				{this.props.kills.length === 0 && (
+				{!this.props.kills && (
+					<div className='center'>
+						<span className='red'>No kills to show :(</span>
+					</div>
+				)}
+				{this.props.kills && this.props.kills.length === 0 && (
 					<div className='center'>
 						<CircularProgress />
 					</div>
 				)}
-				{this.props.kills.length > 0 && (
+				{this.props.kills && this.props.kills.length > 0 && (
 					<Table className='kill-history-table'>
 						<TableBody>
 							{this.props.kills.map((kill) => (

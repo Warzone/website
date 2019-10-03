@@ -62,6 +62,7 @@ class PlayerInfo extends Component {
 		let matchRes, matchJson;
 		matchRes = await fetch(`${config.API_BASE}/mc/match/latest/${playerName}`);
 		matchJson = await matchRes.json();
+		if (matchJson.length === 0) return this.setState({ recentMatches: null });
 		this.setState({ recentMatches: matchJson });
 	}
 
@@ -88,7 +89,7 @@ class PlayerInfo extends Component {
 								<div className='col-6'>
 									<div>Recent Kills</div>
 									<KillHistory
-										kills={player.deaths
+										kills={player.deaths.length === 0 ? null : player.deaths
 											.sort((a, b) => a.date - b.date)
 											.reverse()}
 									/>

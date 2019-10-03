@@ -16,12 +16,17 @@ class MatchHistory extends Component {
 			<div className='match-history'>
 				<h4>{this.props.title}</h4>
 				{/* <hr /> */}
-				{this.props.matches.length === 0 && (
+				{!this.props.matches && (
+					<div className='center'>
+						<span className='red'>No matches to show :(</span>
+					</div>
+				)}
+				{this.props.matches && this.props.matches.length === 0 && (
 					<div className='center'>
 						<CircularProgress />
 					</div>
 				)}
-				{this.props.matches.length > 0 && (
+				{this.props.matches && this.props.matches.length > 0 && (
 					<Table className='match-history-table'>
 						<TableBody>
 							{this.props.matches.map((match) => (
