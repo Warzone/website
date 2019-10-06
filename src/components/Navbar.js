@@ -27,7 +27,7 @@ class Navbar extends Component {
 						<a href='https://warz.one/store' className='nav-button white'>
 							Store
 						</a>
-						<a href='https://discord.gg/uCxjNhS' className='nav-button white'>
+						<a href='https://warz.one/discord' className='nav-button white'>
 							Discord
 						</a>
 						<Link to='/leaderboard' className='nav-button white'>
