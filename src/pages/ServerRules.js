@@ -112,7 +112,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Keep all names, profile pictures, and chats appropriate. We do
-								now allow any NSFW content on our services.
+								not allow any NSFW content on our services.
 							</li>
 							<li>
 								Use of voice changers/soundboards is not allowed. Additionally,
