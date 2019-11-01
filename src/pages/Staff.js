@@ -28,7 +28,9 @@ export default function Staff() {
 				rank.name = rank.name.charAt(0).toUpperCase() + rank.name.slice(1);
 
 				rank.players = [];
-				let res = await fetch(`${config.API_BASE}/mc/rank/${rank.name}/players`);
+				let res = await fetch(
+					`${config.API_BASE}/mc/rank/${rank.name}/players`
+				);
 				let json = await res.json();
 				rank.players = json.users;
 
