@@ -107,6 +107,14 @@ export default function Staff() {
 							))}
 						</div>
 					))}
+
+					<p>
+						To get in contact with staff, please join{' '}
+						<a className='bold white' href='https://warz.one/discord'>
+							our Discord server
+						</a>
+						.
+					</p>
 				</div>
 			</div>
 		</div>
