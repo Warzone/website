@@ -28,9 +28,9 @@ export default function Staff() {
 				rank.name = rank.name.charAt(0).toUpperCase() + rank.name.slice(1);
 
 				rank.players = [];
-				rank.players = await (await (await fetch(
-					`${config.API_BASE}/mc/rank/${rank.name}/players`
-				)).json()).users;
+				let res = await fetch(`${config.API_BASE}/mc/rank/${rank.name}/players`);
+				let json = await res.json();
+				rank.players = json.users;
 
 				if (rank.players[i] !== []) {
 					rank.playersLoaded = true;
