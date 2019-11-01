@@ -75,7 +75,13 @@ export default function Staff() {
 						<div class='row'>
 							<h2>
 								{rank.name}{' '}
-								<small style={{ fontSize: '13px', color: 'white', userSelect: 'none' }}>
+								<small
+									style={{
+										fontSize: '13px',
+										color: 'white',
+										userSelect: 'none'
+									}}
+								>
 									{rank.players.length}
 								</small>
 							</h2>
