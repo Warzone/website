@@ -21,8 +21,8 @@ export default function Staff() {
 			ranksJson = await ranksRes.json();
 			if (ranksJson.notFound) return setNotFound(true);
 
-			ranksJson = ranksJson.filter(function(rank) {
-				return rank.staff !== false;
+			ranksJson = ranksJson.filter((rank) => {
+				return !!rank.staff;
 			});
 
 			ranksJson.reverse().map(async (rank, i) => {
@@ -35,9 +35,7 @@ export default function Staff() {
 				let json = await res.json();
 				rank.players = json.users;
 
-				if (rank.players[i] !== []) {
-					rank.playersLoaded = true;
-				}
+				if (rank.players[i] !== []) rank.playersLoaded = true;
 
 				if (ranksJson.every((e) => e.hasOwnProperty('playersLoaded'))) {
 					setStaff(ranksJson);
