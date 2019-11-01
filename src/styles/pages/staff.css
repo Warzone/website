@@ -1,0 +1,7 @@
+.staff-player-image {
+	transition: transform 0.2s;
+}
+
+.staff-player-image:hover {
+	transform: scale(1.03);
+}

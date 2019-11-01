@@ -4,6 +4,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { Link } from 'react-router-dom';
 import NotFound from './NotFound';
 import { config } from '../';
+import '../styles/pages/staff.css';
 
 export default function Staff() {
 	const [staff, setStaff] = useState([]);
@@ -86,6 +87,7 @@ export default function Staff() {
 											disableTouchListener
 											placement='top'
 											title={player.name}
+											className='staff-player-image'
 										>
 											<img
 												class='img-rounded'
