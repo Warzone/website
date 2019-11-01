@@ -139,7 +139,7 @@ class ServerRules extends Component {
 						<span className='underline'>appeal a punishment</span> or{' '}
 						<span className='underline'>report a player</span>, please post in{' '}
 						<a
-							href='https://discord.gg/uCxjNhS'
+							href='https://warz.one/discord'
 							className='white bold no-text-decoration'
 						>
 							our Discord server

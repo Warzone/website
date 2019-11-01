@@ -79,7 +79,7 @@ class PrivacyPolicy extends Component {
 						<h2>Contact Us</h2>
 						If you have any questions or wish to seek clarification about our
 						Privacy Policy, please contact a staff member in{' '}
-						<a className='bold white' href='https://discord.gg/uCxjNhS'>
+						<a className='bold white' href='https://warz.one/discord'>
 							our Discord server
 						</a>
 						.
