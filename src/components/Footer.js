@@ -34,6 +34,11 @@ class Footer extends Component {
 									</Link>
 								</li>
 								<li className='left'>
+									<Link className='footer-link' to='/staff'>
+										Staff
+									</Link>
+								</li>
+								<li className='left'>
 									<a className='footer-link' href='https://warz.one/store'>
 										Store
 									</a>
