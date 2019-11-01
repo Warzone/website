@@ -62,7 +62,7 @@ export default function Staff() {
 						<div>
 							<h1 style={{ marginBottom: '0px' }}>
 								Staff{' '}
-								<small style={{ fontSize: '17px' }}>
+								<small style={{ fontSize: '17px', fontWeight: 'normal' }}>
 									People who help keep the server running
 								</small>
 							</h1>
