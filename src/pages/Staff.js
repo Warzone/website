@@ -72,7 +72,7 @@ export default function Staff() {
 					{staff.map((rank) => (
 						<div class='row'>
 							<h2>
-								{rank.name}{' '}
+								{rank.display}{' '}
 								<small
 									style={{
 										fontSize: '13px',
