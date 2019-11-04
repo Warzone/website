@@ -8,7 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on November 4th, 2019 (revamped)
+							This page was last updated on November 4th, 2019 (revamped).
 						</span>
 						<p>
 							Failure to follow any of the rules listed on this page may result
@@ -22,45 +22,46 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								Ensure that you are respectful to all players and are maintaining
-								a calm and positive atmosphere while on our server. 
-								Any forms of harassment or bullying are strictly forbidden. Don't be toxic.
+								Ensure that you are respectful to all players and are
+								maintaining a calm and positive atmosphere while on our server.
+								Any forms of harassment or bullying are strictly forbidden.
+								Don't be toxic.
 							</li>
 							<li>
-								Be aware that others may find excessive profanity repulsive and 
-								disrespectful. While we're lenient when it comes to swearing, we 
+								Be aware that others may find excessive profanity repulsive and
+								disrespectful. While we're lenient when it comes to swearing, we
 								ask that you do not direct profanity towards other players.
 							</li>
 							<li>
-								Advertising in any way is not allowed. This includes Minehut servers, 
-								external Minecraft servers, YouTube channels and Discord servers.
-								If you are wondering if you are able to advertise anything not listed
-								in this section, ask a staff member on our Discord.
+								Advertising is not allowed. This includes Minehut servers,
+								external Minecraft servers, YouTube channels and Discord
+								servers.
 							</li>
 							<li>
-								Keep in mind that this is not a market. In order to protect our players 
-								from scamming and other financial offenses, selling, soliciting,
-								and/or buying anything through our services is not allowed.
+								Keep in mind that this is not a market. In order to protect our
+								players from scamming and other financial offenses, selling,
+								soliciting, and/or buying anything through our services is not
+								allowed.
 							</li>
 							<li>
-								Discrimination, excessive capitalization, chat flood and spamming 
-								are all punishable offenses. 
+								Use of excessive capitalization, chat flood and spamming are all
+								punishable offenses.
 							</li>
 							<li>
-								Client modifications that give you an unfair advantage over other players
-								are not permitted. You are allowed to use clients similar to the famous
-								Badlion Client, as they do not naturally give you an unfair advantage.
-								Modifications that positively affect your client visually are allowed
-								(e.g. Optifine).
+								Client modifications that give you an unfair advantage over
+								other players are not permitted. We do not condone the use of
+								unofficial clients (like Badlion Client). Mods that affect your
+								client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
 							</li>
 							<li>
-								We ask that you are respectful towards members of the staff team. 
-								They should be treated like any normal person, they have feelings too.
-								Make sure to abide by the instructions they give you.
+								We ask that you are respectful towards members of the staff
+								team, as you would a normal player. Make sure to abide by the
+								instructions they give you.
+							</li>
 							<li>
 								Do not encourage other players to break rules. If a player
-								breaks a rule in response to your directions, you will be held
-								accountable.
+								breaks a rule in response to your directions, you may also be
+								held accountable.
 							</li>
 							<li>
 								Do not impersonate staff members on any platform by rank,
@@ -72,29 +73,26 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Directed threats towards players or the server are not
-								permitted. This includes D(Dos) Threats, Dox threats, Death threats, 
-								Swat threats and any other threat.
+								permitted. This includes (D)DoS Threats, Dox threats, Death
+								threats or other personal threats.
 							</li>
 						</ol>
 					</div>
 					<div>
 						<h2>General Gameplay</h2>
 						<ol>
+							<li>You must have an appropriate username and skin.</li>
 							<li>
-								You must have an appropriate username and skin.
-								If you are banned, change your username/skin and appeal. 
-								You will be unbanned.
+								Do not try to harm your team. This includes game throwing
+								(intentionally losing a game) and team griefing (i.e. breaking
+								blocks under teammates, stealing from chests, destroying your
+								team's side and preventing your team from achieving objectives).
 							</li>
 							<li>
-								Do not try to harm your team.
-								Intentionally losing a match, killing your teammates & preventing
-								teammates to complete the objective is not allowed.
-							</li>
-							<li>
-								Grinding alt accounts, spawn killing, leaving before getting killed,
-								switching teams prior to a loss and anything similar that may unfairly
-								affect your statistics in a positive way is not allowed. This is 
-								identified as stat abuse.
+								Grinding alt accounts, spawn killing, leaving the game right before getting
+								killed, switching teams right before you lose and anything similar
+								that may unfairly affect your stats is
+								not allowed. This is called map/stat abuse.
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
