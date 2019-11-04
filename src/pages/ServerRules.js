@@ -49,8 +49,8 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Client modifications that give you an unfair advantage over
-								other players are not permitted. We do not condone the use of
-								unofficial clients (like Badlion Client). Mods that affect your
+								other players are not permitted. Unofficial clients (like Badlion Client) 
+								are "use your own risk". Mods that affect your
 								client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
 							</li>
 							<li>
