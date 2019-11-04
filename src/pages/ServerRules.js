@@ -44,13 +44,15 @@ class ServerRules extends Component {
 								allowed.
 							</li>
 							<li>
+								Discrimination is frowned upon and will not be tolerated.
+							<li>
 								Use of excessive capitalization, chat flood and spamming are all
 								punishable offenses.
 							</li>
 							<li>
 								Client modifications that give you an unfair advantage over
 								other players are not permitted. Unofficial clients (like Badlion Client) 
-								are "use your own risk". Mods that affect your
+								are "use at your own risk". Mods that affect your
 								client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
 							</li>
 							<li>
