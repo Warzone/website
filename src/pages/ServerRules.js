@@ -56,13 +56,14 @@ class ServerRules extends Component {
 							<li>
 								We ask that you are respectful towards members of the staff team. 
 								They should be treated like any normal person, they have feelings too.
+								Make sure to abide by the instructions they give you.
 							<li>
 								Do not encourage other players to break rules. If a player
 								breaks a rule in response to your directions, you will be held
 								accountable.
 							</li>
 							<li>
-								Do not impersonate staff members on any service by rank,
+								Do not impersonate staff members on any platform by rank,
 								association, or username.
 							</li>
 							<li>
@@ -71,8 +72,8 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Directed threats towards players or the server are not
-								permitted. This includes D(Dos) Threats, Dox threats, Death Threats, 
-								Swat Threats and any other threat.
+								permitted. This includes D(Dos) Threats, Dox threats, Death threats, 
+								Swat threats and any other threat.
 							</li>
 						</ol>
 					</div>
