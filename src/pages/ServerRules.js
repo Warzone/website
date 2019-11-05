@@ -25,20 +25,26 @@ class ServerRules extends Component {
 								Ensure that you are respectful to all players and are
 								maintaining a calm and positive atmosphere while on our server.
 								Any forms of harassment or bullying are strictly forbidden.
-				
 							</li>
-		
 							<li> 
 								Toxic behaviour such as making fun of other players, acting out as a 
 								result of a loss, disrespecting others, making others feel bad about
 								themselves and that they're not welcome on Warzone etc.) 
 								is not allowed. We aim to provide all players with a safe and relaxed 
 								environment, Warzone has no room for toxicity.
+							</li>
+							<li>
+								Do not leak personal information. Sharing someones IP address, phone number
+								or anything that somebody would typically keep hidden, will result 
+								in a blacklist. Your access to our Discord server and Minecraft server will be 
+								permanently taken away. 
 							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
 								ask that you do not direct profanity towards other players.
 							</li>
+							<li>
+								
 							<li>
 								Advertising is not allowed. This includes Minehut servers,
 								external Minecraft servers, YouTube channels and Discord
