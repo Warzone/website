@@ -31,8 +31,9 @@ class ServerRules extends Component {
 							<li> 
 								Toxic behaviour such as making fun of other players, acting out as a 
 								result of a loss, disrespecting others, making others feel bad about
-								themselves, etc.) is not allowed. We aim to provide all players with a safe
-								and relaxed environment, Warzone has no room for toxicity.
+								themselves and that they're not welcome on Warzone etc.) 
+								is not allowed. We aim to provide all players with a safe and relaxed 
+								environment, Warzone has no room for toxicity.
 							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
