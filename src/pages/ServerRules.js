@@ -25,8 +25,14 @@ class ServerRules extends Component {
 								Ensure that you are respectful to all players and are
 								maintaining a calm and positive atmosphere while on our server.
 								Any forms of harassment or bullying are strictly forbidden.
-								Don't be toxic.
+				
 							</li>
+		
+							<li> 
+								Toxic behaviour such as making fun of other players, acting out as a 
+								result of a loss, disrespecting others, making others feel bad about
+								themselves, etc.) is not allowed. We aim to provide all players with a safe
+								and relaxed environment, Warzone has no room for toxicity.
 							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
@@ -44,7 +50,7 @@ class ServerRules extends Component {
 								allowed.
 							</li>
 							<li>
-								Discrimination is frowned upon and will not be tolerated.
+								Discrimination will not be tolerated.
 							<li>
 								Use of excessive capitalization, chat flood and spamming are all
 								punishable offenses.
@@ -91,10 +97,9 @@ class ServerRules extends Component {
 								team's side and preventing your team from achieving objectives).
 							</li>
 							<li>
-								Grinding alt accounts, spawn killing, leaving the game right before getting
-								killed, switching teams right before you lose and anything similar
-								that may unfairly affect your stats is
-								not allowed. This is called map/stat abuse.
+								Map/stats abuse such as grinding alt accounts, spawn killing, leaving the game right before 
+								getting killed, switching teams right before you lose, and anything similar that may positively 
+								affect your stats above other players on the server is not allowed.
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
