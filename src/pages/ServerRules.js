@@ -29,23 +29,19 @@ class ServerRules extends Component {
 							<li> 
 								Toxic behaviour such as making fun of other players, acting out as a 
 								result of a loss, disrespecting others, making others feel bad about
-								themselves and that they're not welcome on Warzone etc.) 
+								themselves and that they're not welcome on Warzone etc.
 								is not allowed. We aim to provide all players with a safe and relaxed 
-								environment, Warzone has no room for toxicity.
+								environment; Warzone has no room for toxicity.
 							</li>
 							<li>
 								Do not leak personal information. Sharing someones IP address, phone number
-								or anything that somebody would typically keep hidden, will result 
-								in a blacklist. Your access to our Discord server and Minecraft server will be 
-								permanently taken away. 
+								or other commonly hidden information, will result in a blacklist. 
+								Your access to our Discord server and Minecraft server will be permanently taken away. 
 							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
 								ask that you do not direct profanity towards other players.
 							</li>
-							<li>
-								
-							<li>
 								Advertising is not allowed. This includes Minehut servers,
 								external Minecraft servers, YouTube channels and Discord
 								servers.
@@ -57,9 +53,9 @@ class ServerRules extends Component {
 								allowed.
 							</li>
 							<li>
-								Discrimination will not be tolerated.
+								Discrimination of any kind will not be tolerated.
 							<li>
-								Use of excessive capitalization, chat flood and spamming are all
+								Use of excessive capitalization, chat flood, and spamming are all
 								punishable offenses.
 							</li>
 							<li>
