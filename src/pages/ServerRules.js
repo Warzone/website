@@ -27,10 +27,8 @@ class ServerRules extends Component {
 								Any forms of harassment or bullying are strictly forbidden.
 							</li>
 							<li> 
-								Toxic behavior such as making fun of other players, acting out as a 
-								result of a loss, disrespecting others, making others feel bad about
-								themselves and that they're not welcome on Warzone, etc.
-								is not allowed. We aim to provide all players with a safe and relaxed 
+								Toxic behavior such as acting negatively towards others, being a bad sportsman,
+								and disrespecting others is not allowed. We aim to provide all players with a safe and relaxed 
 								environment; Warzone has no room for toxicity.
 							</li>
 							<li>
@@ -126,7 +124,7 @@ class ServerRules extends Component {
 								not allow any NSFW content on our services.
 							</li>
 							<li>
-								The use of voice changers and 	soundboards is not allowed. Additionally,
+								The use of voice changers and soundboards is not allowed. Additionally,
 								turn on push to talk when necessary for consideration of other
 								players.
 							</li>
