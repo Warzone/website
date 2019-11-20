@@ -35,11 +35,13 @@ class ServerRules extends Component {
 								Do not leak personal information. Sharing someone's IP address, phone number
 								or other commonly hidden information will result in a blacklist. 
 								Your access to our Discord server and Minecraft server will be permanently taken away. 
-							<li>
+							</li>
+									<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
 								ask that you do not direct profanity towards other players.
 							</li>
+							<li>
 								Advertising is not allowed. This includes Minehut servers,
 								external Minecraft servers, YouTube channels, and Discord
 								servers.
@@ -52,6 +54,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Discrimination of any kind will not be tolerated.
+							</li>
 							<li>
 								The use of excessive capitalization, flooding chat with characters, 
 								and spamming are all punishable offenses.
