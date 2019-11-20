@@ -8,7 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on November 4th, 2019 (revamped).
+							This page was last updated on November 21st, 2019 (revamped).
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
