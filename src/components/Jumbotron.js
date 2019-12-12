@@ -22,14 +22,15 @@ class Jumbotron extends Component {
 					console.log(newHeading);
 					break;
 				case 'Compete':
-					newHeading = '???';
+					// newHeading = '???';
+					newHeading = 'Play';
 					console.log(newHeading);
 					headingElement.classList.add('jumbotron-slide-in-right');
 					break;
-				case '???':
-					newHeading = 'Play';
-					console.log(newHeading);
-					break;
+				// case '???':
+				// 	newHeading = 'Play';
+				// 	console.log(newHeading);
+				// 	break;
 				default:
 					newHeading = 'Play';
 			}
