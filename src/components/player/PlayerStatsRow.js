@@ -22,7 +22,7 @@ class PlayerStatsRow extends Component {
 				<div className='col-4 player-info-col'>
 					<img
 						style={{ width: '40px', marginBottom: '-75px' }}
-						src={`https://crafatar.com/renders/body/${player.user.uuid}?overlay`}
+						src={`https://crafatar.jlz.fun/renders/body/${player.user.uuid}?overlay`}
 						alt='Player skin'
 					/>
 					<h1
