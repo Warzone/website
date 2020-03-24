@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Badge from '@material-ui/core/Badge';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import '../styles/components/navbar.css';
@@ -21,6 +22,11 @@ class Navbar extends Component {
 								Warzone
 							</Link>
 						</Typography>
+						<a href='https://warz.one/store' className='nav-button white'>
+							<Badge badgeContent={'New'} color='secondary'>
+								Store&nbsp;&nbsp;&nbsp;
+							</Badge>
+						</a>
 						<Link to='/play' className='nav-button white'>
 							Play
 						</Link>
