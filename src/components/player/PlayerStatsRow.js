@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 
 class PlayerStatsRow extends Component {
 	getLevelColour(level) {
-			if (level <= 10) return '#AAAAAA';
-			else if (level <= 20) return '#00AAAA';
-			else if (level <= 30) return '#5555FF';
-			else if (level <= 40) return '#FF55FF';
-			else if (level <= 60) return '#AA00AA';
-			else if (level <= 80) return '#AA0000';
-			else if (level <= 100) return '#FF5555';
-			else if (level <= 120) return '#FFAA00';
-			else if (level <= 140) return '#FFFF55';
-			else if (level <= 160) return '#55FF55';
-			else return '#00AA00'; // levels above 160
-		}
+		if (level <= 10) return '#AAAAAA';
+		else if (level <= 20) return '#00AAAA';
+		else if (level <= 30) return '#5555FF';
+		else if (level <= 40) return '#FF55FF';
+		else if (level <= 60) return '#AA00AA';
+		else if (level <= 80) return '#AA0000';
+		else if (level <= 100) return '#FF5555';
+		else if (level <= 120) return '#FFAA00';
+		else if (level <= 140) return '#FFFF55';
+		else if (level <= 160) return '#55FF55';
+		else return '#00AA00'; // levels above 160
+	}
 
 	render() {
 		let { player } = this.props;
