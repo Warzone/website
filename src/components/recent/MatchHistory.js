@@ -41,6 +41,7 @@ class MatchHistory extends Component {
 											to={`/m/${match.match._id}`}
 											variant='contained'
 											className='match-history-view-button white'
+											disabled={true}
 										>
 											View
 										</Button>
