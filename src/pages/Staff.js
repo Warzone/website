@@ -95,7 +95,7 @@ export default function Staff() {
 										>
 											<img
 												class='img-rounded'
-												src={`https://crafatar.jlz.fun/avatars/${player.uuid}?helm&amp;size=160`}
+												src={`https://crafatar.com/avatars/${player.uuid}?helm&amp;size=160`}
 												style={{ width: '120px', borderRadius: '10px' }}
 												alt='Staff head'
 											/>
