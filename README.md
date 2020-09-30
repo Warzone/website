@@ -1,4 +1,4 @@
-## Website
+## Website - An New Innovation
 
 Warzone's website is built with React. This ties in with Warzone's [TGM](https://github.com/WarzoneMC/Warzone) project to display information like player leaderboards, individual player stats, as well as detailed match info.
 
