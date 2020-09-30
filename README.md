@@ -1,6 +1,6 @@
-## Website
+## Website 
 
-Warzone's website is built with React. This ties in with Warzone's [TGM](https://github.com/WarzoneMC/Warzone) project to display information like player leaderboards, individual player stats, as well as detailed match info.
+Warzone's website is built with React & very usefull for anyone This ties in with Warzone's [TGM](https://github.com/WarzoneMC/Warzone) project to display information like player leaderboards, individual player stats, as well as detailed match info.
 
 ## Contributing
 
