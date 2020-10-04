@@ -13,7 +13,9 @@ export default function Staff() {
 	useEffect(() => {
 		async function fetchData() {
 			if (window.sessionStorage.getItem('staff_list'))
-				return setStaff(JSON.parse(window.sessionStorage.getItem('staff_list')));
+				return setStaff(
+					JSON.parse(window.sessionStorage.getItem('staff_list'))
+				);
 			let ranksJson, ranksRes;
 			ranksRes = await fetch(`${config.API_BASE}/mc/ranks`);
 			if (!ranksRes.ok) {
@@ -37,7 +39,10 @@ export default function Staff() {
 
 				if (ranksJson.every((e) => e.hasOwnProperty('playersLoaded'))) {
 					setStaff(ranksJson);
-					window.sessionStorage.setItem('staff_list', JSON.stringify(ranksJson));
+					window.sessionStorage.setItem(
+						'staff_list',
+						JSON.stringify(ranksJson)
+					);
 					console.log(ranksJson);
 				}
 			});
