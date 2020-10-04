@@ -12,6 +12,10 @@ export default function Staff() {
 
 	useEffect(() => {
 		async function fetchData() {
+			if (window.sessionStorage.getItem('staff_list'))
+				return setStaff(
+					JSON.parse(window.sessionStorage.getItem('staff_list'))
+				);
 			let ranksJson, ranksRes;
 			ranksRes = await fetch(`${config.API_BASE}/mc/ranks`);
 			if (!ranksRes.ok) {
@@ -21,24 +25,24 @@ export default function Staff() {
 			ranksJson = await ranksRes.json();
 			if (ranksJson.notFound) return setNotFound(true);
 
-			ranksJson = ranksJson.filter((rank) => {
-				return !!rank.staff;
-			});
+			ranksJson = ranksJson.filter((rank) => rank.staff).reverse();
 
-			ranksJson.reverse().map(async (rank, i) => {
-				rank.name = rank.name.charAt(0).toUpperCase() + rank.name.slice(1);
-
+			ranksJson.map(async (rank, i) => {
 				rank.players = [];
-				let res = await fetch(
+				const res = await fetch(
 					`${config.API_BASE}/mc/rank/${rank.name}/players`
 				);
-				let json = await res.json();
+				const json = await res.json();
 				rank.players = json.users;
 
 				if (rank.players[i] !== []) rank.playersLoaded = true;
 
 				if (ranksJson.every((e) => e.hasOwnProperty('playersLoaded'))) {
 					setStaff(ranksJson);
+					window.sessionStorage.setItem(
+						'staff_list',
+						JSON.stringify(ranksJson)
+					);
 					console.log(ranksJson);
 				}
 			});
@@ -70,7 +74,7 @@ export default function Staff() {
 					)}
 
 					{staff.map((rank) => (
-						<div class='row'>
+						<div className='row' key={rank.name}>
 							<h2>
 								{rank.display}{' '}
 								<small
@@ -84,7 +88,7 @@ export default function Staff() {
 								</small>
 							</h2>
 							{rank.players.map((player) => (
-								<div class='col-md-3 col-sm-6'>
+								<div className='col-md-3 col-sm-6' key={player.name}>
 									<Link to={`/p/${player.name}`}>
 										<Tooltip
 											disableFocusListener
@@ -94,7 +98,7 @@ export default function Staff() {
 											className='staff-player-image'
 										>
 											<img
-												class='img-rounded'
+												className='img-rounded'
 												src={`https://crafatar.com/avatars/${player.uuid}?helm&amp;size=160`}
 												style={{ width: '120px', borderRadius: '10px' }}
 												alt='Staff head'
