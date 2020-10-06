@@ -47,7 +47,7 @@ class Footer extends Component {
 								className='footer-logo-image'
 							/>
 							<h5>
-								&copy; 2019{' '}
+								&copy; 2020{' '}
 								<Link to='/' className='footer-link'>
 									Warzone
 								</Link>
