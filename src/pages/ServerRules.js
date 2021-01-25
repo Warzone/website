@@ -63,7 +63,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Evading a punishment will result in a harsher punishment. You are not permitted to speak in #server-chat on 
-								our Discord if you are muted in-game, and you may not join our Discord or Minecraft server with an alternet account
+								our Discord if you are muted in-game, and you may not join our Discord or Minecraft server with an alternate account
 								to evade a ban or mute. Evasion of any kind will result in a decreased chance of your appeal being accepted and 
 								may potentially result in a harsher punishment.
 							</li>
