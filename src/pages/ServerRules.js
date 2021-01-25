@@ -54,7 +54,7 @@ class ServerRules extends Component {
 								allowed.
 							</li>
 							<li>
-								Discrimination of any kind will not be tolerated. This includes discrimination of age, 
+								Discrimination of any kind will not be tolerated. This includes discrimination of
 								gender, race, disability, religion, sexual orientation, and more.
 							</li>
 							<li>
