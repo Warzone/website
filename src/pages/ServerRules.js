@@ -19,7 +19,7 @@ class ServerRules extends Component {
 					</div>
 					<hr />
 					<div>
-						<h2>General Composure</h2>
+						<h2>Network Guidelines</h2>
 						<ol>
 							<li>
 								Ensure that you are respectful to all players and are
@@ -68,12 +68,6 @@ class ServerRules extends Component {
 								may potentially result in a harsher punishment.
 							</li>
 							<li>
-								Client modifications that give you an unfair advantage over
-								other players are not permitted. Unofficial clients (like
-								Badlion Client) are "use at your own risk". Mods that affect
-								your client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
-							</li>
-							<li>
 								We ask that you are respectful towards members of the staff
 								team, as you would a normal player. Make sure to abide by the
 								instructions they give you.
@@ -101,7 +95,9 @@ class ServerRules extends Component {
 					<div>
 						<h2>General Gameplay</h2>
 						<ol>
-							<li>You must have an appropriate username and skin.</li>
+							<li>
+								You must have an appropriate username and skin. 
+							</li>
 							<li>
 								Do not try to harm your team. This includes game throwing
 								(intentionally losing a game) and team griefing (i.e. breaking
@@ -114,6 +110,12 @@ class ServerRules extends Component {
 								right before you lose, and anything similar that may positively
 								affect your stats above other players on the server are not
 								allowed.
+							</li>
+							<li>
+								Client modifications that give you an unfair advantage over
+								other players are not permitted. Unofficial clients (like
+								Badlion Client) are "use at your own risk". Mods that affect
+								your client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
