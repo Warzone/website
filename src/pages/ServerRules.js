@@ -12,19 +12,19 @@ class ServerRules extends Component {
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
-							result in punishment for your Minecraft or Discord account. If you
-							have any questions about a rule, please contact a staff member on
-							our Discord server for more information.
+							result in a punishment for your Minecraft or Discord account. If
+							you have any questions about a rule, please contact a staff member
+							on our Discord server for more information.
 						</p>
 					</div>
 					<hr />
 					<div>
-						<h2>Network Guidelines</h2>
+						<h2>General Composure</h2>
 						<ol>
 							<li>
 								Ensure that you are respectful to all players and are
 								maintaining a calm and positive atmosphere while on our server.
-								Any forms of harassment or bullying are strictly forbidden.
+								Harassment and bullying is not allowed.
 							</li>
 							<li>
 								Toxic behavior such as acting negatively towards others, being a
@@ -33,9 +33,9 @@ class ServerRules extends Component {
 								Warzone has no room for toxicity.
 							</li>
 							<li>
-								Do not leak personal information. Sharing someone's IP address, home address, phone number
-								or other commonly hidden information will result in a blacklist. 
-								Your access to our Discord server and Minecraft server will be permanently taken away. 
+								Leaking personal information is not allowed. This includes, but
+								is not limited to, IP addresses, home addresses and phone
+								numbers.
 							</li>
 							<li>
 								Be aware that others may find excessive profanity repulsive and
@@ -43,87 +43,85 @@ class ServerRules extends Component {
 								ask that you do not direct profanity towards other players.
 							</li>
 							<li>
-								Advertising is not allowed. This includes Minehut servers,
-								external Minecraft servers, YouTube channels, and Discord
-								servers.
+								Advertising and self-promoting is not allowed. This includes
+								Minehut servers, external Minecraft servers, YouTube channels,
+								and Discord servers.
 							</li>
 							<li>
 								Keep in mind that this is not a market. In order to protect our
 								players from scamming and other financial offenses, selling,
-								soliciting, and/or buying anything through our services is not
-								allowed.
+								soliciting, and/or buying anything through our services (that is
+								not from our official store) is not allowed. Scamming and fraud
+								is also not allowed.
 							</li>
 							<li>
-								Discrimination of any kind will not be tolerated. This includes discrimination of
-								gender, race, disability, religion, sexual orientation, and more.
+								Discrimination of any kind is not allowed. This includes
+								discrimination based on gender, race, disability, religion,
+								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								The use of excessive capitalization, flooding chat with
-								characters, and spamming are all punishable offenses.
+								Using excessive capitalization in chat, flooding the chat and
+								spamming the chat are all not allowed.
 							</li>
 							<li>
-								Evading a punishment will result in a harsher punishment. You are not permitted to speak in #server-chat on 
-								our Discord if you are muted in-game, and you may not join our Discord or Minecraft server with an alternate account
-								to evade a ban or mute. Evasion of any kind will result in a decreased chance of your appeal being accepted and 
-								may potentially result in a harsher punishment.
+								Evading punishments is not allowed. This includes using
+								alternate accounts to join our Discord or Minecraft server to
+								evade a punishment. Users who are muted in-game are not
+								permitted to chat in our{' '}
+								<span className='white'>#server-chat</span> Discord bridging
+								channel.
 							</li>
 							<li>
-								We ask that you are respectful towards members of the staff
-								team, as you would a normal player. Make sure to abide by the
-								instructions they give you.
+								We ask that you are respectful toward members of the staff team,
+								as you would be to a normal player. Make sure to follow
+								instructions from staff.
 							</li>
 							<li>
-								Do not encourage other players to break rules. If a player
-								breaks a rule in response to your directions, you may also be
-								held accountable.
+								Encouraging other players to break rules is not allowed. If a
+								player breaks a rule following your directions, you may also be
+								responsible.
 							</li>
 							<li>
-								Do not impersonate staff members on any platform by rank,
-								association, or username.
+								Impersonating staff members on any platform by rank,
+								association, or name is not allowed.
 							</li>
 							<li>
-								Defrauding other players in any way is not allowed, either
-								in-game or on the Discord server.
-							</li>
-							<li>
-								Directed threats towards players or the server are not
-								permitted. This includes (D)DoS Threats, Dox threats, Death
-								threats or other personal threats.
+								Threatening other players or the server is not allowed. This
+								includes (D)DoS Threats, Dox threats, Death threats or other
+								threats of that nature.
 							</li>
 						</ol>
 					</div>
 					<div>
 						<h2>General Gameplay</h2>
 						<ol>
-							<li>
-								You must have an appropriate username and skin. 
-							</li>
+							<li>You must have an appropriate username and skin.</li>
 							<li>
 								Do not try to harm your team. This includes game throwing
-								(intentionally losing a game) and team griefing (i.e. breaking
-								blocks under teammates, stealing from chests, destroying your
-								team's side and preventing your team from achieving objectives).
+								(intentionally losing a game) and team griefing (breaking blocks
+								under teammates, stealing from chests, destroying your team's
+								side and preventing your team from achieving objectives, etc.).
 							</li>
 							<li>
-								Map/stats abuse such as grinding alt accounts, spawn killing,
-								leaving the game right before getting killed, switching teams
-								right before you lose, and anything similar that may positively
-								affect your stats above other players on the server are not
-								allowed.
+								Map/statistic abuse such as grinding alt accounts, spawn
+								killing, leaving the game just before being killed, switching
+								teams just before you lose, and anything similar that may
+								positively affect your stats above other players on the server
+								are not allowed.
 							</li>
 							<li>
 								Client modifications that give you an unfair advantage over
-								other players are not permitted. Unofficial clients (like
-								Badlion Client) are "use at your own risk". Mods that affect
-								your client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
+								other players are not allowed. Unofficial clients (like Badlion
+								Client) are "use at your own risk". Mods that purely affect your
+								client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
 								hardware or software modifications to allow automated clicking,
 								changing standard mouse settings, modifications to standard
-								hardware limitations, etc. are not permitted. Any clicks beyond
-								one click at a time is not permitted, butterfly clicking and drag clicking
-								are both unacceptable clicking methods.
+								hardware limitations, etc. are not allowed. Any clicks beyond
+								one click at a time is not allowed; butterfly clicking and drag
+								clicking are both unacceptable clicking methods.
 							</li>
 						</ol>
 					</div>
@@ -131,21 +129,17 @@ class ServerRules extends Component {
 						<h2>Discord</h2>
 						<ol>
 							<li>
-								Please keep all channels on topic. Be sure to read pinned
-								messages in each channel if there are any.
+								Please keep all channels on topic. Be sure to check the pinned
+								messages in each channel you use.
 							</li>
 							<li>
-								Keep all names, profile pictures, and chats appropriate. We do
-								not allow any NSFW content on our services.
+								Keep all names, pictures (including profile pictures), and
+								messages appropriate. NSFW content is not allowed.
 							</li>
 							<li>
 								The use of voice changers and soundboards is not allowed.
 								Additionally, turn on push to talk when necessary for
 								consideration of other players.
-							</li>
-							<li>
-								All rules listed in the sections above also apply to the Discord
-								server.
 							</li>
 						</ol>
 					</div>
@@ -159,16 +153,23 @@ class ServerRules extends Component {
 					</div>
 					<br />
 					<div>
-						If you wish to{' '}
-						<span className='underline'>appeal a punishment</span> or{' '}
-						<span className='underline'>report a player</span>, please post a
-						thread in their respective categories (appeals, reports){' '}
 						<a
-							href='https://forums.minehut.com/clubs/23-warzone/'
-							className='white bold no-text-decoration'
+							href='https://forums.minehut.com/forum/33-appeals/?ct=1611842576'
+							className='white bold underline'
+							style={{ paddingRight: '10px' }}
 						>
-							on our forums
-						</a>{' '}
+							Appeal a punishment
+						</a>
+						<a
+							href='https://forums.minehut.com/forum/34-reports/'
+							className='white bold underline'
+							style={{ paddingRight: '10px' }}
+						>
+							Report a player
+						</a>
+						<a href='https://warz.one/discord' className='white bold underline'>
+							Contact staff
+						</a>
 					</div>
 				</div>
 			</div>
