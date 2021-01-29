@@ -98,9 +98,9 @@ class ServerRules extends Component {
 							<li>You must have an appropriate username and skin.</li>
 							<li>
 								Do not try to harm your team. This includes game throwing
-								(intentionally losing a game) and team griefing (breaking blocks
-								under teammates, stealing from chests, destroying your team's
-								side and preventing your team from achieving objectives, etc.).
+								(intentionally losing a game), cross teaming (teaming with opponents),
+								and team griefing (breaking blocks under teammates, stealing from chests, 
+								destroying your team's side and preventing your team from achieving objectives, etc.).
 							</li>
 							<li>
 								Map/statistic abuse such as grinding alt accounts, spawn
