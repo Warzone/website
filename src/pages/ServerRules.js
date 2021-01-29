@@ -111,10 +111,10 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Client modifications that give you an unfair advantage over
-								other players are not allowed. Unofficial clients (like Badlion
-								Client) are "use at your own risk". Mods that purely affect your
-								client visually are allowed (e.g. OptiFine, 5zig, LabyMod).
-							</li>
+								other players are not allowed, including the use of toggle sneak within Infection. 
+								Unofficial clients (like BadlionClient) are "use at your own risk". 
+								Mods that purely affect your client visually are allowed (e.g. OptiFine, 5zig, LabyMod). 
+							</li>			
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
 								hardware or software modifications to allow automated clicking,
