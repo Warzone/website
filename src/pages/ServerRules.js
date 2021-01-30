@@ -8,7 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on January 25th, 2021 (revamped).
+							This page was last updated on January 30th, 2021.
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -22,37 +22,43 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								Ensure that you are respectful to all players and are
-								maintaining a calm and positive atmosphere while on our server.
-								Harassment and bullying is not allowed.
+								Ensure that you are respectful to all players and are 
+								helping to maintain Warzone's calm atmosphere while on our server.
+								Harassment and bullying are not allowed.
 							</li>
 							<li>
-								Toxic behavior such as acting negatively towards others, being a
-								bad sportsman, and disrespecting others is not allowed. We aim
-								to provide all players with a safe and relaxed environment;
+								Toxic behavior while on any of our platforms is not allowed. 
+								Toxic behavior can be considered as showing bad sportsmanship, 
+								disrespecting others, and acting in a demeaning way towards others.
+								We aim to provide all users with a safe and relaxed environment;
 								Warzone has no room for toxicity.
 							</li>
 							<li>
-								Leaking personal information is not allowed. This includes, but
-								is not limited to, IP addresses, home addresses and phone
-								numbers.
+								Revealing personal information is not allowed. This includes, but 
+								is not limited to, IP addresses, home addresses and phone numbers.
+								Doing so may result in immediate removal from all Warzone platforms.
 							</li>
 							<li>
-								Be aware that others may find excessive profanity repulsive and
-								disrespectful. While we're lenient when it comes to swearing, we
-								ask that you do not direct profanity towards other players.
+								Threatening other players or the server is not allowed. This
+								includes (D)DoS Threats, Dox threats, Death threats or other
+								threats of that nature.
 							</li>
 							<li>
-								Advertising and self-promoting is not allowed. This includes
-								Minehut servers, external Minecraft servers, YouTube channels,
-								and Discord servers.
+								Be aware that others may find excessive profanity unwelcoming
+								and repulsive. While we're lenient when it comes to swearing,
+								we ask that you do not direct profanity towards other community
+								members.
 							</li>
 							<li>
-								Keep in mind that this is not a market. In order to protect our
-								players from scamming and other financial offenses, selling,
-								soliciting, and/or buying anything through our services (that is
-								not from our official store) is not allowed. Scamming and fraud
-								is also not allowed.
+								Advertisement and self promotion is strictly prohibited.
+								This includes Minecraft or Discord servers, and any form of
+								social media.
+							</li>
+							<li>
+								Utilizing our platforms as a marketplace will not be tolerated.
+								Purchasing, selling, or soliciting anything through our services 
+								is not allowed (only if you are not purchasing from our official store).
+								Keep in mind that this is not a market.
 							</li>
 							<li>
 								Discrimination of any kind is not allowed. This includes
@@ -60,8 +66,8 @@ class ServerRules extends Component {
 								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								Using excessive capitalization in chat, flooding the chat and
-								spamming the chat are all not allowed.
+								Using excessive capitalization in chat, flooding chat, inciting spam 
+								or engaging in spam, is not allowed. 
 							</li>
 							<li>
 								Evading punishments is not allowed. This includes using
@@ -72,23 +78,17 @@ class ServerRules extends Component {
 								channel.
 							</li>
 							<li>
-								We ask that you are respectful toward members of the staff team,
-								as you would be to a normal player. Make sure to follow
-								instructions from staff.
-							</li>
-							<li>
 								Encouraging other players to break rules is not allowed. If a
 								player breaks a rule following your directions, you may also be
 								responsible.
 							</li>
 							<li>
-								Impersonating staff members on any platform by rank,
-								association, or name is not allowed.
+								We ask that you are respectful toward members of the staff team,
+								as you would be to a normal player. Make sure to follow instructions from staff.
 							</li>
 							<li>
-								Threatening other players or the server is not allowed. This
-								includes (D)DoS Threats, Dox threats, Death threats or other
-								threats of that nature.
+								Impersonating staff members on any platform by rank,
+								association, or name is not allowed.
 							</li>
 						</ol>
 					</div>
@@ -140,6 +140,18 @@ class ServerRules extends Component {
 								The use of voice changers and soundboards is not allowed.
 								Additionally, turn on push to talk when necessary for
 								consideration of other players.
+							</li>
+						</ol>
+					</div>
+					<div>
+						<h2>Forums</h2>
+						<ol>
+							<li>
+								If you are not the creator of a report or an appeal, you may not post replies unless you are a staff member.
+							</li>
+							<li>
+								Both the Reports & Appeals forum categories are strictly for reports & appeals. You may not
+								post anything unrelated.
 							</li>
 						</ol>
 					</div>
