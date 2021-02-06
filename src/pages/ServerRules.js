@@ -23,11 +23,11 @@ class ServerRules extends Component {
 						<ol>
 							<li>
 								Ensure that you are respectful to all players and are 
-								helping to maintain Warzone's calm atmosphere while on our server.
+								helping to maintain Warzone's calm atmosphere while on our platforms.
 								Harassment and bullying are not allowed.
 							</li>
 							<li>
-								Toxic behavior while on any of our platforms is not allowed. 
+								Toxic behavior on any of our platforms is not allowed. 
 								Toxic behavior can be considered as showing bad sportsmanship, 
 								disrespecting others, and acting in a demeaning way towards others.
 								We aim to provide all users with a safe and relaxed environment;
@@ -44,10 +44,9 @@ class ServerRules extends Component {
 								threats of that nature.
 							</li>
 							<li>
-								Be aware that others may find excessive profanity unwelcoming
-								and repulsive. While we're lenient when it comes to swearing,
-								we ask that you do not direct profanity towards other community
-								members.
+								Keep in mind that some users can be offended by profanity, and feel unwelcome.
+								While we're lenient when it comes to swearing, we ask that you do not direct profanity 
+								towards other community members.
 							</li>
 							<li>
 								Advertisement and self promotion is strictly prohibited.
@@ -83,7 +82,7 @@ class ServerRules extends Component {
 								responsible.
 							</li>
 							<li>
-								We ask that you are respectful toward members of the staff team,
+								We ask that you are respectful toward members of the staff team,									Make sure to treat our staff members as you would with any other player. We ask that you listen to 
 								as you would be to a normal player. Make sure to follow instructions from staff.
 							</li>
 							<li>
@@ -99,7 +98,7 @@ class ServerRules extends Component {
 							<li>
 								Do not try to harm your team. This includes game throwing
 								(intentionally losing a game), cross teaming (teaming with opponents),
-								and team griefing (breaking blocks under teammates, stealing from chests, 
+								and team griefing (breaking blocks under teammates, blocking spawn, stealing from chests, 
 								destroying your team's side and preventing your team from achieving objectives, etc.).
 							</li>
 							<li>
@@ -110,10 +109,10 @@ class ServerRules extends Component {
 								are not allowed.
 							</li>
 							<li>
-								Client modifications that give you an unfair advantage over
-								other players are not allowed, including the use of toggle sneak within Infection. 
-								Unofficial clients (like BadlionClient) are "use at your own risk". 
-								Mods that purely affect your client visually are allowed (e.g. OptiFine, 5zig, LabyMod). 
+								All client modifications (including unofficial clients like Badlion Client and Lunar Client)
+								are generally considered "use at your own risk". Client modifications that give you an 
+								unfair advantage over other players are not allowed. Mods that purely affect your client visually are 
+								allowed (e.g. OptiFine, 5zig, LabyMod). 
 							</li>			
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
