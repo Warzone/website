@@ -22,21 +22,22 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								Ensure that you are respectful to all players and are 
-								helping to maintain Warzone's calm atmosphere while on our platforms.
+								Ensure that you are respectful to all players and are helping to
+								maintain Warzone's calm atmosphere while on our platforms.
 								Harassment and bullying are not allowed.
 							</li>
 							<li>
-								Toxic behavior on any of our platforms is not allowed. 
-								Toxic behavior can be considered as showing bad sportsmanship, 
-								disrespecting others, and acting in a demeaning way towards others.
-								We aim to provide all users with a safe and relaxed environment;
-								Warzone has no room for toxicity.
+								Toxic behavior on any of our platforms is not allowed. Toxic
+								behavior can be considered as showing bad sportsmanship,
+								disrespecting others, and acting in a demeaning way towards
+								others. We aim to provide all users with a safe and relaxed
+								environment; Warzone has no room for toxicity.
 							</li>
 							<li>
-								Revealing personal information is not allowed. This includes, but 
-								is not limited to, IP addresses, home addresses and phone numbers.
-								Doing so may result in immediate removal from all Warzone platforms.
+								Revealing personal information is not allowed. This includes,
+								but is not limited to, IP addresses, home addresses and phone
+								numbers. Doing so may result in immediate removal from all
+								Warzone platforms.
 							</li>
 							<li>
 								Threatening other players or the server is not allowed. This
@@ -44,20 +45,21 @@ class ServerRules extends Component {
 								threats of that nature.
 							</li>
 							<li>
-								Keep in mind that some users can be offended by profanity, and feel unwelcome.
-								While we're lenient when it comes to swearing, we ask that you do not direct profanity 
-								towards other community members.
+								Keep in mind that some users can be offended by profanity, and
+								feel unwelcome. While we're lenient when it comes to swearing,
+								we ask that you do not direct profanity towards other community
+								members.
 							</li>
 							<li>
-								Advertisement and self promotion is strictly prohibited.
-								This includes Minecraft or Discord servers, and any form of
-								social media.
+								Advertisement and self promotion is strictly prohibited. This
+								includes Minecraft or Discord servers, and any form of social
+								media.
 							</li>
 							<li>
 								Utilizing our platforms as a marketplace will not be tolerated.
-								Purchasing, selling, or soliciting anything through our services 
-								is not allowed (only if you are not purchasing from our official store).
-								Keep in mind that this is not a market.
+								Purchasing, selling, or soliciting anything through our services
+								is not allowed (only if you are not purchasing from our official
+								store). Keep in mind that this is not a market.
 							</li>
 							<li>
 								Discrimination of any kind is not allowed. This includes
@@ -65,8 +67,8 @@ class ServerRules extends Component {
 								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								Using excessive capitalization in chat, flooding chat, inciting spam 
-								or engaging in spam, is not allowed. 
+								Using excessive capitalization in chat, flooding chat, inciting
+								spam or engaging in spam, is not allowed.
 							</li>
 							<li>
 								Evading punishments is not allowed. This includes using
@@ -82,8 +84,10 @@ class ServerRules extends Component {
 								responsible.
 							</li>
 							<li>
-								We ask that you are respectful toward members of the staff team,									Make sure to treat our staff members as you would with any other player. We ask that you listen to 
-								as you would be to a normal player. Make sure to follow instructions from staff.
+								We ask that you are respectful toward members of the staff team,
+								Make sure to treat our staff members as you would with any other
+								player. We ask that you listen to as you would be to a normal
+								player. Make sure to follow instructions from staff.
 							</li>
 							<li>
 								Impersonating staff members on any platform by rank,
@@ -97,9 +101,10 @@ class ServerRules extends Component {
 							<li>You must have an appropriate username and skin.</li>
 							<li>
 								Do not try to harm your team. This includes game throwing
-								(intentionally losing a game), cross teaming (teaming with opponents),
-								and team griefing (breaking blocks under teammates, blocking spawn, stealing from chests, 
-								destroying your team's side and preventing your team from achieving objectives, etc.).
+								(intentionally losing a game), cross teaming (teaming with
+								opponents), and team griefing (breaking blocks under teammates,
+								blocking spawn, stealing from chests, destroying your team's
+								side and preventing your team from achieving objectives, etc.).
 							</li>
 							<li>
 								Map/statistic abuse such as grinding alt accounts, spawn
@@ -109,11 +114,13 @@ class ServerRules extends Component {
 								are not allowed.
 							</li>
 							<li>
-								All client modifications (including unofficial clients like Badlion Client and Lunar Client)
-								are generally considered "use at your own risk". Client modifications that give you an 
-								unfair advantage over other players are not allowed. Mods that purely affect your client visually are 
-								allowed (e.g. OptiFine, 5zig, LabyMod). 
-							</li>			
+								All client modifications (including unofficial clients like
+								Badlion Client and Lunar Client) are generally considered "use
+								at your own risk". Client modifications that give you an unfair
+								advantage over other players are not allowed. Mods that purely
+								affect your client visually are allowed (e.g. OptiFine, 5zig,
+								LabyMod).
+							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
 								hardware or software modifications to allow automated clicking,
@@ -146,11 +153,12 @@ class ServerRules extends Component {
 						<h2>Forums</h2>
 						<ol>
 							<li>
-								If you are not the creator of a report or an appeal, you may not post replies unless you are a staff member.
+								If you are not the creator of a report or an appeal, you may not
+								post replies unless you are a staff member.
 							</li>
 							<li>
-								Both the Reports & Appeals forum categories are strictly for reports & appeals. You may not
-								post anything unrelated.
+								Both the Reports & Appeals forum categories are strictly for
+								reports & appeals. You may not post anything unrelated.
 							</li>
 						</ol>
 					</div>
