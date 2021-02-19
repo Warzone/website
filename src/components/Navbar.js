@@ -23,9 +23,7 @@ class Navbar extends Component {
 							</Link>
 						</Typography>
 						<a href='https://warz.one/store' className='nav-button white'>
-							<Badge badgeContent={'New'} color='secondary'>
-								Store&nbsp;&nbsp;&nbsp;
-							</Badge>
+							Store
 						</a>
 						<Link to='/play' className='nav-button white'>
 							Play
