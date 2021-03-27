@@ -8,8 +8,7 @@ class PrivacyPolicy extends Component {
 					<div>
 						<h1>Privacy Policy</h1>
 						<span className='bold'>
-							This page was last updated on May 19th, 2019 (minor grammatical
-							changes).
+							This page was last updated on March 27th, 2021 (minor modification).
 						</span>
 						<p>
 							By using our (Warzone) Service, information may be collected
@@ -39,7 +38,7 @@ class PrivacyPolicy extends Component {
 								member.
 							</li>
 							<li>
-								Any reports and appeals made are available in Discord for
+								Any reports and appeals made are publicly displayed on our forums for
 								moderation purposes. Moderators will respond accordingly to any
 								reports and/or appeals you may make, and other users may have
 								the ability to see them.
