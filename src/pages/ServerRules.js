@@ -44,7 +44,7 @@ class ServerRules extends Component {
 							<li>
 								Leaking confidential information about the server is strictly
 								prohibited. This includes files, documents, images, messages,
-								logs, and/or any other piece of infomration that would damage
+								logs, and/or any other piece of information that would damage
 								the server's integrity.
 							</li>
 							<li>
@@ -145,8 +145,8 @@ class ServerRules extends Component {
 								other players are not allowed. Unofficial clients such as
 								Badlion Client and Lunar Client are considered "use at your own
 								risk." Purely aesthetic mods such as OptiFine, 5zig, and LabyMod
-								are allowed, but minimaps, health indicators, skin blinkers,
-								waypoints, etc; are not.
+								are allowed, but minimaps with radars enabled, health indicators, 
+								skin blinkers, waypoints, etc; are not.
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
