@@ -42,6 +42,12 @@ class ServerRules extends Component {
 								and phone numbers.
 							</li>
 							<li>
+								Leaking confidential information about the server is strictly
+								prohibited. This includes files, documents, images, messages,
+								logs, and/or any other piece of infomration that would damage
+								the server's integrity.
+							</li>
+							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
 								ask that you do not direct profanity towards other players.
@@ -49,7 +55,10 @@ class ServerRules extends Component {
 							<li>
 								Advertising and self-promoting are not allowed. This includes
 								promoting Minehut servers, external Minecraft servers, YouTube
-								channels, and Discord servers.
+								channels, and Discord servers. Additionally, indirect advertising 
+								by inviting other players to come along with you or comparing 
+								Warzone's characteristics to another server in order to draw 
+								attention to it is not allowed.
 							</li>
 							<li>
 								Keep in mind that this is not a market. In order to protect our
@@ -104,9 +113,11 @@ class ServerRules extends Component {
 							<li>You must have an appropriate username, skin, and cape.</li>
 							<li>
 								Do not attempt to harm your team. This includes game throwing
-								(intentionally losing a game) and team griefing (breaking blocks
-								under teammates, stealing from chests, sabotaging your team's
-								defences, preventing your team from achieving objectives, etc.).
+								(intentionally losing a game or not attempting to win), team 
+								griefing (breaking blocks under teammates, stealing from chests,
+								sabotaging your team's defences, preventing your team from 
+								achieving objectives), and cross teaming (teaming up with a player
+								of the opposite or different team).
 							</li>
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
@@ -116,8 +127,7 @@ class ServerRules extends Component {
 								players on the server are not allowed.
 							</li>
 							<li>
-								Do not attempt to block glitch. This means abusing map regions 
-								in which block placement is disabled for your own advantage.
+								Do not abuse gameplay bugs, glitches, or exploits for your own advantage.
 							</li>
 							<li>
 								The building of inappropriate structures will not be tolerated. 
