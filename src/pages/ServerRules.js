@@ -39,13 +39,8 @@ class ServerRules extends Component {
 							<li>
 								Leaking players' personal information is not allowed. This
 								includes, but is not limited to, IP addresses, home addresses
-								and phone numbers.
-							</li>
-							<li>
-								Leaking confidential information about the server is strictly
-								prohibited. This includes files, documents, images, messages,
-								logs, and/or any other piece of information that would damage
-								the server's integrity.
+								and phone numbers. Moreover, sharing confidential information
+								related to Warzone and its services is also not allowed.
 							</li>
 							<li>
 								Be aware that others may find excessive profanity repulsive and
@@ -186,7 +181,10 @@ class ServerRules extends Component {
 							</li>
 							<li>All posts should be on topic.</li>
 							<li>
-								Faking evidence when appealing a punishment will result in an instant denial.
+								Forging or faking evidence when appealing or submitting a 
+								report will result in an instant denial. A punishment might 
+								follow depending on the severity of the offense.
+
 							</li>
 							<li>
 								When reporting a player, make sure to do so with sufficient evidence. Joke 
