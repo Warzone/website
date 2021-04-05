@@ -8,7 +8,8 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on April 5th, 2021 (several additions and a few edits).
+							This page was last updated on April 5th, 2021 (several additions
+							and a few edits).
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -22,7 +23,7 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								The server’s official language is English. We ask that you 
+								The server’s official language is English. We ask that you
 								communicate with the general community in said language.
 							</li>
 							<li>
@@ -50,10 +51,10 @@ class ServerRules extends Component {
 							<li>
 								Advertising and self-promoting are not allowed. This includes
 								promoting Minehut servers, external Minecraft servers, YouTube
-								channels, and Discord servers. Additionally, indirect advertising 
-								by inviting other players to come along with you or comparing 
-								Warzone's characteristics to another server in order to draw 
-								attention to it is not allowed.
+								channels, and Discord servers. Additionally, indirect
+								advertising by inviting other players to come along with you or
+								comparing Warzone's characteristics to another server in order
+								to draw attention to it is not allowed.
 							</li>
 							<li>
 								Keep in mind that this is not a market. In order to protect our
@@ -68,7 +69,8 @@ class ServerRules extends Component {
 								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								Suicidal encouragement and encouraging self-harm is strictly forbidden.		
+								Suicidal encouragement and encouraging self-harm is strictly
+								forbidden.
 							</li>
 							<li>
 								Using excessive capitalization in chat, flooding the chat and
@@ -87,9 +89,10 @@ class ServerRules extends Component {
 								instructions from staff.
 							</li>
 							<li>
-								Encouraging other players to break rules is not allowed. Additionally,
-								raiding, rioting, violently protesting or intentionally provoking any 
-								kind of disruption within our community members is not allowed.
+								Encouraging other players to break rules is not allowed.
+								Additionally, raiding, rioting, violently protesting or
+								intentionally provoking any kind of disruption within our
+								community members is not allowed.
 							</li>
 							<li>
 								Impersonating staff members on any platform by rank,
@@ -108,31 +111,32 @@ class ServerRules extends Component {
 							<li>You must have an appropriate username, skin, and cape.</li>
 							<li>
 								Do not attempt to harm your team. This includes game throwing
-								(intentionally losing a game or not attempting to win), team 
+								(intentionally losing a game or not attempting to win), team
 								griefing (breaking blocks under teammates, stealing from chests,
-								sabotaging your team's defences, preventing your team from 
-								achieving objectives), and cross teaming (teaming up with a player
-								of the opposite or different team).
+								sabotaging your team's defences, preventing your team from
+								achieving objectives), and cross teaming (teaming up with a
+								player of the opposite or different team).
 							</li>
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
 								alt accounts, spawn killing, leaving the game just before being
-								killed, switching teams just before you lose, team stacking, and anything
-								similar that may positively affect your stats above other
-								players on the server are not allowed.
+								killed, switching teams just before you lose, team stacking, and
+								anything similar that may positively affect your stats above
+								other players on the server are not allowed.
 							</li>
 							<li>
-								Do not abuse gameplay bugs, glitches, or exploits for your own advantage.
+								Do not abuse gameplay bugs, glitches, or exploits for your own
+								advantage.
 							</li>
 							<li>
-								The building of inappropriate structures will not be tolerated. 
-								This includes, but is not limited to: genitalia, swastikas, 
+								The building of inappropriate structures will not be tolerated.
+								This includes, but is not limited to: genitalia, swastikas,
 								insults, and inappropriate signs.
 							</li>
 							<li>
-								Do not publicly hackusate other players. Also, do not 
-								intentionally play in such a way that aims to get hackusations 
-								from other players. This means that intentionally looking to be 
+								Do not publicly hackusate other players. Also, do not
+								intentionally play in such a way that aims to get hackusations
+								from other players. This means that intentionally looking to be
 								falsely punished is not allowed.
 							</li>
 							<li>
@@ -140,8 +144,8 @@ class ServerRules extends Component {
 								other players are not allowed. Unofficial clients such as
 								Badlion Client and Lunar Client are considered "use at your own
 								risk." Purely aesthetic mods such as OptiFine, 5zig, and LabyMod
-								are allowed, but minimaps with radars enabled, health indicators, 
-								skin blinkers, waypoints, etc; are not.
+								are allowed, but minimaps with radars enabled, health
+								indicators, skin blinkers, waypoints, etc; are not.
 							</li>
 							<li>
 								Macros, autoclickers, multiple attack functions, physical
@@ -181,14 +185,14 @@ class ServerRules extends Component {
 							</li>
 							<li>All posts should be on topic.</li>
 							<li>
-								Forging or faking evidence when appealing or submitting a 
-								report will result in an instant denial. A punishment might 
-								follow depending on the severity of the offense.
-
+								Forging or faking evidence when appealing or submitting a report
+								will result in an instant denial. A punishment might follow
+								depending on the severity of the offense.
 							</li>
 							<li>
-								When reporting a player, make sure to do so with sufficient evidence. Joke 
-								reports may be deleted and will likely lead to a ban on the forums.
+								When reporting a player, make sure to do so with sufficient
+								evidence. Joke reports may be deleted and will likely lead to a
+								ban on the forums.
 							</li>
 						</ol>
 					</div>
