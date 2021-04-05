@@ -117,7 +117,7 @@ class ServerRules extends Component {
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
 								alt accounts, spawn killing, leaving the game just before being
-								killed, switching teams just before you lose, and anything
+								killed, switching teams just before you lose, team stacking, and anything
 								similar that may positively affect your stats above other
 								players on the server are not allowed.
 							</li>
