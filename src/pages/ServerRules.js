@@ -8,8 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on April 5th, 2021 (several additions
-							and a few edits).
+							This page was last updated on April 23rd, 2021 (refurbished).
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -23,45 +22,24 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								The server’s official language is English. We ask that you
-								communicate with the general community in said language.
+								Warzone's official language is English. We ask that you communicate on our platforms in said language.
 							</li>
 							<li>
-								Ensure that you are respectful to all players and are
-								maintaining a calm and positive atmosphere while on our server.
+								Ensure that you are respectful to all players and are helping to maintain our server's positive atmosphere. 
 								Harassment and bullying are not allowed.
 							</li>
 							<li>
-								Toxic behavior such as acting negatively towards others, being a
-								bad sportsman, and disrespecting others is not allowed. We aim
-								to provide all players with a safe and relaxed environment;
-								Toxicity has no place on Warzone.
+								Presenting toxic behavior on our services is not allowed.
+								This can be considered as acting negatively towards other players, being a bad sportsman, or behaving disrespectfully in any capacity. 
+								We aim to provide all players with a safe and relaxed environment; Toxicity has no place on Warzone.
 							</li>
 							<li>
-								Leaking players' personal information is not allowed. This
-								includes, but is not limited to, IP addresses, home addresses
-								and phone numbers. Moreover, sharing confidential information
-								related to Warzone and its services is also not allowed.
+								Be aware that others may take offense when it comes to profanity. 
+								While we're lenient when it comes to swearing, we ask that you do not direct profanity towards other players. 
 							</li>
 							<li>
-								Be aware that others may find excessive profanity repulsive and
-								disrespectful. While we're lenient when it comes to swearing, we
-								ask that you do not direct profanity towards other players.
-							</li>
-							<li>
-								Advertising and self-promoting are not allowed. This includes
-								promoting Minehut servers, external Minecraft servers, YouTube
-								channels, and Discord servers. Additionally, indirect
-								advertising by inviting other players to come along with you or
-								comparing Warzone's characteristics to another server in order
-								to draw attention to it is not allowed.
-							</li>
-							<li>
-								Keep in mind that this is not a market. In order to protect our
-								players from scams and other financial offenses, selling,
-								soliciting, and/or buying anything through our services (that is
-								not from our official store) are not allowed. By extension,
-								scamming or defrauding other players is not allowed.
+								Using excessive capitalization in chat, flooding the chat and
+								spamming the chat are all not allowed.
 							</li>
 							<li>
 								Discrimination of any kind is not allowed. This includes
@@ -73,8 +51,16 @@ class ServerRules extends Component {
 								forbidden.
 							</li>
 							<li>
-								Using excessive capitalization in chat, flooding the chat and
-								spamming the chat are all not allowed.
+								We ask that you are respectful toward members of the staff team,
+								as you would be to normal players. Make sure to follow
+								instructions from staff.
+							</li>
+							<li>
+								Staff impersonation on any platform by rank, association, or name is not allowed.
+							</li>
+							<li>
+								Any form of an advertisement on our platforms is not allowed, whether it be publicly or privately.
+								This includes advertising Minecraft servers, social media, or comparing our server with another server (in favor of the other server).
 							</li>
 							<li>
 								Evading punishments is not allowed. This includes using
@@ -84,23 +70,23 @@ class ServerRules extends Component {
 								channel.
 							</li>
 							<li>
-								We ask that you are respectful toward members of the staff team,
-								as you would be to normal players. Make sure to follow
-								instructions from staff.
+								Warzone is not a marketplace. To protect our players from scams and other financial offenses, selling, soliciting, 
+								and/or buying anything through our services (that is not from our official store) are not allowed. 
+								By extension, scamming or defrauding other players is not allowed.
+							</li>
+							<li> 
+								Disrupting the community by any means will not be tolerated. 
+								We consider community disruption as raiding, rioting, violently protesting, or intentionally provoking any kind of disruption within our community.
+								Additionally, encouraging players to violate one of Warzone's rules is highly discouraged.
 							</li>
 							<li>
-								Encouraging other players to break rules is not allowed.
-								Additionally, raiding, rioting, violently protesting or
-								intentionally provoking any kind of disruption within our
-								community members is not allowed.
-							</li>
-							<li>
-								Impersonating staff members on any platform by rank,
-								association, or name is not allowed.
+								Revealing players' personal information will result in the termination of your access to Warzone's platforms.
+								This includes, but is not limited to, IP addresses, home addresses, and phone numbers. 
+								Moreover, sharing confidential information related to Warzone and its services is also not allowed.
 							</li>
 							<li>
 								Threatening other players or the server is not allowed. This
-								includes (D)DoS Threats, Dox threats, Death threats and other
+								includes (D)DoS Threats, Dox threats, death threats and other
 								threats of that nature.
 							</li>
 						</ol>
@@ -120,7 +106,7 @@ class ServerRules extends Component {
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
 								alt accounts, spawn killing, leaving the game just before being
-								killed, switching teams just before you lose, team stacking, and
+								killed, switching teams just before you lose, team stacking, block glitching and
 								anything similar that may positively affect your stats above
 								other players on the server are not allowed.
 							</li>
@@ -134,16 +120,17 @@ class ServerRules extends Component {
 								insults, and inappropriate signs.
 							</li>
 							<li>
-								Do not publicly hackusate other players. Also, do not
-								intentionally play in such a way that aims to get hackusations
-								from other players. This means that intentionally looking to be
-								falsely punished is not allowed.
+								When encountering a player using illegal modifications, refrain from publicly hackusating the offender. 
+								Instead, make sure to use our in-game reporting feature (<b>/report</b>).
+								If there are no staff members in-game, you may use the <b>!staff</b> command on our Discord. 
+								In the event that our moderation team is unavailable, you can gather evidence of the rule breaker and report it on our <a href="https://forums.minehut.com/forum/34-reports/">forums</a>
+								
 							</li>
 							<li>
 								Client modifications that give you an unfair advantage over
 								other players are not allowed. Unofficial clients such as
 								Badlion Client and Lunar Client are considered "use at your own
-								risk." Purely aesthetic mods such as OptiFine, 5zig, and LabyMod
+								risk". Purely aesthetic mods such as OptiFine, 5zig, and LabyMod
 								are allowed, but minimaps with radars enabled, health
 								indicators, skin blinkers, waypoints, etc; are not.
 							</li>
@@ -160,7 +147,7 @@ class ServerRules extends Component {
 					</div>
 					<div>
 						<h2>Discord</h2>
-						<ol>
+						<ol>	
 							<li>
 								Please keep all channels on topic. Be sure to check the pinned
 								messages in each channel you use.
@@ -183,10 +170,13 @@ class ServerRules extends Component {
 								Participating in reports or appeals threads that you are not
 								directly involved is not allowed.
 							</li>
-							<li>All posts should be on topic.</li>
+							<li>
+								All posts made on the forums must be posted in the correct category, depending on if you are making 
+								a report or an appeal. They must remain on topic at all times. 
+							</li>
 							<li>
 								Forging or faking evidence when appealing or submitting a report
-								will result in an instant denial. A punishment might follow
+								will result in an instant denial. A punishment may follow
 								depending on the severity of the offense.
 							</li>
 							<li>
