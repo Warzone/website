@@ -8,8 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on April 5th, 2021 (several additions
-							and a few edits).
+							This page was last updated on July 7th, 2021 (added two rules).
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -22,6 +21,11 @@ class ServerRules extends Component {
 					<div>
 						<h2>General Composure</h2>
 						<ol>
+							<li>
+								Use and practice common sense. If it sounds questionable 
+								or excessive, it's probably not allowed. Consult with one of 
+								our staff members for rules or behavior not listed on this page.
+							</li>
 							<li>
 								The server’s official language is English. We ask that you
 								communicate with the general community in said language.
@@ -36,6 +40,11 @@ class ServerRules extends Component {
 								bad sportsman, and disrespecting others is not allowed. We aim
 								to provide all players with a safe and relaxed environment;
 								Toxicity has no place on Warzone.
+							</li>
+							<li>
+								Inappropriate behavior is not allowed. This includes, but is not 
+								limited to, linking, posting or sending NSFW content, making sexual 
+								commentary or innuendos, and posting any other statement of that nature.
 							</li>
 							<li>
 								Leaking players' personal information is not allowed. This
