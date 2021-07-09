@@ -165,6 +165,11 @@ class ServerRules extends Component {
 								both not allowed. Mouse debounce time should not be lower than
 								10 milliseconds.
 							</li>
+							<li>
+								Bedrock Edition players must refrain from using unfair build
+								mechanics that allow for scaffold-like bridging (otherwise known
+								as Bedrock Bridging). For more information, contact a staff member.
+							</li>
 						</ol>
 					</div>
 					<div>
