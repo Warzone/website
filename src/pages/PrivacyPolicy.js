@@ -39,9 +39,10 @@ class PrivacyPolicy extends Component {
 								member.
 							</li>
 							<li>
-								Any reports and appeals can be privately submitted on our forums. 
-								Moderators will respond accordingly to any reports and/or appeals 
-								you may make, and only staff members will have the ability to see them.
+								Any reports and appeals can be privately submitted on our
+								forums. Moderators will respond accordingly to any reports
+								and/or appeals you may make, and only staff members will have
+								the ability to see them.
 							</li>
 							<li>
 								We store a hash of your IP address in our database for

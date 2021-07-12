@@ -22,13 +22,14 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								Use and practice common sense. If it sounds questionable 
-								or excessive, it's probably not allowed. Consult with one of 
-								our staff members for rules or behavior not listed on this page.
+								Use and practice common sense. If it sounds questionable or
+								excessive, it's probably not allowed. Consult with one of our
+								staff members for rules or behavior not listed on this page.
 							</li>
 							<li>
 								The server’s official language is English, so we ask that you
-								use English when communicating with the players on the server and in the community.
+								use English when communicating with the players on the server
+								and in the community.
 							</li>
 							<li>
 								Ensure that you are respectful to all players and are
@@ -42,9 +43,10 @@ class ServerRules extends Component {
 								Toxicity has no place on Warzone.
 							</li>
 							<li>
-								Inappropriate behavior is not allowed. This includes, but is not 
-								limited to, linking, posting or sending NSFW content, making sexual 
-								commentary or innuendos, and posting any other statement of that nature.
+								Inappropriate behavior is not allowed. This includes, but is not
+								limited to, linking, posting or sending NSFW content, making
+								sexual commentary or innuendos, and posting any other statement
+								of that nature.
 							</li>
 							<li>
 								Leaking players' personal information is not allowed. This
@@ -66,8 +68,8 @@ class ServerRules extends Component {
 								to draw attention to it is not allowed.
 							</li>
 							<li>
-								Keep in mind that Warzone is not a market. In order to protect our
-								players from scams and other financial offenses, selling,
+								Keep in mind that Warzone is not a market. In order to protect
+								our players from scams and other financial offenses, selling,
 								soliciting, and/or buying anything through our services (that is
 								not from our official store) are not allowed. By extension,
 								scamming or defrauding other players is not allowed.
@@ -168,7 +170,8 @@ class ServerRules extends Component {
 							<li>
 								Bedrock Edition players must refrain from using unfair build
 								mechanics that allow for scaffold-like bridging (otherwise known
-								as Bedrock Bridging). For more information, contact a staff member.
+								as Bedrock Bridging). For more information, contact a staff
+								member.
 							</li>
 						</ol>
 					</div>
