@@ -8,8 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on April 5th, 2021 (several additions
-							and a few edits).
+							This page was last updated on July 12th, 2021.
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -23,8 +22,14 @@ class ServerRules extends Component {
 						<h2>General Composure</h2>
 						<ol>
 							<li>
-								The server’s official language is English. We ask that you
-								communicate with the general community in said language.
+								Use and practice common sense. If it sounds questionable or
+								excessive, it's probably not allowed. Consult with one of our
+								staff members for rules or behavior not listed on this page.
+							</li>
+							<li>
+								The server’s official language is English, so we ask that you
+								use English when communicating with the players on the server
+								and in the community.
 							</li>
 							<li>
 								Ensure that you are respectful to all players and are
@@ -36,6 +41,12 @@ class ServerRules extends Component {
 								bad sportsman, and disrespecting others is not allowed. We aim
 								to provide all players with a safe and relaxed environment;
 								Toxicity has no place on Warzone.
+							</li>
+							<li>
+								Inappropriate behavior is not allowed. This includes, but is not
+								limited to, linking, posting or sending NSFW content, making
+								sexual commentary or innuendos, and posting any other statement
+								of that nature.
 							</li>
 							<li>
 								Leaking players' personal information is not allowed. This
@@ -57,8 +68,8 @@ class ServerRules extends Component {
 								to draw attention to it is not allowed.
 							</li>
 							<li>
-								Keep in mind that this is not a market. In order to protect our
-								players from scams and other financial offenses, selling,
+								Keep in mind that Warzone is not a market. In order to protect
+								our players from scams and other financial offenses, selling,
 								soliciting, and/or buying anything through our services (that is
 								not from our official store) are not allowed. By extension,
 								scamming or defrauding other players is not allowed.
@@ -155,6 +166,12 @@ class ServerRules extends Component {
 								allowed, which means butterfly clicking and drag clicking are
 								both not allowed. Mouse debounce time should not be lower than
 								10 milliseconds.
+							</li>
+							<li>
+								Bedrock Edition players must refrain from using unfair build
+								mechanics that allow for scaffold-like bridging (otherwise known
+								as Bedrock Bridging). For more information, contact a staff
+								member.
 							</li>
 						</ol>
 					</div>
