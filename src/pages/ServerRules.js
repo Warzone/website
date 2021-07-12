@@ -8,7 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on July 7th, 2021 (added two rules).
+							This page was last updated on July 12th, 2021.
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -27,8 +27,8 @@ class ServerRules extends Component {
 								our staff members for rules or behavior not listed on this page.
 							</li>
 							<li>
-								The server’s official language is English. We ask that you
-								communicate with the general community in said language.
+								The server’s official language is English, so we ask that you
+								use English when communicating with the players on the server and in the community.
 							</li>
 							<li>
 								Ensure that you are respectful to all players and are
@@ -66,7 +66,7 @@ class ServerRules extends Component {
 								to draw attention to it is not allowed.
 							</li>
 							<li>
-								Keep in mind that this is not a market. In order to protect our
+								Keep in mind that Warzone is not a market. In order to protect our
 								players from scams and other financial offenses, selling,
 								soliciting, and/or buying anything through our services (that is
 								not from our official store) are not allowed. By extension,
