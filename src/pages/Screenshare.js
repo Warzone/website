@@ -34,9 +34,9 @@ class Screenshare extends Component {
 						guarantee sensitive information will not be encountered in the
 						screenshare process. Players are expected to make sure that
 						sensitive information is not stored in any folders that are related
-						to Minecraft or similar. In the event that sensitive
-						information is discovered, it will be kept private within the
-						screenshare & senior staff.
+						to Minecraft or similar. In the event that sensitive information is
+						discovered, it will be kept private within the screenshare & senior
+						staff.
 						<br />
 						<br />
 						If a player requires any clarification about programs or methods
