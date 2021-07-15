@@ -152,7 +152,7 @@ class Screenshare extends Component {
 						<h2>Who We Screenshare</h2>
 						<ul style={{ listStylePosition: 'inside', marginLeft: 25 }}>
 							<li>
-								Warzone staff does not screenshare players upon player request
+								Warzone staff do not screenshare players upon player request
 							</li>
 							<li>
 								A player who has already been screenshared may be screenshared
@@ -178,7 +178,7 @@ class Screenshare extends Component {
 									Paladin
 								</a>{' '}
 								— Investigate the Minecraft Java client (
-								<a className='white' href='http://dl.pld.ac/'>
+								<a className='ss-dl' href='https://dl.pld.ac/'>
 									Download Paladin
 								</a>
 								)
@@ -188,7 +188,7 @@ class Screenshare extends Component {
 									Avenge
 								</a>{' '}
 								— Investigate the Minecraft Java client (
-								<a className='white' href='http://dl.avenge.ac/'>
+								<a className='ss-dl' href='https://dl.avenge.ac/'>
 									Download Avenge
 								</a>
 								)
@@ -198,7 +198,7 @@ class Screenshare extends Component {
 									Echo
 								</a>{' '}
 								— Investigate the Minecraft Java client (
-								<a className='white' href='http://dl.echo.ac/'>
+								<a className='ss-dl' href='https://dl.echo.ac/'>
 									Download Echo
 								</a>
 								)
@@ -209,7 +209,7 @@ class Screenshare extends Component {
 								</a>{' '}
 								— Variety of bundled utilities designed to investigate program
 								activity and the Minecraft Java client (
-								<a className='white' href='https://safeshare.solutions/'>
+								<a className='ss-dl' href='https://safeshare.solutions/'>
 									Download Safeshare
 								</a>
 								)
@@ -219,7 +219,7 @@ class Screenshare extends Component {
 									AnyDesk
 								</a>{' '}
 								— Provide remote desktop access to staff during screenshare (
-								<a className='white' href='https://anydesk.com/en/downloads/'>
+								<a className='ss-dl' href='https://anydesk.com/en/downloads/'>
 									Download AnyDesk
 								</a>
 								)
