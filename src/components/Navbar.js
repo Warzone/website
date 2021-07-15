@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Badge from '@material-ui/core/Badge';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import '../styles/components/navbar.css';

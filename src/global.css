@@ -63,3 +63,13 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+.page,
+.footer,
+.nav {
+	font-size: larger;
+}
+
+.alert {
+	font-size: medium !important;
+}
