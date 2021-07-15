@@ -30,7 +30,11 @@ class Router extends Component {
 						/>
 						<ScrollToTopRoute exact path='/rules' component={ServerRules} />
 						<ScrollToTopRoute exact path='/privacy' component={PrivacyPolicy} />
-						<ScrollToTopRoute exact path='/screenshare' component={Screenshare} />
+						<ScrollToTopRoute
+							exact
+							path='/screenshare'
+							component={Screenshare}
+						/>
 						<ScrollToTopRoute exact path='/play' component={Play} />
 						<ScrollToTopRoute exact path='/staff' component={Staff} />
 						<ScrollToTopRoute exact path='/m/:mid' component={MatchInfo} />
