@@ -28,16 +28,15 @@ class Screenshare extends Component {
 					<hr />
 					<div>
 						<h2>Privacy Statement</h2>
-						Player privacy is prioritised during screenshares. Staff members
-						conducting screenshares do not look for any sensitive information or
-						information that does not pertain to cheat detection. That being
-						said, Warzone does not guarantee sensitive information will not be
-						encountered in the process of screenshares, as the responsibility
-						falls on players to ensure their information cannot be encountered
-						in the reasonable course of a screenshare (example: sensitive
-						information kept in the .minecraft folder is bound to be
-						encountered). In the case that sensitive information is found, it
-						will be kept confidential within the Warzone screenshare staff.
+						Player privacy is prioritised during a screenshare. Staff members
+						conducting screenshares will not look for any information that does
+						not pertain to cheat detection. That being said, Warzone does not
+						guarantee sensitive information will not be encountered in the
+						screenshare process. Players are expected to make sure that
+						sensitive information is not stored in any folders that are related
+						to Minecraft or similar. In the event that sensitive
+						information is discovered, it will be kept private within the
+						screenshare & senior staff.
 						<br />
 						<br />
 						If a player requires any clarification about programs or methods
@@ -92,9 +91,9 @@ class Screenshare extends Component {
 					</div>
 					<div>
 						<h2>Failure</h2>
-						Doing any of the following during a screenshare without staff
-						approval will result in an automatic screenshare failure and
-						consequently a ban from the server:
+						Doing any or being caught with the following during a screenshare
+						without staff approval will result in an automatic screenshare
+						failure and consequently a ban from the server:
 						<ul style={{ listStylePosition: 'inside', marginLeft: 25 }}>
 							<li>Using a FAT filesystem</li>
 							<li>Using VeraCrypt or other disk encryption programs</li>
@@ -231,7 +230,7 @@ class Screenshare extends Component {
 						programs in advance.
 					</div>
 					<div>
-						<h2>Screenshare Abuse</h2>
+						<h2>Abuse</h2>
 						Screenshares are regulated internally within the Warzone staff team
 						and screenshare staff are held to a high standard.
 						<br />
