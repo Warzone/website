@@ -91,7 +91,7 @@ class Screenshare extends Component {
 					</div>
 					<div>
 						<h2>Failure</h2>
-						Doing any or being caught with the following during a screenshare
+						Doing or being caught with any of the following during a screenshare
 						without staff approval will result in an automatic screenshare
 						failure and consequently a ban from the server:
 						<ul style={{ listStylePosition: 'inside', marginLeft: 25 }}>
