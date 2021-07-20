@@ -11,7 +11,7 @@ class Screenshare extends Component {
 						recently, so we are giving players time to familiarise themselves
 						with the Screenshare Policy before we start screensharing. <br />
 						<br /> Warzone will not commence screensharing until{' '}
-						<span class='bold'>August 1st 2021</span>.
+						<span class='bold'>August 4th 2021</span>.
 					</Alert>
 					<div>
 						<h1>Screenshare Policy</h1>
@@ -34,9 +34,9 @@ class Screenshare extends Component {
 						guarantee sensitive information will not be encountered in the
 						screenshare process. Players are expected to make sure that
 						sensitive information is not stored in any folders that are related
-						to Minecraft or similar. In the event that sensitive
-						information is discovered, it will be kept private within the
-						screenshare & senior staff.
+						to Minecraft or similar. In the event that sensitive information is
+						discovered, it will be kept private within the screenshare & senior
+						staff.
 						<br />
 						<br />
 						If a player requires any clarification about programs or methods
@@ -242,6 +242,9 @@ class Screenshare extends Component {
 					</div>
 					<br />
 					<hr />
+					Our Screenshare Policy may be updated at any time, with or without
+					notice. It is your responsibility to keep up-to-date with the content
+					on this page.
 				</div>
 			</div>
 		);
