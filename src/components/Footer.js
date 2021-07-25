@@ -66,6 +66,11 @@ class Footer extends Component {
 										Privacy Policy
 									</Link>
 								</li>
+								<li className='right'>
+									<Link className='footer-link' to='/screenshare'>
+										Screenshare Policy
+									</Link>
+								</li>
 							</ul>
 							<div className='right'>
 								Servers hosted by{' '}

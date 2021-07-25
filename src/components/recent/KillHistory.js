@@ -27,51 +27,53 @@ class KillHistory extends Component {
 					<Table className='kill-history-table'>
 						<TableBody>
 							{this.props.kills.map((kill) => (
-								<TableRow key={kill._id}>
-									<TableCell
-										className='kill-history-table-cell center'
-										component='th'
-										scope='row'
-									>
-										<img
-											className='kill-history-player-head'
-											src={
-												!kill.killerLoaded
-													? `https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32`
-													: `https://crafatar.com/avatars/${kill.killerLoaded.uuid}?size=32`
-											}
-											alt='Player head'
-										/>
-									</TableCell>
-									<TableCell className='kill-history-table-cell center'>
-										<span className='bold'>
-											{!kill.killerLoaded ? (
-												'Wilderness'
-											) : (
-												<Link
-													className='kill-history-link white'
-													to={`/p/${kill.killerLoaded.name}`}
-												>
-													{kill.killerLoaded.name}
-												</Link>
-											)}
-										</span>{' '}
-										killed{' '}
-										<Link
-											className='kill-history-link white'
-											to={`/p/${kill.playerLoaded.name}`}
+								<>
+									<TableRow key={kill._id}>
+										<TableCell
+											className='kill-history-table-cell center'
+											component='th'
+											scope='row'
 										>
-											<span className='bold'>{kill.playerLoaded.name}</span>
-										</Link>
-									</TableCell>
-									<TableCell className='kill-history-table-cell center'>
-										<img
-											className='kill-history-player-head'
-											src={`https://crafatar.com/avatars/${kill.playerLoaded.uuid}?size=32`}
-											alt='Player head'
-										/>
-									</TableCell>
-								</TableRow>
+											<img
+												className='kill-history-player-head'
+												src={
+													!kill.killerLoaded
+														? `https://crafatar.com/avatars/606e2ff0ed7748429d6ce1d3321c7838?size=32`
+														: `https://crafatar.com/avatars/${kill.killerLoaded.uuid}?size=32`
+												}
+												alt='Player head'
+											/>
+										</TableCell>
+										<TableCell className='kill-history-table-cell center'>
+											<span className='bold'>
+												{!kill.killerLoaded ? (
+													'Wilderness'
+												) : (
+													<Link
+														className='kill-history-link white'
+														to={`/p/${kill.killerLoaded.name}`}
+													>
+														{kill.killerLoaded.name}
+													</Link>
+												)}
+											</span>{' '}
+											killed{' '}
+											<Link
+												className='kill-history-link white'
+												to={`/p/${kill.playerLoaded.name}`}
+											>
+												<span className='bold'>{kill.playerLoaded.name}</span>
+											</Link>
+										</TableCell>
+										<TableCell className='kill-history-table-cell center'>
+											<img
+												className='kill-history-player-head'
+												src={`https://crafatar.com/avatars/${kill.playerLoaded.uuid}?size=32`}
+												alt='Player head'
+											/>
+										</TableCell>
+									</TableRow>
+								</>
 							))}
 						</TableBody>
 					</Table>
