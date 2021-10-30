@@ -192,8 +192,8 @@ class ServerRules extends Component {
 								Minecraft or Discord servers is not allowed.
 							</li>
 							<li>
-								Linking social media accounts in your Discord profile is explicitly allowed and
-								will not be considered advertising.
+								Linking social media accounts in your Discord profile is allowed and
+								is not considered advertising.
 							</li>
 							<li>
 								The use of voice changers and soundboards is not allowed.
