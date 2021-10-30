@@ -183,8 +183,17 @@ class ServerRules extends Component {
 								messages in each channel you use.
 							</li>
 							<li>
-								Keep all names, pictures (including profile pictures), and
-								messages appropriate. NSFW content is not allowed.
+								You must maintain an appropriate Discord profile. This includes, but is 
+								not limited to: usernames, nicknames, profile pictures or banners, and 
+								"About Me" contents.
+							</li>
+							<li>
+								Using your Discord profile to advertise, link, or otherwise refer to competitor
+								Minecraft or Discord servers is not allowed.
+							</li>
+							<li>
+								Linking social media accounts in your Discord profile is allowed and
+								is not considered advertising.
 							</li>
 							<li>
 								The use of voice changers and soundboards is not allowed.
