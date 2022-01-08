@@ -130,7 +130,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Do not share information with players as a spectator to offer an
-								advantage over other teams.
+								advantage over other teams, otherwise known as ghosting.
 							</li>
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
