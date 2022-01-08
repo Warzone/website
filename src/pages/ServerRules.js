@@ -129,7 +129,8 @@ class ServerRules extends Component {
 								player of the opposite or different team).
 							</li>
 							<li>
-								Do not share information with players as a spectator to offer an advantage over other teams.
+								Do not share information with players as a spectator to offer an
+								advantage over other teams.
 							</li>
 							<li>
 								Map and statistic abuse are not allowed. This includes grinding
