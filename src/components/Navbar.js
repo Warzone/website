@@ -21,21 +21,24 @@ class Navbar extends Component {
 								Warzone
 							</Link>
 						</Typography>
-						<a href='https://warz.one/store' className='nav-button white'>
-							Store
-						</a>
-						<Link to='/play' className='nav-button white'>
-							Play
-						</Link>
-						<a href='https://warz.one/discord' className='nav-button white'>
-							Discord
-						</a>
-						<Link to='/staff' className='nav-button white'>
-							Staff
-						</Link>
-						<Link to='/leaderboard' className='nav-button white'>
-							Leaderboard
-						</Link>
+						<div>
+							<a href='https://warz.one/store' className='nav-button white'>
+								Store
+							</a>
+							<Link to='/play' className='nav-button white'>
+								Play
+							</Link>
+							<a href='https://warz.one/discord' className='nav-button white'>
+								Discord
+							</a>
+							<Link to='/staff' className='nav-button white'>
+								Staff
+							</Link>
+							<Link to='/leaderboard' className='nav-button white'>
+								Leaderboard
+							</Link>
+						</div>
+						
 					</div>
 				</Toolbar>
 			</AppBar>
