@@ -8,8 +8,7 @@ class PrivacyPolicy extends Component {
 					<div>
 						<h1>Privacy Policy</h1>
 						<span className='bold'>
-							This page was last updated on July 7th, 2021 (updated reports and
-							appeals policy).
+							This page was last updated on July 23rd, 2022 (updated policy regarding inventory data).
 						</span>
 						<p>
 							By using our (Warzone) Service, information may be collected
@@ -24,6 +23,11 @@ class PrivacyPolicy extends Component {
 								Any statistics, participation in matches, and other
 								gameplay-related events are compiled to allow for profile pages
 								and match pages.
+							</li>
+							<li>
+								Any changes in the player's inventory arrangement are saved every
+								match to allow for preferences to be modeled and/or applied after
+								each respawn.
 							</li>
 							<li>
 								Any messages you send to the server are stored on our Discord
