@@ -27,7 +27,7 @@ class PrivacyPolicy extends Component {
 							<li>
 								Any changes in the player's inventory arrangement are saved every
 								match to allow for preferences to be modeled and/or applied after
-								each respawn.
+								each respawn. Saved data may be shared with third parties.
 							</li>
 							<li>
 								Any messages you send to the server are stored on our Discord
