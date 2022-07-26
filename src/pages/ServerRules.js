@@ -80,7 +80,7 @@ class ServerRules extends Component {
 								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								Suicidal encouragement and encouraging self-harm a strictly
+								Suicidal encouragement and encouraging self-harm are strictly
 								forbidden.
 							</li>
 							<li>
