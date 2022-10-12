@@ -8,7 +8,7 @@ class ServerRules extends Component {
 					<div>
 						<h1>Server Rules</h1>
 						<span className='bold'>
-							This page was last updated on July 12th, 2021.
+							This page was last updated on July 28th, 2022.
 						</span>
 						<p>
 							Failure to abide by any of the rules listed on this page may
@@ -45,7 +45,7 @@ class ServerRules extends Component {
 							<li>
 								Inappropriate behavior is not allowed. This includes, but is not
 								limited to, linking, posting or sending NSFW content, making
-								sexual commentary or innuendos, and posting any other statement
+								sexual comments or innuendos, and posting any other statement
 								of that nature.
 							</li>
 							<li>
@@ -57,21 +57,21 @@ class ServerRules extends Component {
 							<li>
 								Be aware that others may find excessive profanity repulsive and
 								disrespectful. While we're lenient when it comes to swearing, we
-								ask that you do not direct profanity towards other players.
+								ask that you do not direct profanity toward other players.
 							</li>
 							<li>
 								Advertising and self-promoting are not allowed. This includes
 								promoting Minehut servers, external Minecraft servers, YouTube
 								channels, and Discord servers. Additionally, indirect
 								advertising by inviting other players to come along with you or
-								comparing Warzone's characteristics to another server in order
+								comparing Warzone's characteristics to another server
 								to draw attention to it is not allowed.
 							</li>
 							<li>
-								Keep in mind that Warzone is not a market. In order to protect
+								Keep in mind that Warzone is not a market. To protect
 								our players from scams and other financial offenses, selling,
 								soliciting, and/or buying anything through our services (that is
-								not from our official store) are not allowed. By extension,
+								not from our official store) is not allowed. By extension,
 								scamming or defrauding other players is not allowed.
 							</li>
 							<li>
@@ -80,7 +80,7 @@ class ServerRules extends Component {
 								sexual orientation, and other protected groups.
 							</li>
 							<li>
-								Suicidal encouragement and encouraging self-harm is strictly
+								Suicidal encouragement and encouraging self-harm are strictly
 								forbidden.
 							</li>
 							<li>
@@ -209,10 +209,6 @@ class ServerRules extends Component {
 					<div>
 						<h2>Forums</h2>
 						<ol>
-							<li>
-								Participating in reports or appeals threads that you are not
-								directly involved is not allowed.
-							</li>
 							<li>All posts should be on topic.</li>
 							<li>
 								Forging or faking evidence when appealing or submitting a report
@@ -228,7 +224,7 @@ class ServerRules extends Component {
 					</div>
 					<hr />
 					<div>
-						Please note that if you are IP banned in game or on our Discord
+						Please note that if you are IP banned in-game or on our Discord
 						server, all users associated with that IP address will also be
 						banned. Additionally, these rules are subject to change at any time,
 						without notice. It is your responsibility to keep up-to-date with
