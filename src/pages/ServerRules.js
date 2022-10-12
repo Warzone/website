@@ -50,7 +50,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Leaking players' personal information is not allowed. This
-								includes, but is not limited to, IP addresses, home addresses
+								includes, but is not limited to, IP addresses, home addresses,
 								and phone numbers. Moreover, sharing confidential information
 								related to Warzone and its services is also not allowed.
 							</li>
@@ -84,7 +84,7 @@ class ServerRules extends Component {
 								forbidden.
 							</li>
 							<li>
-								Using excessive capitalization in chat, flooding the chat and
+								Using excessive capitalization in chat, flooding the chat, and
 								spamming the chat are all not allowed.
 							</li>
 							<li>
@@ -101,7 +101,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Encouraging other players to break rules is not allowed.
-								Additionally, raiding, rioting, violently protesting or
+								Additionally, raiding, rioting, violently protesting, or
 								intentionally provoking any kind of disruption within our
 								community members is not allowed.
 							</li>
@@ -111,7 +111,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								Threatening other players or the server is not allowed. This
-								includes (D)DoS Threats, Dox threats, Death threats and other
+								includes (D)DoS Threats, Dox threats, Death threats, and other
 								threats of that nature.
 							</li>
 						</ol>
