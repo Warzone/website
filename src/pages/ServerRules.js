@@ -124,7 +124,7 @@ class ServerRules extends Component {
 								Do not attempt to harm your team. This includes game throwing
 								(intentionally losing a game or not attempting to win), team
 								griefing (breaking blocks under teammates, stealing from chests,
-								sabotaging your team's defences, preventing your team from
+								sabotaging your team's defenses, preventing your team from
 								achieving objectives), and cross teaming (teaming up with a
 								player of the opposite or different team).
 							</li>
@@ -145,7 +145,7 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								The building of inappropriate structures will not be tolerated.
-								This includes, but is not limited to: genitalia, swastikas,
+								This includes, but is not limited to genitalia, swastikas,
 								insults, and inappropriate signs.
 							</li>
 							<li>
@@ -188,8 +188,8 @@ class ServerRules extends Component {
 							</li>
 							<li>
 								You must maintain an appropriate Discord profile. This includes,
-								but is not limited to: usernames, nicknames, profile pictures or
-								banners, and "About Me" contents.
+								but is not limited to: usernames, nicknames, profile pictures, or
+								banners, and "About Me" content.
 							</li>
 							<li>
 								Using your Discord profile to advertise, link, or otherwise
