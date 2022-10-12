@@ -35,11 +35,11 @@ class PrivacyPolicy extends Component {
 							</li>
 							<li>
 								Any purchases made in our store are processed directly through
-								3rd party services (PayPal, Stripe and Xsolla) and not the
+								3rd party services (PayPal, Stripe, and Xsolla) and not the
 								Warzone administration. We do not store your personal card
 								information on our Services, nor do we have access to it.
 								Additionally, we have a right to block you from using our
-								Service if you chargeback on our store without notifying a staff
+								Service if you charge back on our store without notifying a staff
 								member.
 							</li>
 							<li>
