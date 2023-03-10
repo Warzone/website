@@ -29,7 +29,7 @@ class Play extends Component {
 			<div className='page center play'>
 				<div className='play-background'>
 					<div className='container'>
-						<h1 className='white'>Join Warzone to practice anytime</h1>
+						<h1 className='white'>Join Warzone to play anytime!</h1>
 
 						<h2 className='font-weight-500'>
 							Connect to{' '}
