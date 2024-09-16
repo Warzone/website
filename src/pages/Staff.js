@@ -6,6 +6,8 @@ import NotFound from './NotFound';
 import { config } from '../';
 import '../styles/pages/staff.css';
 
+const bedrock = ["*", "."];
+
 export default function Staff() {
 	const [staff, setStaff] = useState([]);
 	const [notFound, setNotFound] = useState(false);
@@ -25,17 +27,17 @@ export default function Staff() {
 			ranksJson = await ranksRes.json();
 			if (ranksJson.notFound) return setNotFound(true);
 
-			ranksJson = ranksJson.filter((rank) => rank.staff).reverse();
+			ranksJson = ranksJson.filter((rank) => rank.staff).sort((a,b) => a.priority - b.priority).reverse();
 
 			ranksJson.map(async (rank, i) => {
 				rank.players = [];
 				const res = await fetch(
-					`${config.API_BASE}/mc/rank/${rank.name}/players`
+					`${config.API_BASE}/mc/ranks/${rank._id}/players`
 				);
-				const json = await res.json();
-				rank.players = json.users;
+				const players = await res.json();
+				rank.players = players.filter((player) => !bedrock.includes(player.name.charAt(0)));
 
-				if (rank.players[i] !== []) rank.playersLoaded = true;
+				rank.playersLoaded = true;
 
 				if (ranksJson.every((e) => e.hasOwnProperty('playersLoaded'))) {
 					setStaff(ranksJson);
@@ -76,7 +78,7 @@ export default function Staff() {
 					{staff.map((rank) => (
 						<div className='row' key={rank.name}>
 							<h2>
-								{rank.display}{' '}
+								{rank.displayName}{' '}
 								<small
 									style={{
 										fontSize: '13px',
@@ -99,7 +101,7 @@ export default function Staff() {
 										>
 											<img
 												className='img-rounded'
-												src={`https://crafatar.com/avatars/${player.uuid}?helm&size=160`}
+												src={`https://crafatar.com/avatars/${player.id}?helm&size=160`}
 												style={{ width: '120px', borderRadius: '10px' }}
 												alt='Staff head'
 											/>

@@ -3,7 +3,21 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Clock from '@material-ui/icons/Timer';
 import '../styles/pages/match-info.css';
 import { config } from '../';
-// import MatchTeams from '../components/match/MatchTeams';
+import {
+	formatTime,
+	gamemodes,
+	getElapsedTime,
+	getStatusColor
+} from '../utils';
+import MatchTeams from '../components/match/MatchTeams';
+
+var dateOptions = {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+	hour: 'numeric',
+	minute: 'numeric'
+};
 
 class MatchInfo extends Component {
 	constructor() {
@@ -18,7 +32,7 @@ class MatchInfo extends Component {
 	async componentDidMount() {
 		let matchJson, matchRes;
 		matchRes = await fetch(
-			`${config.API_BASE}/mc/match/${this.props.match.params.mid}`
+			`${config.API_BASE}/mc/matches/${this.props.match.params.mid}`
 		);
 		if (!matchRes.ok)
 			return console.error('Error fetching match: ' + matchRes.status);
@@ -50,20 +64,34 @@ class MatchInfo extends Component {
 					{match && (
 						<div>
 							<div className='row'>
-								<div className='col-4'>
-									<h1>CTW</h1>
-									<h3>TechnoWar</h3>
+								<div className='col-6'>
+									<h1>{match.level.name}</h1>
+									<h3>{gamemodes[match.level.gamemodes[0]]}</h3>
 								</div>
-								<div className='col-4' />
-								<div className='col-4'>
-									<h1>
-										<Clock /> 00:25
+								<div className='col-2' />
+								<div
+									className='col-4'
+									style={{
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'end',
+										justifyContent: 'start'
+									}}
+								>
+									<h1 style={{ color: getStatusColor(match) }}>
+										<Clock /> {formatTime(getElapsedTime(match))}
 									</h1>
+									<h3>
+										{new Date(match.loadedAt).toLocaleDateString(
+											'en-US',
+											dateOptions
+										)}
+									</h3>
 								</div>
 							</div>
 							<hr />
 							<div>
-								{/* <MatchTeams match={match} getPlayerById={this.getPlayerById} /> */}
+								<MatchTeams match={match} getPlayerById={this.getPlayerById} />
 							</div>
 						</div>
 					)}

@@ -9,10 +9,11 @@
 }
 .match-history-table-cell {
 	color: #cacaca !important;
-	padding: 0 0 0 !important;
+	padding-top: 100 !important;
 	font-size: inherit !important;
 	border-bottom: 0 !important;
 	border-top: 1px solid #4a4949 !important;
+    text-transform: none !important;
 }
 .match-history-table-cell-icon {
 	vertical-align: bottom;

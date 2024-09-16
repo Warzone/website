@@ -9,6 +9,7 @@ import People from '@material-ui/icons/People';
 import Timer from '@material-ui/icons/Timer';
 import { Link } from 'react-router-dom';
 import '../../styles/components/recent/match-history.css';
+import { gamemodes_short, formatTime, getStatusColor, getElapsedTime } from '../../utils';
 
 class MatchHistory extends Component {
 	render() {
@@ -29,39 +30,56 @@ class MatchHistory extends Component {
 				{this.props.matches && this.props.matches.length > 0 && (
 					<Table className='match-history-table'>
 						<TableBody>
-							{this.props.matches.map((match) => (
-								<TableRow key={match.match._id}>
-									<TableCell
-										className='match-history-table-cell'
-										component='th'
-										scope='row'
-									>
-										<Button
-											component={Link}
-											to={`/m/${match.match._id}`}
-											variant='contained'
-											className='match-history-view-button white'
-											disabled={true}
+							{this.props.matches.map((match) => {
+								let timeElapsed = getElapsedTime(match);
+								const color = getStatusColor(match);
+								return (
+									<TableRow key={match._id}>
+										<TableCell
+											align='left'
+											className='match-history-table-cell'
 										>
-											View
-										</Button>
-									</TableCell>
-									<TableCell align='left' className='match-history-table-cell'>
-										<span className='bold'>{match.loadedMap.gametype}</span>
-									</TableCell>
-									<TableCell className='match-history-table-cell' align='left'>
-										{match.loadedMap.name}
-									</TableCell>
-									<TableCell className='match-history-table-cell' align='left'>
-										<Timer className='match-history-table-cell-icon' />{' '}
-										{match.timeElapsed}
-									</TableCell>
-									<TableCell className='match-history-table-cell' align='left'>
-										{match.matchSize}{' '}
-										<People className='match-history-table-cell-icon' />
-									</TableCell>
-								</TableRow>
-							))}
+											<a href={`/m/${match._id}`} className='bold'>
+												{match.level.name}
+											</a>
+										</TableCell>
+										<TableCell
+											className='match-history-table-cell'
+											align='left'
+										>
+											{gamemodes_short[match.level.gamemodes[0]]}
+										</TableCell>
+										<TableCell
+											className='match-history-table-cell'
+											align='left'
+										>
+											<Timer className='match-history-table-cell-icon' />{' '}
+											<span style={{ color }}>{formatTime(timeElapsed)}</span>
+										</TableCell>
+										<TableCell
+											className='match-history-table-cell'
+											align='left'
+										>
+											{Object.keys(match.participants).length}{' '}
+											<People className='match-history-table-cell-icon' />
+										</TableCell>
+										<TableCell
+											className='match-history-table-cell'
+											component='th'
+											scope='row'
+										>
+											<Button
+												component={Link}
+												to={`/m/${match._id}`}
+												variant='contained'
+												className='match-history-view-button white'
+											>
+												View
+											</Button>
+										</TableCell>
+									</TableRow>
+								);
+							})}
 						</TableBody>
 					</Table>
 				)}

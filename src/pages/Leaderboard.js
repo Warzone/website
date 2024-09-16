@@ -16,7 +16,7 @@ class Leaderboard extends Component {
 	async componentDidMount() {
 		var leaderboardJson, leaderboardRes;
 		if (!window.sessionStorage.getItem('leaderboard')) {
-			leaderboardRes = await fetch(config.API_BASE + '/mc/leaderboard/kills');
+			leaderboardRes = await fetch(config.API_BASE + '/mc/leaderboards/XP/ALL_TIME');
 			leaderboardJson = await leaderboardRes.json();
 			window.sessionStorage.setItem(
 				'leaderboard',
@@ -44,7 +44,7 @@ class Leaderboard extends Component {
 					<Table className='leaderboard-table'>
 						<TableBody>
 							{this.state.leaderboard.map((player) => (
-								<TableRow key={player._id}>
+								<TableRow key={player.id}>
 									<TableCell
 										className='leaderboard-table-cell'
 										component='td'
@@ -52,7 +52,7 @@ class Leaderboard extends Component {
 									>
 										<img
 											className='leaderboard-player-head'
-											src={`https://crafatar.com/avatars/${player.uuid}?size=32`}
+											src={`https://crafatar.com/avatars/${player.id}?size=32`}
 											alt='Player head'
 										/>
 										<span className='bold'>
@@ -77,18 +77,18 @@ class Leaderboard extends Component {
 										className='leaderboard-table-cell center'
 										component='td'
 									>
-										<span className='bold'>{player.kills}</span>
+										<span className='bold'>{player.score}</span>
 										<br />
-										kills
+										XP
 									</TableCell>
-									<TableCell
+									{/* <TableCell
 										className='leaderboard-table-cell center'
 										component='td'
 									>
 										<span className='bold'>{player.wins}</span>
 										<br />
 										wins
-									</TableCell>
+									</TableCell> */}
 								</TableRow>
 							))}
 						</TableBody>

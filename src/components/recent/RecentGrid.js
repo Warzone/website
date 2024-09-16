@@ -14,23 +14,24 @@ class RecentGrid extends Component {
 
 		// cache recent matches for entire session
 		if (!window.sessionStorage.getItem('recent_matches')) {
-			matchRes = await fetch(config.API_BASE + '/mc/match/latest');
+			matchRes = await fetch(config.API_BASE + '/mc/matches');
 			matchJson = await matchRes.json();
-			window.sessionStorage.setItem(
-				'recent_matches',
-				JSON.stringify(matchJson)
-			);
+			// window.sessionStorage.setItem(
+			// 	'recent_matches',
+			// 	JSON.stringify(matchJson)
+			// );
 		} else
 			matchJson = JSON.parse(window.sessionStorage.getItem('recent_matches'));
 
 		// cache recent kills for entire session
-		if (!window.sessionStorage.getItem('recent_kills')) {
-			killRes = await fetch(config.API_BASE + '/mc/death/latest');
-			killJson = await killRes.json();
-			window.sessionStorage.setItem('recent_kills', JSON.stringify(killJson));
-		} else killJson = JSON.parse(window.sessionStorage.getItem('recent_kills'));
+		// if (!window.sessionStorage.getItem('recent_kills')) {
+		// 	killRes = await fetch(config.API_BASE + '/mc/death/latest');
+		// 	killJson = await killRes.json();
+		// 	window.sessionStorage.setItem('recent_kills', JSON.stringify(killJson));
+		// } else killJson = JSON.parse(window.sessionStorage.getItem('recent_kills'));
 
-		this.setState({ recentMatches: matchJson, recentKills: killJson });
+		// this.setState({ recentMatches: matchJson, recentKills: killJson });
+		this.setState({ recentMatches: matchJson });
 	}
 
 	render() {
@@ -43,9 +44,9 @@ class RecentGrid extends Component {
 							title='Recent Matches'
 						/>
 					</div>
-					<div className='col-5'>
+					{/* <div className='col-5'>
 						<KillHistory kills={this.state.recentKills} title='Recent Kills' />
-					</div>
+					</div> */}
 				</div>
 			</div>
 		);
