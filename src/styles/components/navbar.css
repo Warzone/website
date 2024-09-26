@@ -15,10 +15,18 @@
 
 .nav-container {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	width: 100%;
 }
+.top-container{
+	flex: 50%;
+}
 
+.bottom-container{
+	flex: 50%;
+	margin-top: 6px;
+}
 .nav-button {
 	margin-left: auto;
 	text-transform: none;
